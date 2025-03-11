@@ -10,5 +10,5 @@ pip install -U "huggingface_hub[cli]"
 ```bash
 huggingface-cli login
 ```
-3. Install `uv` from (here)[https://docs.astral.sh/uv/getting-started/installation/]
+3. Install `uv` from [here](https://docs.astral.sh/uv/getting-started/installation/)
 4. `uv sync` to add all the requirements
