@@ -1,5 +1,5 @@
 # GPT
-GPT From Scratch | FDS
+GPT From Scratch 
 
 ## Setup
 1. Install the Hugging Face CLI:
