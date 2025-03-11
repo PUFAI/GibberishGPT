@@ -3,6 +3,11 @@ def get_tokenizer():
     tokenizer = OpenAIGPTTokenizer.from_pretrained("openai-gpt")
     return tokenizer
 
+def get_gpt2_tokenizer():
+    from transformers import AutoTokenizer
+    tokenizer = AutoTokenizer.from_pretrained("gpt2")
+    return tokenizer
+
 # Sample tokenizer code
 # from transformers import OpenAIGPTTokenizer
 
