@@ -2,10 +2,10 @@
 
 ## Setup
 
-1. Install transformers and torch:
+1. Install Dependencies:
 
 ```bash
-uv pip install transformers torch ftfy spacy
+uv pip install transformers torch ftfy spacy tiktoken
 ```
 
 2. Running GPT.py
@@ -13,5 +13,5 @@ uv pip install transformers torch ftfy spacy
    Ensure you are in the GPT directory and not models
 
 ```bash
-python -m models.GPT
+python -m models.gpt2_tokenize
 ```
