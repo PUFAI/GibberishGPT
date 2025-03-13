@@ -1,5 +1,5 @@
 import re
-def clean_text():
+def clean_textdata(text):
     # Remove equal signs used for headings
     text = re.sub(r'={2,}', '', text)  # Remove multiple equal signs for headings (e.g., = Robert Boulter =)
     
