@@ -9,4 +9,4 @@ def tiktoken_tokenize_function(tokenizer, examples):
 
 # Tokenizes the entire dataset using multiprocessing using tiktoken tokenizer
 def tiktoken_tokenize_dataset(dataset, tokenizer, num_cores):
-    return dataset.map(lambda x: tiktoken_tokenize_function(tokenizer, x), batched=True, num_proc=num_cores, remove_columns="text")
+    return dataset.map(lambda x: tiktoken_tokenize_function(tokenizer, x), batched=True, num_proc=num_cores, remove_columns=["text"])

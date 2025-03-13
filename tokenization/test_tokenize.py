@@ -1,8 +1,8 @@
 # GPT token-level model
 import multiprocessing
 
-from wikitext_data import get_wikitext_data, save_data, load_data
-from tiktoken_tokenizer import get_tiktoken_tokenizer, tiktoken_tokenize_dataset
+from data import get_wikitext_data, save_data, load_data
+from tokenization import get_tiktoken_tokenizer, tiktoken_tokenize_dataset
 
 DATA_PATH = "/workspace/GPT/data/tiktoken_tokenized_wikitext"
 num_cores = multiprocessing.cpu_count()
@@ -14,6 +14,7 @@ tokenized_dataset = tiktoken_tokenize_dataset(dataset, tokenizer, num_cores)
 print(tokenized_dataset)
 
 save_data(tokenized_dataset, DATA_PATH)
+
 
 tokenized_dataset = load_data(DATA_PATH)
 #######################################################
