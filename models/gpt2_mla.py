@@ -33,3 +33,4 @@ def convert_to_tensor(example):
     return {"tokens": torch.tensor(example["input_ids"], dtype=torch.long)}
 
 tokenized_dataset = tokenized_dataset.map(convert_to_tensor, batched=False)
+save_data(tokenized_dataset, DATA_PATH)
