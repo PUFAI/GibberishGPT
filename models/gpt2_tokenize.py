@@ -1,26 +1,20 @@
 # GPT token-level model
-from data import get_wikitext_data
-from datasets import load_from_disk
-from models import get_gpt2_tokenizer
-
 import multiprocessing
 
+from data import get_wikitext_data, save_data, load_data
+from models.tokenizer import get_gpt2_tokenizer, tokenize_dataset, tokenize_function
+
+DATA_PATH = "/workspace/GPT/data/tokenized_wikitext"
 num_cores = multiprocessing.cpu_count()
 
 tokenizer = get_gpt2_tokenizer()
-tokenizer.pad_token = tokenizer.eos_token
 
 dataset = get_wikitext_data()
+tokenized_dataset = tokenize_dataset(dataset, tokenizer, num_cores)
+print(tokenized_dataset)
+save_data(tokenized_dataset, DATA_PATH)
 
-def tokenize_function(examples):
-    return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=512)
-
-tokenized_datasets = dataset.map(tokenize_function, batched=True, num_proc=num_cores)
-print(tokenized_datasets["train"][4])
-
-tokenized_datasets.save_to_disk("/workspace/GPT/data/tokenized_wikitext")
-saved_datasets = load_from_disk("/workspace/GPT/data/tokenized_wikitext")
-print(saved_datasets["train"][4])
+tokenized_dataset = load_data(DATA_PATH)
 
 ############################################################
 # Example tokenization
