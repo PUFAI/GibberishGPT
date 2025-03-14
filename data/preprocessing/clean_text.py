@@ -1,5 +1,5 @@
 import re
-def clean_textdata():
+def clean_textdata(text):
     text = re.sub(r'={2,}', '', text)  
     
     text = re.sub(r'@-@', '', text)
