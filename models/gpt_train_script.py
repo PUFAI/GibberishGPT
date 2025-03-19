@@ -1,8 +1,8 @@
-
+# %%
 import sys
 print(sys.executable)
 
-
+# %%
 import sys
 import os
 import json
@@ -12,7 +12,7 @@ base_folder = os.path.abspath("..")
 print(f"Your base folder is: {base_folder}")
 sys.path.append(base_folder)
 
-
+# %%
 # PyTorch Stuff
 import torch
 import torch.nn as nn
@@ -32,7 +32,7 @@ from tokenization import get_tiktoken_tokenizer
 
 print(f"Using device: {device}")
 
-
+# %%
 batch_size = 64  # Kept the same; could be adjusted based on hardware
 block_size = 1024  # GPT-2 uses a context length of 1024 tokens
 max_iters = 50000  # More iterations needed for larger models
@@ -46,7 +46,7 @@ n_layer = 12  # GPT-2 has 12 transformer blocks in the small version
 dropout = 0.1  # GPT-2 uses 0.1 dropout for better generalization
 accumulation_steps = 4
 
-
+# %%
 DATA_PATH = f"{base_folder}/data/tiktoken_tokenized_wikitext"
 num_cores = multiprocessing.cpu_count()
 
@@ -57,10 +57,10 @@ dataset = get_wikitext_data()
 print(tokenizer)
 print(dataset)
 
- 
+
 # # Cleaning Data
 
-
+# %%
 def clean_batch(examples):
     cleaned_texts = [clean_textdata(text) for text in examples["text"]]
     cleaned_texts = list(filter(None, cleaned_texts))
@@ -81,7 +81,7 @@ cleaned_dataset["train"][0]["text"][:100]
 print(cleaned_dataset)
 
 
-
+# %%
 # print(cleaned_dataset["test"]["text"])
 import numpy as np
 
@@ -128,7 +128,7 @@ axs[1].set_ylabel('Count')
 plt.tight_layout()
 plt.show()
 
-
+# %%
 # Similar to this: https://huggingface.co/docs/transformers/en/tasks/language_modeling
 def tokenize_batch(examples, tokenizer):
     return {
@@ -166,7 +166,7 @@ lm_dataset = tokenized_dataset.map(
 tokenized_dataset_text = lm_dataset.filter(lambda x: any(token != 0 for token in x["input_ids"]))
 
 
-
+# %%
 train_tensor = np.array(tokenized_dataset_text["train"]["input_ids"], dtype=np.int64)
 val_tensor   = np.array(tokenized_dataset_text["validation"]["input_ids"], dtype=np.int64)
 test_tensor  = np.array(tokenized_dataset_text["test"]["input_ids"], dtype=np.int64)
@@ -180,10 +180,10 @@ print(f"Val   Data: {val_data.shape}, {val_data.dtype}")
 print(f"Test  Data: {test_data.shape}, {test_data.dtype}")
 
 
- 
+
 # # Transformer Functions
 
-
+# %%
 torch.manual_seed(1337)
 
 def get_batch(split, batch_size):
@@ -233,10 +233,10 @@ def estimate_loss(model, eval_iters=100, batch_size=64, splits=("train", "val"))
     avg_losses = {split: np.mean(losses[split]) for split in splits}
     return avg_losses
 
- 
+
 # # Transformer
 
-
+# %%
 class Head(nn.Module):
     """ single head of self-attention 
         also i commented every step here
@@ -288,7 +288,7 @@ class Head(nn.Module):
         
         return output_tensor
 
-
+# %%
 class MultiHead(nn.Module):
     """ multiple heads of self-attention in parallel 
         commented every step here as well
@@ -323,7 +323,7 @@ class MultiHead(nn.Module):
         output_tensor = self.dropout(projected_output)
         return output_tensor
 
-
+# %%
 class FeedForward(nn.Module):
     """ feedforward network that applies 
             a linear transformation, 
@@ -355,7 +355,7 @@ class FeedForward(nn.Module):
         return self.net(input_tensor)
 
 
-
+# %%
 class Block(nn.Module):
     """ a transformer block that applies multi-head self-attention and a feedforward network with residual connections and layer normalization """
     
@@ -395,10 +395,10 @@ class Block(nn.Module):
         return output_tensor
 
 
- 
+
 # # Our Model
 
-
+# %%
 class TransformerModel(nn.Module):
     """ a transformer-based language model 
         decoder only
@@ -472,10 +472,10 @@ class TransformerModel(nn.Module):
         return idx
 
 
- 
+
 # # Training
 
-
+# %%
 vocab_size = tokenizer.n_vocab
 
 model = TransformerModel(
@@ -492,7 +492,7 @@ model = nn.DataParallel(model)
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
 # grad scaler for mixed precision training
-scaler = torch.cuda.amp.GradScaler()
+scaler = torch.amp.GradScaler()
 
 # gradients are zeroed at the start
 optimizer.zero_grad()
@@ -502,7 +502,7 @@ for iter in range(max_iters):
     xb, yb = get_batch("train", batch_size)
     
     # mixed precision: autocast the forward pass
-    with torch.cuda.amp.autocast():
+    with torch.amp.autocast(device_type=device):
         logits, loss = model(xb, yb)
     
     # normalize the loss by the accumulation steps
