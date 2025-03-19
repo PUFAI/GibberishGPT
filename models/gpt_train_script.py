@@ -18,11 +18,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-device = torch.device(
+device_name = (
     "mps"
     if torch.backends.mps.is_available()
     else "cuda" if torch.cuda.is_available else "cpu"
 )
+device = torch.device(device_name)
 
 # Library imports
 import multiprocessing
@@ -47,10 +48,10 @@ print(f"Using device: {device}")
 
 batch_size = 64  # Kept the same; could be adjusted based on hardware
 block_size = 1024  # GPT-2 uses a context length of 1024 tokens
-max_iters = 1  # More iterations needed for larger models
-eval_interval = 1  # Increase since more iterations are done
-learning_rate = 5e-2  # GPT-2 uses a lower learning rate
-eval_iters = 1  # More frequent evaluation for stability
+max_iters = 50000  # More iterations needed for larger models
+eval_interval = 1000  # Increase since more iterations are done
+learning_rate = 5e-5  # GPT-2 uses a lower learning rate
+eval_iters = 500  # More frequent evaluation for stability
 
 n_embd = 768  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
 n_head = 12  # GPT-2 uses 12 attention heads
@@ -534,7 +535,7 @@ for iter in range(max_iters):
     xb, yb = get_batch("train", batch_size)
 
     # mixed precision: autocast the forward pass
-    with torch.amp.autocast(device_type=device):
+    with torch.amp.autocast(device_type=device_name):
         logits, loss = model(xb, yb)
 
     # normalize the loss by the accumulation steps
