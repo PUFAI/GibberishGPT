@@ -56,7 +56,7 @@ dataset = get_wikitext_data()
 print(tokenizer)
 print(dataset)
 
- [markdown]
+ 
 # # Cleaning Data
 
 
@@ -200,7 +200,7 @@ print(f"Val   Data: {val_data.shape}, {val_data.dtype}")
 print(f"Test  Data: {test_data.shape}, {test_data.dtype}")
 
 
- [markdown]
+ 
 # # Transformer Functions
 
 
@@ -253,7 +253,7 @@ def estimate_loss(model, eval_iters=100, batch_size=64, splits=("train", "val"))
     avg_losses = {split: np.mean(losses[split]) for split in splits}
     return avg_losses
 
- [markdown]
+ 
 # # Transformer
 
 
@@ -415,7 +415,7 @@ class Block(nn.Module):
         return output_tensor
 
 
- [markdown]
+ 
 # # Our Model
 
 
@@ -492,7 +492,7 @@ class TransformerModel(nn.Module):
         return idx
 
 
- [markdown]
+ 
 # # Training
 
 
