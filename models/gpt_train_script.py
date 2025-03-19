@@ -44,6 +44,7 @@ n_embd = 768  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for 
 n_head = 12  # GPT-2 uses 12 attention heads
 n_layer = 12  # GPT-2 has 12 transformer blocks in the small version
 dropout = 0.1  # GPT-2 uses 0.1 dropout for better generalization
+accumulation_steps = 4
 
 
 DATA_PATH = f"{base_folder}/data/tiktoken_tokenized_wikitext"
@@ -127,27 +128,6 @@ axs[1].set_ylabel('Count')
 plt.tight_layout()
 plt.show()
 
-
-# def tokenize_batch_old(examples, tokenizer, max_length=1024):
-#     tokens = [tokenizer.encode(text) for text in examples["text"]]
-#     padded_tokens = []
-#     for seq in tokens:
-#         if len(seq) > max_length:
-#             padded_tokens.append(seq[:max_length])
-#         else:
-#             padded_tokens.append(seq + [0] * (max_length - len(seq)))
-
-#     return {"tokens": padded_tokens}
-
-# tokenized_dataset = cleaned_dataset.map(
-#     tokenize_batch_old,
-#     fn_kwargs={"tokenizer": tokenizer},
-#     batched=True,
-#     batch_size=1000,
-#     num_proc=num_cores,
-#     remove_columns=["text"],
-#     desc="Tokenizing"
-# )
 
 # Similar to this: https://huggingface.co/docs/transformers/en/tasks/language_modeling
 def tokenize_batch(examples, tokenizer):
@@ -507,26 +487,45 @@ model = TransformerModel(
     dropout_prob=dropout      # 0.1
 )
 model = model.to(device)
+model = nn.DataParallel(model)
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
+# grad scaler for mixed precision training
+scaler = torch.cuda.amp.GradScaler()
+
+# gradients are zeroed at the start
+optimizer.zero_grad()
+
 for iter in range(max_iters):
-    # sample a batch of data from the training split
+    # get a mini-batch from the training split
     xb, yb = get_batch("train", batch_size)
     
-    # forward pass: compute logits and loss from the model
-    logits, loss = model(xb, yb)
+    # mixed precision: autocast the forward pass
+    with torch.cuda.amp.autocast():
+        logits, loss = model(xb, yb)
     
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
+    # normalize the loss by the accumulation steps
+    loss = loss / accumulation_steps
     
+    # scale the loss and call backward to accumulate gradients
+    scaler.scale(loss).backward()
+    
+    # if we've reached the accumulation step, update the model
+    if (iter + 1) % accumulation_steps == 0:
+        # perform the optimizer step using the scaled gradients
+        scaler.step(optimizer)
+        # update the scaler for next iteration
+        scaler.update()
+        # reset gradients
+        optimizer.zero_grad()
+    
+    # evaluate the model every eval_interval iterations
     if iter % eval_interval == 0 or iter == max_iters - 1:
         loss_dict = estimate_loss(model, eval_iters=eval_iters, batch_size=batch_size, splits=("train", "val"))
         print(f"iter {iter}: train loss {loss_dict['train']:.4f}, val loss {loss_dict['val']:.4f}")
 
-# generate text and see what going on 
-# here, we start with a context of a single token (token 0) and generate new tokens
+# generation example after training
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 generated_sequence = model.generate(context, max_new_tokens=200, max_seq_len=block_size)
 print("generated text:", generated_sequence)
