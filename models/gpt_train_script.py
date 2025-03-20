@@ -174,9 +174,9 @@ train_tensor = np.array(tokenized_dataset_text["train"]["input_ids"], dtype=np.i
 val_tensor   = np.array(tokenized_dataset_text["validation"]["input_ids"], dtype=np.int32)
 test_tensor  = np.array(tokenized_dataset_text["test"]["input_ids"], dtype=np.int32)
 
-train_data = torch.from_numpy(train_tensor)
-val_data   = torch.from_numpy(val_tensor)
-test_data  = torch.from_numpy(test_tensor)
+train_data = torch.from_numpy(train_tensor).long()
+val_data   = torch.from_numpy(val_tensor).long()
+test_data  = torch.from_numpy(test_tensor).long()
 
 print(f"Train Data: {train_data.shape}, {train_data.dtype}")
 print(f"Val   Data: {val_data.shape}, {val_data.dtype}")
