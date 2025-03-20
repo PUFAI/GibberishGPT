@@ -37,17 +37,18 @@ print(f"Using device: {device}")
 
 batch_size = 64  # Kept the same; could be adjusted based on hardware
 block_size = 1024  # GPT-2 uses a context length of 1024 tokens
-max_iters = 1  # More iterations needed for larger models
+max_iters = 10  # More iterations needed for larger models
 eval_interval = 1  # Increase since more iterations are done
 learning_rate = 5e-5  # GPT-2 uses a lower learning rate
-eval_iters = 1  # More frequent evaluation for stability
+eval_iters = 5  # More frequent evaluation for stability
 
 n_embd = 768  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
 n_head = 12  # GPT-2 uses 12 attention heads
 n_layer = 12  # GPT-2 has 12 transformer blocks in the small version
 dropout = 0.1  # GPT-2 uses 0.1 dropout for better generalization
-accumulation_steps = 4
 
+
+accumulation_steps = 4
 
 DATA_PATH = f"{base_folder}/data/tiktoken_tokenized_wikitext"
 num_cores = multiprocessing.cpu_count()
