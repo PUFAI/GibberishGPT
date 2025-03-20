@@ -55,7 +55,7 @@ num_cores = multiprocessing.cpu_count()
 print(f"{num_cores} cores available")
 
 tokenizer = get_tiktoken_tokenizer()
-dataset = get_fineweb_data(1)
+dataset = get_wikitext_data()
 # save_data(dataset, DATA_PATH)
 
 print(tokenizer)
