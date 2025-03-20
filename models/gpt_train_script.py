@@ -37,10 +37,10 @@ print(f"Using device: {device}")
 
 batch_size = 16  # Kept the same; could be adjusted based on hardware
 block_size = 512  # GPT-2 uses a context length of 1024 tokens
-max_iters = 1  # More iterations needed for larger models
-eval_interval = 1  # Increase since more iterations are done
+max_iters = 10  # More iterations needed for larger models
+eval_interval = 5  # Increase since more iterations are done
 learning_rate = 2.5e-5  # GPT-2 uses a lower learning rate
-eval_iters = 1  # More frequent evaluation for stability
+eval_iters = 5  # More frequent evaluation for stability
 
 n_embd = 384  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
 n_head = 6 # GPT-2 uses 12 attention heads
@@ -551,6 +551,8 @@ print(f"Total training time: {end_time - start_time:.2f} seconds")  # Print the 
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 generated_sequence = model.module.generate(context, max_new_tokens=200, max_seq_len=block_size)
 print("generated text:", generated_sequence)
-
+generated_ids = generated_sequence[0].tolist()  # Convert tensor to a list of token IDs
+decoded_text = tokenizer.decode(generated_ids)    # Decode the list into a string
+print("Generated text:", decoded_text)
 
 
