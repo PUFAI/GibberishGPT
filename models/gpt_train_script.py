@@ -51,6 +51,7 @@ accumulation_steps = 4
 
 DATA_PATH = f"{base_folder}/data/tiktoken_tokenized_wikitext"
 num_cores = multiprocessing.cpu_count()
+print(f"{num_cores} cores available")
 
 tokenizer = get_tiktoken_tokenizer()
 dataset = get_wikitext_data()
