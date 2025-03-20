@@ -230,6 +230,8 @@ def estimate_loss(model, eval_iters=eval_iters, batch_size=batch_size, splits=("
         for _ in range(eval_iters):
             xb, yb = get_batch(split, batch_size)
             _, loss = model(xb, yb)
+            if loss.ndim > 0:
+                loss = loss.mean()
             losses[split].append(loss.item())
 
     model.train()
@@ -492,7 +494,9 @@ model = TransformerModel(
     dropout_prob=dropout      # 0.1
 )
 model = model.to(device)
-model = nn.DataParallel(model)
+if torch.cuda.device_count() > 1:
+    model = nn.DataParallel(model)
+
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
@@ -513,6 +517,9 @@ for iter in range(max_iters):
     # mixed precision: autocast the forward pass
     with torch.cuda.amp.autocast('cuda'):
         logits, loss = model(xb, yb)
+    
+    if loss.ndim > 0:
+        loss = loss.mean()
     
     # normalize the loss by the accumulation steps
     loss = loss / accumulation_steps
