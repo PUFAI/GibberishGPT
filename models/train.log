@@ -1,0 +1,2173 @@
+nohup: ignoring input
+/workspace/GPT/.venv/bin/python3
+Your base folder is: /workspace/GPT
+Using device: cuda
+256 cores available
+<Encoding 'gpt2'>
+DatasetDict({
+    test: Dataset({
+        features: ['text'],
+        num_rows: 4358
+    })
+    train: Dataset({
+        features: ['text'],
+        num_rows: 1801350
+    })
+    validation: Dataset({
+        features: ['text'],
+        num_rows: 3760
+    })
+})
+DatasetDict({
+    test: Dataset({
+        features: ['text'],
+        num_rows: 2530
+    })
+    train: Dataset({
+        features: ['text'],
+        num_rows: 1014942
+    })
+    validation: Dataset({
+        features: ['text'],
+        num_rows: 2163
+    })
+})
+Min length: 1
+Max length: 1485
+Average length: 108.38
+Median length: 101.00
+90th percentile: 230
+95th percentile: 273
+99th percentile: 988
+Number of sequences: 1014942
+Train Data: torch.Size([213838, 512]), torch.int64
+Val   Data: torch.Size([324, 512]), torch.int64
+Test  Data: torch.Size([394, 512]), torch.int64
+Iteration: 0
+/workspace/GPT/models/gpt_train_script.py:518: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/workspace/GPT/.venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+iter 0: train loss 10.9854, val loss 10.9826
+Total iter time: 25.26 seconds
+Iteration: 1
+Total iter time: 0.35 seconds
+Iteration: 2
+Total iter time: 0.32 seconds
+Iteration: 3
+Total iter time: 0.42 seconds
+Iteration: 4
+Total iter time: 1.82 seconds
+Iteration: 5
+Total iter time: 0.32 seconds
+Iteration: 6
+Total iter time: 0.32 seconds
+Iteration: 7
+Total iter time: 0.52 seconds
+Iteration: 8
+Total iter time: 0.32 seconds
+Iteration: 9
+Total iter time: 0.32 seconds
+Iteration: 10
+iter 10: train loss 10.3624, val loss 10.3507
+Total iter time: 1.64 seconds
+Iteration: 11
+Total iter time: 0.31 seconds
+Iteration: 12
+Total iter time: 0.31 seconds
+Iteration: 13
+Total iter time: 0.31 seconds
+Iteration: 14
+Total iter time: 0.31 seconds
+Iteration: 15
+Total iter time: 0.32 seconds
+Iteration: 16
+Total iter time: 0.31 seconds
+Iteration: 17
+Total iter time: 0.45 seconds
+Iteration: 18
+Total iter time: 0.32 seconds
+Iteration: 19
+Total iter time: 0.33 seconds
+Iteration: 20
+iter 20: train loss 9.8118, val loss 9.8059
+Total iter time: 1.64 seconds
+Iteration: 21
+Total iter time: 0.30 seconds
+Iteration: 22
+Total iter time: 0.30 seconds
+Iteration: 23
+Total iter time: 0.32 seconds
+Iteration: 24
+Total iter time: 0.31 seconds
+Iteration: 25
+Total iter time: 0.31 seconds
+Iteration: 26
+Total iter time: 0.32 seconds
+Iteration: 27
+Total iter time: 0.46 seconds
+Iteration: 28
+Total iter time: 0.30 seconds
+Iteration: 29
+Total iter time: 0.30 seconds
+Iteration: 30
+iter 30: train loss 9.6039, val loss 9.6089
+Total iter time: 1.59 seconds
+Iteration: 31
+Total iter time: 0.32 seconds
+Iteration: 32
+Total iter time: 0.31 seconds
+Iteration: 33
+Total iter time: 0.32 seconds
+Iteration: 34
+Total iter time: 0.31 seconds
+Iteration: 35
+Total iter time: 0.35 seconds
+Iteration: 36
+Total iter time: 0.46 seconds
+Iteration: 37
+Total iter time: 0.31 seconds
+Iteration: 38
+Total iter time: 0.31 seconds
+Iteration: 39
+Total iter time: 0.32 seconds
+Iteration: 40
+iter 40: train loss 9.4335, val loss 9.4312
+Total iter time: 1.62 seconds
+Iteration: 41
+Total iter time: 0.30 seconds
+Iteration: 42
+Total iter time: 0.32 seconds
+Iteration: 43
+Total iter time: 0.32 seconds
+Iteration: 44
+Total iter time: 0.31 seconds
+Iteration: 45
+Total iter time: 0.46 seconds
+Iteration: 46
+Total iter time: 0.33 seconds
+Iteration: 47
+Total iter time: 0.32 seconds
+Iteration: 48
+Total iter time: 0.31 seconds
+Iteration: 49
+Total iter time: 0.31 seconds
+Iteration: 50
+iter 50: train loss 9.3589, val loss 9.3365
+Total iter time: 1.62 seconds
+Iteration: 51
+Total iter time: 0.31 seconds
+Iteration: 52
+Total iter time: 0.31 seconds
+Iteration: 53
+Total iter time: 0.32 seconds
+Iteration: 54
+Total iter time: 0.33 seconds
+Iteration: 55
+Total iter time: 0.35 seconds
+Iteration: 56
+Total iter time: 0.46 seconds
+Iteration: 57
+Total iter time: 0.31 seconds
+Iteration: 58
+Total iter time: 0.31 seconds
+Iteration: 59
+Total iter time: 0.32 seconds
+Iteration: 60
+iter 60: train loss 9.2738, val loss 9.2682
+Total iter time: 1.62 seconds
+Iteration: 61
+Total iter time: 0.31 seconds
+Iteration: 62
+Total iter time: 0.31 seconds
+Iteration: 63
+Total iter time: 0.35 seconds
+Iteration: 64
+Total iter time: 0.32 seconds
+Iteration: 65
+Total iter time: 0.33 seconds
+Iteration: 66
+Total iter time: 0.33 seconds
+Iteration: 67
+Total iter time: 0.34 seconds
+Iteration: 68
+Total iter time: 0.45 seconds
+Iteration: 69
+Total iter time: 0.31 seconds
+Iteration: 70
+iter 70: train loss 9.2181, val loss 9.1895
+Total iter time: 1.63 seconds
+Iteration: 71
+Total iter time: 0.32 seconds
+Iteration: 72
+Total iter time: 0.31 seconds
+Iteration: 73
+Total iter time: 0.31 seconds
+Iteration: 74
+Total iter time: 0.31 seconds
+Iteration: 75
+Total iter time: 0.35 seconds
+Iteration: 76
+Total iter time: 0.32 seconds
+Iteration: 77
+Total iter time: 0.33 seconds
+Iteration: 78
+Total iter time: 0.51 seconds
+Iteration: 79
+Total iter time: 0.34 seconds
+Iteration: 80
+iter 80: train loss 9.1184, val loss 9.0812
+Total iter time: 1.65 seconds
+Iteration: 81
+Total iter time: 0.31 seconds
+Iteration: 82
+Total iter time: 0.31 seconds
+Iteration: 83
+Total iter time: 0.33 seconds
+Iteration: 84
+Total iter time: 0.32 seconds
+Iteration: 85
+Total iter time: 0.33 seconds
+Iteration: 86
+Total iter time: 0.33 seconds
+Iteration: 87
+Total iter time: 0.33 seconds
+Iteration: 88
+Total iter time: 0.32 seconds
+Iteration: 89
+Total iter time: 0.47 seconds
+Iteration: 90
+iter 90: train loss 9.0479, val loss 9.0271
+Total iter time: 1.62 seconds
+Iteration: 91
+Total iter time: 0.32 seconds
+Iteration: 92
+Total iter time: 0.31 seconds
+Iteration: 93
+Total iter time: 0.31 seconds
+Iteration: 94
+Total iter time: 0.31 seconds
+Iteration: 95
+Total iter time: 0.32 seconds
+Iteration: 96
+Total iter time: 0.30 seconds
+Iteration: 97
+Total iter time: 0.32 seconds
+Iteration: 98
+Total iter time: 0.48 seconds
+Iteration: 99
+Total iter time: 0.34 seconds
+Iteration: 100
+iter 100: train loss 9.0028, val loss 8.9894
+Total iter time: 1.65 seconds
+Iteration: 101
+Total iter time: 0.31 seconds
+Iteration: 102
+Total iter time: 0.32 seconds
+Iteration: 103
+Total iter time: 0.32 seconds
+Iteration: 104
+Total iter time: 0.31 seconds
+Iteration: 105
+Total iter time: 0.31 seconds
+Iteration: 106
+Total iter time: 0.31 seconds
+Iteration: 107
+Total iter time: 0.33 seconds
+Iteration: 108
+Total iter time: 0.45 seconds
+Iteration: 109
+Total iter time: 0.31 seconds
+Iteration: 110
+iter 110: train loss 8.9091, val loss 8.9236
+Total iter time: 1.62 seconds
+Iteration: 111
+Total iter time: 0.32 seconds
+Iteration: 112
+Total iter time: 0.31 seconds
+Iteration: 113
+Total iter time: 0.31 seconds
+Iteration: 114
+Total iter time: 0.31 seconds
+Iteration: 115
+Total iter time: 0.32 seconds
+Iteration: 116
+Total iter time: 0.31 seconds
+Iteration: 117
+Total iter time: 0.46 seconds
+Iteration: 118
+Total iter time: 0.31 seconds
+Iteration: 119
+Total iter time: 0.33 seconds
+Iteration: 120
+iter 120: train loss 8.8894, val loss 8.8072
+Total iter time: 1.62 seconds
+Iteration: 121
+Total iter time: 0.31 seconds
+Iteration: 122
+Total iter time: 0.31 seconds
+Iteration: 123
+Total iter time: 0.34 seconds
+Iteration: 124
+Total iter time: 0.31 seconds
+Iteration: 125
+Total iter time: 0.31 seconds
+Iteration: 126
+Total iter time: 0.31 seconds
+Iteration: 127
+Total iter time: 0.49 seconds
+Iteration: 128
+Total iter time: 0.31 seconds
+Iteration: 129
+Total iter time: 0.31 seconds
+Iteration: 130
+iter 130: train loss 8.8101, val loss 8.7735
+Total iter time: 1.65 seconds
+Iteration: 131
+Total iter time: 0.31 seconds
+Iteration: 132
+Total iter time: 0.30 seconds
+Iteration: 133
+Total iter time: 0.31 seconds
+Iteration: 134
+Total iter time: 0.31 seconds
+Iteration: 135
+Total iter time: 0.32 seconds
+Iteration: 136
+Total iter time: 0.31 seconds
+Iteration: 137
+Total iter time: 0.31 seconds
+Iteration: 138
+Total iter time: 0.31 seconds
+Iteration: 139
+Total iter time: 0.48 seconds
+Iteration: 140
+iter 140: train loss 8.7198, val loss 8.7055
+Total iter time: 1.61 seconds
+Iteration: 141
+Total iter time: 0.30 seconds
+Iteration: 142
+Total iter time: 0.31 seconds
+Iteration: 143
+Total iter time: 0.33 seconds
+Iteration: 144
+Total iter time: 0.32 seconds
+Iteration: 145
+Total iter time: 0.33 seconds
+Iteration: 146
+Total iter time: 0.33 seconds
+Iteration: 147
+Total iter time: 0.35 seconds
+Iteration: 148
+Total iter time: 0.32 seconds
+Iteration: 149
+Total iter time: 0.33 seconds
+Iteration: 150
+iter 150: train loss 8.7033, val loss 8.6950
+Total iter time: 1.75 seconds
+Iteration: 151
+Total iter time: 0.32 seconds
+Iteration: 152
+Total iter time: 0.31 seconds
+Iteration: 153
+Total iter time: 0.31 seconds
+Iteration: 154
+Total iter time: 0.31 seconds
+Iteration: 155
+Total iter time: 0.33 seconds
+Iteration: 156
+Total iter time: 0.30 seconds
+Iteration: 157
+Total iter time: 0.31 seconds
+Iteration: 158
+Total iter time: 0.31 seconds
+Iteration: 159
+Total iter time: 0.33 seconds
+Iteration: 160
+iter 160: train loss 8.6484, val loss 8.6100
+Total iter time: 1.73 seconds
+Iteration: 161
+Total iter time: 0.31 seconds
+Iteration: 162
+Total iter time: 0.30 seconds
+Iteration: 163
+Total iter time: 0.32 seconds
+Iteration: 164
+Total iter time: 0.32 seconds
+Iteration: 165
+Total iter time: 0.33 seconds
+Iteration: 166
+Total iter time: 0.32 seconds
+Iteration: 167
+Total iter time: 0.32 seconds
+Iteration: 168
+Total iter time: 0.32 seconds
+Iteration: 169
+Total iter time: 0.33 seconds
+Iteration: 170
+iter 170: train loss 8.5667, val loss 8.5800
+Total iter time: 1.77 seconds
+Iteration: 171
+Total iter time: 0.31 seconds
+Iteration: 172
+Total iter time: 0.31 seconds
+Iteration: 173
+Total iter time: 0.31 seconds
+Iteration: 174
+Total iter time: 0.31 seconds
+Iteration: 175
+Total iter time: 0.32 seconds
+Iteration: 176
+Total iter time: 0.31 seconds
+Iteration: 177
+Total iter time: 0.31 seconds
+Iteration: 178
+Total iter time: 0.31 seconds
+Iteration: 179
+Total iter time: 0.34 seconds
+Iteration: 180
+iter 180: train loss 8.5358, val loss 8.5081
+Total iter time: 1.78 seconds
+Iteration: 181
+Total iter time: 0.30 seconds
+Iteration: 182
+Total iter time: 0.31 seconds
+Iteration: 183
+Total iter time: 0.32 seconds
+Iteration: 184
+Total iter time: 0.31 seconds
+Iteration: 185
+Total iter time: 0.31 seconds
+Iteration: 186
+Total iter time: 0.31 seconds
+Iteration: 187
+Total iter time: 0.35 seconds
+Iteration: 188
+Total iter time: 0.32 seconds
+Iteration: 189
+Total iter time: 0.32 seconds
+Iteration: 190
+iter 190: train loss 8.4850, val loss 8.4486
+Total iter time: 1.79 seconds
+Iteration: 191
+Total iter time: 0.32 seconds
+Iteration: 192
+Total iter time: 0.32 seconds
+Iteration: 193
+Total iter time: 0.32 seconds
+Iteration: 194
+Total iter time: 0.33 seconds
+Iteration: 195
+Total iter time: 0.35 seconds
+Iteration: 196
+Total iter time: 0.32 seconds
+Iteration: 197
+Total iter time: 0.33 seconds
+Iteration: 198
+Total iter time: 0.34 seconds
+Iteration: 199
+Total iter time: 0.35 seconds
+Iteration: 200
+iter 200: train loss 8.4556, val loss 8.3679
+Total iter time: 1.78 seconds
+Iteration: 201
+Total iter time: 0.30 seconds
+Iteration: 202
+Total iter time: 0.31 seconds
+Iteration: 203
+Total iter time: 0.33 seconds
+Iteration: 204
+Total iter time: 0.32 seconds
+Iteration: 205
+Total iter time: 0.32 seconds
+Iteration: 206
+Total iter time: 0.32 seconds
+Iteration: 207
+Total iter time: 0.32 seconds
+Iteration: 208
+Total iter time: 0.31 seconds
+Iteration: 209
+Total iter time: 0.32 seconds
+Iteration: 210
+iter 210: train loss 8.4162, val loss 8.3545
+Total iter time: 1.78 seconds
+Iteration: 211
+Total iter time: 0.32 seconds
+Iteration: 212
+Total iter time: 0.31 seconds
+Iteration: 213
+Total iter time: 0.32 seconds
+Iteration: 214
+Total iter time: 0.33 seconds
+Iteration: 215
+Total iter time: 0.35 seconds
+Iteration: 216
+Total iter time: 0.32 seconds
+Iteration: 217
+Total iter time: 0.33 seconds
+Iteration: 218
+Total iter time: 0.33 seconds
+Iteration: 219
+Total iter time: 0.35 seconds
+Iteration: 220
+iter 220: train loss 8.3361, val loss 8.2858
+Total iter time: 1.78 seconds
+Iteration: 221
+Total iter time: 0.30 seconds
+Iteration: 222
+Total iter time: 0.31 seconds
+Iteration: 223
+Total iter time: 0.32 seconds
+Iteration: 224
+Total iter time: 0.32 seconds
+Iteration: 225
+Total iter time: 0.31 seconds
+Iteration: 226
+Total iter time: 0.31 seconds
+Iteration: 227
+Total iter time: 0.32 seconds
+Iteration: 228
+Total iter time: 0.31 seconds
+Iteration: 229
+Total iter time: 0.31 seconds
+Iteration: 230
+iter 230: train loss 8.2847, val loss 8.2574
+Total iter time: 1.76 seconds
+Iteration: 231
+Total iter time: 0.32 seconds
+Iteration: 232
+Total iter time: 0.32 seconds
+Iteration: 233
+Total iter time: 0.32 seconds
+Iteration: 234
+Total iter time: 0.32 seconds
+Iteration: 235
+Total iter time: 0.32 seconds
+Iteration: 236
+Total iter time: 0.31 seconds
+Iteration: 237
+Total iter time: 0.31 seconds
+Iteration: 238
+Total iter time: 0.31 seconds
+Iteration: 239
+Total iter time: 0.32 seconds
+Iteration: 240
+iter 240: train loss 8.2265, val loss 8.2032
+Total iter time: 1.74 seconds
+Iteration: 241
+Total iter time: 0.31 seconds
+Iteration: 242
+Total iter time: 0.32 seconds
+Iteration: 243
+Total iter time: 0.34 seconds
+Iteration: 244
+Total iter time: 0.32 seconds
+Iteration: 245
+Total iter time: 0.34 seconds
+Iteration: 246
+Total iter time: 0.34 seconds
+Iteration: 247
+Total iter time: 0.36 seconds
+Iteration: 248
+Total iter time: 0.33 seconds
+Iteration: 249
+Total iter time: 0.32 seconds
+Iteration: 250
+iter 250: train loss 8.1890, val loss 8.1710
+Total iter time: 1.77 seconds
+Iteration: 251
+Total iter time: 0.32 seconds
+Iteration: 252
+Total iter time: 0.31 seconds
+Iteration: 253
+Total iter time: 0.32 seconds
+Iteration: 254
+Total iter time: 0.32 seconds
+Iteration: 255
+Total iter time: 0.35 seconds
+Iteration: 256
+Total iter time: 0.32 seconds
+Iteration: 257
+Total iter time: 0.33 seconds
+Iteration: 258
+Total iter time: 0.33 seconds
+Iteration: 259
+Total iter time: 0.32 seconds
+Iteration: 260
+iter 260: train loss 8.1140, val loss 8.1035
+Total iter time: 1.77 seconds
+Iteration: 261
+Total iter time: 0.30 seconds
+Iteration: 262
+Total iter time: 0.31 seconds
+Iteration: 263
+Total iter time: 0.35 seconds
+Iteration: 264
+Total iter time: 0.32 seconds
+Iteration: 265
+Total iter time: 0.31 seconds
+Iteration: 266
+Total iter time: 0.32 seconds
+Iteration: 267
+Total iter time: 0.33 seconds
+Iteration: 268
+Total iter time: 0.32 seconds
+Iteration: 269
+Total iter time: 0.49 seconds
+Iteration: 270
+iter 270: train loss 8.1397, val loss 8.0955
+Total iter time: 1.62 seconds
+Iteration: 271
+Total iter time: 0.29 seconds
+Iteration: 272
+Total iter time: 0.31 seconds
+Iteration: 273
+Total iter time: 0.31 seconds
+Iteration: 274
+Total iter time: 0.31 seconds
+Iteration: 275
+Total iter time: 0.32 seconds
+Iteration: 276
+Total iter time: 0.31 seconds
+Iteration: 277
+Total iter time: 0.31 seconds
+Iteration: 278
+Total iter time: 0.33 seconds
+Iteration: 279
+Total iter time: 0.48 seconds
+Iteration: 280
+iter 280: train loss 8.0734, val loss 8.0317
+Total iter time: 1.62 seconds
+Iteration: 281
+Total iter time: 0.31 seconds
+Iteration: 282
+Total iter time: 0.31 seconds
+Iteration: 283
+Total iter time: 0.32 seconds
+Iteration: 284
+Total iter time: 0.31 seconds
+Iteration: 285
+Total iter time: 0.31 seconds
+Iteration: 286
+Total iter time: 0.31 seconds
+Iteration: 287
+Total iter time: 0.34 seconds
+Iteration: 288
+Total iter time: 0.45 seconds
+Iteration: 289
+Total iter time: 0.31 seconds
+Iteration: 290
+iter 290: train loss 8.0938, val loss 8.0240
+Total iter time: 1.62 seconds
+Iteration: 291
+Total iter time: 0.31 seconds
+Iteration: 292
+Total iter time: 0.31 seconds
+Iteration: 293
+Total iter time: 0.31 seconds
+Iteration: 294
+Total iter time: 0.33 seconds
+Iteration: 295
+Total iter time: 0.35 seconds
+Iteration: 296
+Total iter time: 0.32 seconds
+Iteration: 297
+Total iter time: 0.31 seconds
+Iteration: 298
+Total iter time: 0.31 seconds
+Iteration: 299
+Total iter time: 0.47 seconds
+Iteration: 300
+iter 300: train loss 8.0048, val loss 7.9871
+Total iter time: 1.62 seconds
+Iteration: 301
+Total iter time: 0.36 seconds
+Iteration: 302
+Total iter time: 0.39 seconds
+Iteration: 303
+Total iter time: 0.40 seconds
+Iteration: 304
+Total iter time: 0.38 seconds
+Iteration: 305
+Total iter time: 0.39 seconds
+Iteration: 306
+Total iter time: 0.39 seconds
+Iteration: 307
+Total iter time: 0.40 seconds
+Iteration: 308
+Total iter time: 0.38 seconds
+Iteration: 309
+Total iter time: 0.38 seconds
+Iteration: 310
+iter 310: train loss 7.9903, val loss 7.9257
+Total iter time: 2.38 seconds
+Iteration: 311
+Total iter time: 0.37 seconds
+Iteration: 312
+Total iter time: 0.37 seconds
+Iteration: 313
+Total iter time: 0.38 seconds
+Iteration: 314
+Total iter time: 0.39 seconds
+Iteration: 315
+Total iter time: 0.40 seconds
+Iteration: 316
+Total iter time: 0.36 seconds
+Iteration: 317
+Total iter time: 0.37 seconds
+Iteration: 318
+Total iter time: 0.37 seconds
+Iteration: 319
+Total iter time: 0.38 seconds
+Iteration: 320
+iter 320: train loss 7.9484, val loss 7.8969
+Total iter time: 2.32 seconds
+Iteration: 321
+Total iter time: 0.35 seconds
+Iteration: 322
+Total iter time: 0.37 seconds
+Iteration: 323
+Total iter time: 0.39 seconds
+Iteration: 324
+Total iter time: 0.36 seconds
+Iteration: 325
+Total iter time: 0.37 seconds
+Iteration: 326
+Total iter time: 0.36 seconds
+Iteration: 327
+Total iter time: 0.39 seconds
+Iteration: 328
+Total iter time: 0.34 seconds
+Iteration: 329
+Total iter time: 0.38 seconds
+Iteration: 330
+iter 330: train loss 7.9196, val loss 7.8647
+Total iter time: 2.38 seconds
+Iteration: 331
+Total iter time: 0.38 seconds
+Iteration: 332
+Total iter time: 0.37 seconds
+Iteration: 333
+Total iter time: 0.38 seconds
+Iteration: 334
+Total iter time: 0.38 seconds
+Iteration: 335
+Total iter time: 0.40 seconds
+Iteration: 336
+Total iter time: 0.38 seconds
+Iteration: 337
+Total iter time: 0.38 seconds
+Iteration: 338
+Total iter time: 0.38 seconds
+Iteration: 339
+Total iter time: 0.41 seconds
+Iteration: 340
+iter 340: train loss 7.8863, val loss 7.8707
+Total iter time: 2.44 seconds
+Iteration: 341
+Total iter time: 0.37 seconds
+Iteration: 342
+Total iter time: 0.39 seconds
+Iteration: 343
+Total iter time: 0.41 seconds
+Iteration: 344
+Total iter time: 0.39 seconds
+Iteration: 345
+Total iter time: 0.39 seconds
+Iteration: 346
+Total iter time: 0.40 seconds
+Iteration: 347
+Total iter time: 0.41 seconds
+Iteration: 348
+Total iter time: 0.39 seconds
+Iteration: 349
+Total iter time: 0.40 seconds
+Iteration: 350
+iter 350: train loss 7.8929, val loss 7.8445
+Total iter time: 2.40 seconds
+Iteration: 351
+Total iter time: 0.38 seconds
+Iteration: 352
+Total iter time: 0.39 seconds
+Iteration: 353
+Total iter time: 0.40 seconds
+Iteration: 354
+Total iter time: 0.39 seconds
+Iteration: 355
+Total iter time: 0.41 seconds
+Iteration: 356
+Total iter time: 0.39 seconds
+Iteration: 357
+Total iter time: 0.39 seconds
+Iteration: 358
+Total iter time: 0.39 seconds
+Iteration: 359
+Total iter time: 0.72 seconds
+Iteration: 360
+iter 360: train loss 7.7981, val loss 7.7800
+Total iter time: 2.03 seconds
+Iteration: 361
+Total iter time: 0.35 seconds
+Iteration: 362
+Total iter time: 0.38 seconds
+Iteration: 363
+Total iter time: 0.40 seconds
+Iteration: 364
+Total iter time: 0.39 seconds
+Iteration: 365
+Total iter time: 0.39 seconds
+Iteration: 366
+Total iter time: 0.39 seconds
+Iteration: 367
+Total iter time: 0.40 seconds
+Iteration: 368
+Total iter time: 0.55 seconds
+Iteration: 369
+Total iter time: 0.39 seconds
+Iteration: 370
+iter 370: train loss 7.8485, val loss 7.7943
+Total iter time: 2.04 seconds
+Iteration: 371
+Total iter time: 0.37 seconds
+Iteration: 372
+Total iter time: 0.37 seconds
+Iteration: 373
+Total iter time: 0.40 seconds
+Iteration: 374
+Total iter time: 0.38 seconds
+Iteration: 375
+Total iter time: 0.40 seconds
+Iteration: 376
+Total iter time: 0.37 seconds
+Iteration: 377
+Total iter time: 0.38 seconds
+Iteration: 378
+Total iter time: 0.38 seconds
+Iteration: 379
+Total iter time: 0.39 seconds
+Iteration: 380
+iter 380: train loss 7.7837, val loss 7.7688
+Total iter time: 2.35 seconds
+Iteration: 381
+Total iter time: 0.34 seconds
+Iteration: 382
+Total iter time: 0.36 seconds
+Iteration: 383
+Total iter time: 0.39 seconds
+Iteration: 384
+Total iter time: 0.36 seconds
+Iteration: 385
+Total iter time: 0.37 seconds
+Iteration: 386
+Total iter time: 0.35 seconds
+Iteration: 387
+Total iter time: 0.41 seconds
+Iteration: 388
+Total iter time: 0.38 seconds
+Iteration: 389
+Total iter time: 0.38 seconds
+Iteration: 390
+iter 390: train loss 7.7706, val loss 7.7267
+Total iter time: 2.38 seconds
+Iteration: 391
+Total iter time: 0.36 seconds
+Iteration: 392
+Total iter time: 0.36 seconds
+Iteration: 393
+Total iter time: 0.39 seconds
+Iteration: 394
+Total iter time: 0.38 seconds
+Iteration: 395
+Total iter time: 0.39 seconds
+Iteration: 396
+Total iter time: 0.36 seconds
+Iteration: 397
+Total iter time: 0.37 seconds
+Iteration: 398
+Total iter time: 0.37 seconds
+Iteration: 399
+Total iter time: 0.39 seconds
+Iteration: 400
+iter 400: train loss 7.7770, val loss 7.7469
+Total iter time: 2.36 seconds
+Iteration: 401
+Total iter time: 0.35 seconds
+Iteration: 402
+Total iter time: 0.38 seconds
+Iteration: 403
+Total iter time: 0.38 seconds
+Iteration: 404
+Total iter time: 0.36 seconds
+Iteration: 405
+Total iter time: 0.37 seconds
+Iteration: 406
+Total iter time: 0.37 seconds
+Iteration: 407
+Total iter time: 0.40 seconds
+Iteration: 408
+Total iter time: 0.36 seconds
+Iteration: 409
+Total iter time: 0.37 seconds
+Iteration: 410
+iter 410: train loss 7.7514, val loss 7.7554
+Total iter time: 2.31 seconds
+Iteration: 411
+Total iter time: 0.37 seconds
+Iteration: 412
+Total iter time: 0.37 seconds
+Iteration: 413
+Total iter time: 0.38 seconds
+Iteration: 414
+Total iter time: 0.39 seconds
+Iteration: 415
+Total iter time: 0.41 seconds
+Iteration: 416
+Total iter time: 0.38 seconds
+Iteration: 417
+Total iter time: 0.39 seconds
+Iteration: 418
+Total iter time: 0.38 seconds
+Iteration: 419
+Total iter time: 0.39 seconds
+Iteration: 420
+iter 420: train loss 7.7346, val loss 7.7079
+Total iter time: 2.30 seconds
+Iteration: 421
+Total iter time: 0.37 seconds
+Iteration: 422
+Total iter time: 0.39 seconds
+Iteration: 423
+Total iter time: 0.41 seconds
+Iteration: 424
+Total iter time: 0.37 seconds
+Iteration: 425
+Total iter time: 0.39 seconds
+Iteration: 426
+Total iter time: 0.40 seconds
+Iteration: 427
+Total iter time: 0.43 seconds
+Iteration: 428
+Total iter time: 0.39 seconds
+Iteration: 429
+Total iter time: 0.40 seconds
+Iteration: 430
+iter 430: train loss 7.7193, val loss 7.6673
+Total iter time: 2.27 seconds
+Iteration: 431
+Total iter time: 0.37 seconds
+Iteration: 432
+Total iter time: 0.38 seconds
+Iteration: 433
+Total iter time: 0.39 seconds
+Iteration: 434
+Total iter time: 0.39 seconds
+Iteration: 435
+Total iter time: 0.40 seconds
+Iteration: 436
+Total iter time: 0.38 seconds
+Iteration: 437
+Total iter time: 0.39 seconds
+Iteration: 438
+Total iter time: 0.38 seconds
+Iteration: 439
+Total iter time: 0.40 seconds
+Iteration: 440
+iter 440: train loss 7.7040, val loss 7.6516
+Total iter time: 2.30 seconds
+Iteration: 441
+Total iter time: 0.34 seconds
+Iteration: 442
+Total iter time: 0.38 seconds
+Iteration: 443
+Total iter time: 0.39 seconds
+Iteration: 444
+Total iter time: 0.38 seconds
+Iteration: 445
+Total iter time: 0.39 seconds
+Iteration: 446
+Total iter time: 0.39 seconds
+Iteration: 447
+Total iter time: 0.40 seconds
+Iteration: 448
+Total iter time: 0.39 seconds
+Iteration: 449
+Total iter time: 0.39 seconds
+Iteration: 450
+iter 450: train loss 7.7452, val loss 7.5925
+Total iter time: 2.28 seconds
+Iteration: 451
+Total iter time: 0.37 seconds
+Iteration: 452
+Total iter time: 0.37 seconds
+Iteration: 453
+Total iter time: 0.38 seconds
+Iteration: 454
+Total iter time: 0.38 seconds
+Iteration: 455
+Total iter time: 0.39 seconds
+Iteration: 456
+Total iter time: 0.37 seconds
+Iteration: 457
+Total iter time: 0.38 seconds
+Iteration: 458
+Total iter time: 0.38 seconds
+Iteration: 459
+Total iter time: 0.39 seconds
+Iteration: 460
+iter 460: train loss 7.6386, val loss 7.6443
+Total iter time: 2.24 seconds
+Iteration: 461
+Total iter time: 0.35 seconds
+Iteration: 462
+Total iter time: 0.37 seconds
+Iteration: 463
+Total iter time: 0.39 seconds
+Iteration: 464
+Total iter time: 0.37 seconds
+Iteration: 465
+Total iter time: 0.38 seconds
+Iteration: 466
+Total iter time: 0.37 seconds
+Iteration: 467
+Total iter time: 0.39 seconds
+Iteration: 468
+Total iter time: 0.37 seconds
+Iteration: 469
+Total iter time: 0.38 seconds
+Iteration: 470
+iter 470: train loss 7.7110, val loss 7.6283
+Total iter time: 2.24 seconds
+Iteration: 471
+Total iter time: 0.38 seconds
+Iteration: 472
+Total iter time: 0.37 seconds
+Iteration: 473
+Total iter time: 0.38 seconds
+Iteration: 474
+Total iter time: 0.38 seconds
+Iteration: 475
+Total iter time: 0.39 seconds
+Iteration: 476
+Total iter time: 0.37 seconds
+Iteration: 477
+Total iter time: 0.37 seconds
+Iteration: 478
+Total iter time: 0.36 seconds
+Iteration: 479
+Total iter time: 0.38 seconds
+Iteration: 480
+iter 480: train loss 7.6959, val loss 7.6130
+Total iter time: 2.01 seconds
+Iteration: 481
+Total iter time: 0.34 seconds
+Iteration: 482
+Total iter time: 0.35 seconds
+Iteration: 483
+Total iter time: 0.37 seconds
+Iteration: 484
+Total iter time: 0.35 seconds
+Iteration: 485
+Total iter time: 0.35 seconds
+Iteration: 486
+Total iter time: 0.36 seconds
+Iteration: 487
+Total iter time: 0.38 seconds
+Iteration: 488
+Total iter time: 0.36 seconds
+Iteration: 489
+Total iter time: 0.36 seconds
+Iteration: 490
+iter 490: train loss 7.6742, val loss 7.6314
+Total iter time: 1.97 seconds
+Iteration: 491
+Total iter time: 0.35 seconds
+Iteration: 492
+Total iter time: 0.36 seconds
+Iteration: 493
+Total iter time: 0.36 seconds
+Iteration: 494
+Total iter time: 0.36 seconds
+Iteration: 495
+Total iter time: 0.37 seconds
+Iteration: 496
+Total iter time: 0.35 seconds
+Iteration: 497
+Total iter time: 0.34 seconds
+Iteration: 498
+Total iter time: 0.37 seconds
+Iteration: 499
+Total iter time: 0.38 seconds
+Iteration: 500
+iter 500: train loss 7.6557, val loss 7.5645
+Total iter time: 1.98 seconds
+Iteration: 501
+Total iter time: 0.34 seconds
+Iteration: 502
+Total iter time: 0.36 seconds
+Iteration: 503
+Total iter time: 0.37 seconds
+Iteration: 504
+Total iter time: 0.37 seconds
+Iteration: 505
+Total iter time: 0.36 seconds
+Iteration: 506
+Total iter time: 0.36 seconds
+Iteration: 507
+Total iter time: 0.37 seconds
+Iteration: 508
+Total iter time: 0.35 seconds
+Iteration: 509
+Total iter time: 0.36 seconds
+Iteration: 510
+iter 510: train loss 7.6179, val loss 7.6125
+Total iter time: 2.02 seconds
+Iteration: 511
+Total iter time: 0.35 seconds
+Iteration: 512
+Total iter time: 0.37 seconds
+Iteration: 513
+Total iter time: 0.37 seconds
+Iteration: 514
+Total iter time: 0.38 seconds
+Iteration: 515
+Total iter time: 0.37 seconds
+Iteration: 516
+Total iter time: 0.37 seconds
+Iteration: 517
+Total iter time: 0.37 seconds
+Iteration: 518
+Total iter time: 0.36 seconds
+Iteration: 519
+Total iter time: 0.37 seconds
+Iteration: 520
+iter 520: train loss 7.6295, val loss 7.5410
+Total iter time: 2.00 seconds
+Iteration: 521
+Total iter time: 0.35 seconds
+Iteration: 522
+Total iter time: 0.37 seconds
+Iteration: 523
+Total iter time: 0.36 seconds
+Iteration: 524
+Total iter time: 0.37 seconds
+Iteration: 525
+Total iter time: 0.36 seconds
+Iteration: 526
+Total iter time: 0.36 seconds
+Iteration: 527
+Total iter time: 0.37 seconds
+Iteration: 528
+Total iter time: 0.36 seconds
+Iteration: 529
+Total iter time: 0.55 seconds
+Iteration: 530
+iter 530: train loss 7.6048, val loss 7.5552
+Total iter time: 1.79 seconds
+Iteration: 531
+Total iter time: 0.35 seconds
+Iteration: 532
+Total iter time: 0.35 seconds
+Iteration: 533
+Total iter time: 0.36 seconds
+Iteration: 534
+Total iter time: 0.37 seconds
+Iteration: 535
+Total iter time: 0.38 seconds
+Iteration: 536
+Total iter time: 0.35 seconds
+Iteration: 537
+Total iter time: 0.36 seconds
+Iteration: 538
+Total iter time: 0.36 seconds
+Iteration: 539
+Total iter time: 0.37 seconds
+Iteration: 540
+iter 540: train loss 7.5719, val loss 7.5718
+Total iter time: 2.00 seconds
+Iteration: 541
+Total iter time: 0.35 seconds
+Iteration: 542
+Total iter time: 0.37 seconds
+Iteration: 543
+Total iter time: 0.38 seconds
+Iteration: 544
+Total iter time: 0.35 seconds
+Iteration: 545
+Total iter time: 0.36 seconds
+Iteration: 546
+Total iter time: 0.36 seconds
+Iteration: 547
+Total iter time: 0.37 seconds
+Iteration: 548
+Total iter time: 0.36 seconds
+Iteration: 549
+Total iter time: 0.36 seconds
+Iteration: 550
+iter 550: train loss 7.6390, val loss 7.4753
+Total iter time: 1.99 seconds
+Iteration: 551
+Total iter time: 0.35 seconds
+Iteration: 552
+Total iter time: 0.35 seconds
+Iteration: 553
+Total iter time: 0.36 seconds
+Iteration: 554
+Total iter time: 0.36 seconds
+Iteration: 555
+Total iter time: 0.38 seconds
+Iteration: 556
+Total iter time: 0.35 seconds
+Iteration: 557
+Total iter time: 0.37 seconds
+Iteration: 558
+Total iter time: 0.38 seconds
+Iteration: 559
+Total iter time: 0.36 seconds
+Iteration: 560
+iter 560: train loss 7.5371, val loss 7.5630
+Total iter time: 1.98 seconds
+Iteration: 561
+Total iter time: 0.34 seconds
+Iteration: 562
+Total iter time: 0.35 seconds
+Iteration: 563
+Total iter time: 0.37 seconds
+Iteration: 564
+Total iter time: 0.35 seconds
+Iteration: 565
+Total iter time: 0.36 seconds
+Iteration: 566
+Total iter time: 0.36 seconds
+Iteration: 567
+Total iter time: 0.37 seconds
+Iteration: 568
+Total iter time: 0.36 seconds
+Iteration: 569
+Total iter time: 0.36 seconds
+Iteration: 570
+iter 570: train loss 7.5721, val loss 7.5179
+Total iter time: 1.98 seconds
+Iteration: 571
+Total iter time: 0.35 seconds
+Iteration: 572
+Total iter time: 0.36 seconds
+Iteration: 573
+Total iter time: 0.36 seconds
+Iteration: 574
+Total iter time: 0.37 seconds
+Iteration: 575
+Total iter time: 0.37 seconds
+Iteration: 576
+Total iter time: 0.37 seconds
+Iteration: 577
+Total iter time: 0.36 seconds
+Iteration: 578
+Total iter time: 0.36 seconds
+Iteration: 579
+Total iter time: 0.37 seconds
+Iteration: 580
+iter 580: train loss 7.5258, val loss 7.5161
+Total iter time: 1.99 seconds
+Iteration: 581
+Total iter time: 0.34 seconds
+Iteration: 582
+Total iter time: 0.35 seconds
+Iteration: 583
+Total iter time: 0.38 seconds
+Iteration: 584
+Total iter time: 0.36 seconds
+Iteration: 585
+Total iter time: 0.36 seconds
+Iteration: 586
+Total iter time: 0.36 seconds
+Iteration: 587
+Total iter time: 0.38 seconds
+Iteration: 588
+Total iter time: 0.36 seconds
+Iteration: 589
+Total iter time: 0.36 seconds
+Iteration: 590
+iter 590: train loss 7.5082, val loss 7.4933
+Total iter time: 1.97 seconds
+Iteration: 591
+Total iter time: 0.34 seconds
+Iteration: 592
+Total iter time: 0.35 seconds
+Iteration: 593
+Total iter time: 0.35 seconds
+Iteration: 594
+Total iter time: 0.36 seconds
+Iteration: 595
+Total iter time: 0.37 seconds
+Iteration: 596
+Total iter time: 0.35 seconds
+Iteration: 597
+Total iter time: 0.36 seconds
+Iteration: 598
+Total iter time: 0.37 seconds
+Iteration: 599
+Total iter time: 0.37 seconds
+Iteration: 600
+iter 600: train loss 7.5704, val loss 7.4991
+Total iter time: 1.98 seconds
+Iteration: 601
+Total iter time: 0.33 seconds
+Iteration: 602
+Total iter time: 0.35 seconds
+Iteration: 603
+Total iter time: 0.36 seconds
+Iteration: 604
+Total iter time: 0.35 seconds
+Iteration: 605
+Total iter time: 0.36 seconds
+Iteration: 606
+Total iter time: 0.36 seconds
+Iteration: 607
+Total iter time: 0.37 seconds
+Iteration: 608
+Total iter time: 0.35 seconds
+Iteration: 609
+Total iter time: 0.36 seconds
+Iteration: 610
+iter 610: train loss 7.5676, val loss 7.4710
+Total iter time: 1.96 seconds
+Iteration: 611
+Total iter time: 0.35 seconds
+Iteration: 612
+Total iter time: 0.36 seconds
+Iteration: 613
+Total iter time: 0.36 seconds
+Iteration: 614
+Total iter time: 0.37 seconds
+Iteration: 615
+Total iter time: 0.38 seconds
+Iteration: 616
+Total iter time: 0.36 seconds
+Iteration: 617
+Total iter time: 0.36 seconds
+Iteration: 618
+Total iter time: 0.37 seconds
+Iteration: 619
+Total iter time: 0.37 seconds
+Iteration: 620
+iter 620: train loss 7.4868, val loss 7.4445
+Total iter time: 2.00 seconds
+Iteration: 621
+Total iter time: 0.34 seconds
+Iteration: 622
+Total iter time: 0.36 seconds
+Iteration: 623
+Total iter time: 0.39 seconds
+Iteration: 624
+Total iter time: 0.35 seconds
+Iteration: 625
+Total iter time: 0.36 seconds
+Iteration: 626
+Total iter time: 0.37 seconds
+Iteration: 627
+Total iter time: 0.36 seconds
+Iteration: 628
+Total iter time: 0.36 seconds
+Iteration: 629
+Total iter time: 0.37 seconds
+Iteration: 630
+iter 630: train loss 7.5678, val loss 7.4652
+Total iter time: 2.18 seconds
+Iteration: 631
+Total iter time: 0.36 seconds
+Iteration: 632
+Total iter time: 0.35 seconds
+Iteration: 633
+Total iter time: 0.37 seconds
+Iteration: 634
+Total iter time: 0.37 seconds
+Iteration: 635
+Total iter time: 0.39 seconds
+Iteration: 636
+Total iter time: 0.36 seconds
+Iteration: 637
+Total iter time: 0.36 seconds
+Iteration: 638
+Total iter time: 0.37 seconds
+Iteration: 639
+Total iter time: 0.36 seconds
+Iteration: 640
+iter 640: train loss 7.5389, val loss 7.4591
+Total iter time: 2.03 seconds
+Iteration: 641
+Total iter time: 0.35 seconds
+Iteration: 642
+Total iter time: 0.37 seconds
+Iteration: 643
+Total iter time: 0.37 seconds
+Iteration: 644
+Total iter time: 0.36 seconds
+Iteration: 645
+Total iter time: 0.35 seconds
+Iteration: 646
+Total iter time: 0.37 seconds
+Iteration: 647
+Total iter time: 0.37 seconds
+Iteration: 648
+Total iter time: 0.36 seconds
+Iteration: 649
+Total iter time: 0.36 seconds
+Iteration: 650
+iter 650: train loss 7.4770, val loss 7.4200
+Total iter time: 2.00 seconds
+Iteration: 651
+Total iter time: 0.34 seconds
+Iteration: 652
+Total iter time: 0.33 seconds
+Iteration: 653
+Total iter time: 0.35 seconds
+Iteration: 654
+Total iter time: 0.36 seconds
+Iteration: 655
+Total iter time: 0.34 seconds
+Iteration: 656
+Total iter time: 0.33 seconds
+Iteration: 657
+Total iter time: 0.32 seconds
+Iteration: 658
+Total iter time: 0.33 seconds
+Iteration: 659
+Total iter time: 0.34 seconds
+Iteration: 660
+iter 660: train loss 7.5687, val loss 7.4436
+Total iter time: 1.95 seconds
+Iteration: 661
+Total iter time: 0.32 seconds
+Iteration: 662
+Total iter time: 0.34 seconds
+Iteration: 663
+Total iter time: 0.35 seconds
+Iteration: 664
+Total iter time: 0.33 seconds
+Iteration: 665
+Total iter time: 0.35 seconds
+Iteration: 666
+Total iter time: 0.34 seconds
+Iteration: 667
+Total iter time: 0.36 seconds
+Iteration: 668
+Total iter time: 0.33 seconds
+Iteration: 669
+Total iter time: 0.34 seconds
+Iteration: 670
+iter 670: train loss 7.5049, val loss 7.4478
+Total iter time: 1.94 seconds
+Iteration: 671
+Total iter time: 0.33 seconds
+Iteration: 672
+Total iter time: 0.33 seconds
+Iteration: 673
+Total iter time: 0.33 seconds
+Iteration: 674
+Total iter time: 0.33 seconds
+Iteration: 675
+Total iter time: 0.36 seconds
+Iteration: 676
+Total iter time: 0.34 seconds
+Iteration: 677
+Total iter time: 0.34 seconds
+Iteration: 678
+Total iter time: 0.34 seconds
+Iteration: 679
+Total iter time: 0.34 seconds
+Iteration: 680
+iter 680: train loss 7.5173, val loss 7.4628
+Total iter time: 1.94 seconds
+Iteration: 681
+Total iter time: 0.32 seconds
+Iteration: 682
+Total iter time: 0.33 seconds
+Iteration: 683
+Total iter time: 0.36 seconds
+Iteration: 684
+Total iter time: 0.34 seconds
+Iteration: 685
+Total iter time: 0.35 seconds
+Iteration: 686
+Total iter time: 0.34 seconds
+Iteration: 687
+Total iter time: 0.36 seconds
+Iteration: 688
+Total iter time: 0.34 seconds
+Iteration: 689
+Total iter time: 0.34 seconds
+Iteration: 690
+iter 690: train loss 7.4941, val loss 7.3980
+Total iter time: 1.96 seconds
+Iteration: 691
+Total iter time: 0.33 seconds
+Iteration: 692
+Total iter time: 0.32 seconds
+Iteration: 693
+Total iter time: 0.33 seconds
+Iteration: 694
+Total iter time: 0.33 seconds
+Iteration: 695
+Total iter time: 0.36 seconds
+Iteration: 696
+Total iter time: 0.33 seconds
+Iteration: 697
+Total iter time: 0.35 seconds
+Iteration: 698
+Total iter time: 0.34 seconds
+Iteration: 699
+Total iter time: 0.37 seconds
+Iteration: 700
+iter 700: train loss 7.4423, val loss 7.4827
+Total iter time: 1.94 seconds
+Iteration: 701
+Total iter time: 0.31 seconds
+Iteration: 702
+Total iter time: 0.32 seconds
+Iteration: 703
+Total iter time: 0.33 seconds
+Iteration: 704
+Total iter time: 0.32 seconds
+Iteration: 705
+Total iter time: 0.32 seconds
+Iteration: 706
+Total iter time: 0.34 seconds
+Iteration: 707
+Total iter time: 0.34 seconds
+Iteration: 708
+Total iter time: 0.33 seconds
+Iteration: 709
+Total iter time: 0.33 seconds
+Iteration: 710
+iter 710: train loss 7.4797, val loss 7.4213
+Total iter time: 1.95 seconds
+Iteration: 711
+Total iter time: 0.32 seconds
+Iteration: 712
+Total iter time: 0.33 seconds
+Iteration: 713
+Total iter time: 0.33 seconds
+Iteration: 714
+Total iter time: 0.34 seconds
+Iteration: 715
+Total iter time: 0.37 seconds
+Iteration: 716
+Total iter time: 0.34 seconds
+Iteration: 717
+Total iter time: 0.34 seconds
+Iteration: 718
+Total iter time: 0.34 seconds
+Iteration: 719
+Total iter time: 0.35 seconds
+Iteration: 720
+iter 720: train loss 7.4246, val loss 7.4603
+Total iter time: 1.93 seconds
+Iteration: 721
+Total iter time: 0.32 seconds
+Iteration: 722
+Total iter time: 0.33 seconds
+Iteration: 723
+Total iter time: 0.36 seconds
+Iteration: 724
+Total iter time: 0.34 seconds
+Iteration: 725
+Total iter time: 0.34 seconds
+Iteration: 726
+Total iter time: 0.35 seconds
+Iteration: 727
+Total iter time: 0.36 seconds
+Iteration: 728
+Total iter time: 0.34 seconds
+Iteration: 729
+Total iter time: 0.34 seconds
+Iteration: 730
+iter 730: train loss 7.4798, val loss 7.3975
+Total iter time: 1.96 seconds
+Iteration: 731
+Total iter time: 0.34 seconds
+Iteration: 732
+Total iter time: 0.34 seconds
+Iteration: 733
+Total iter time: 0.33 seconds
+Iteration: 734
+Total iter time: 0.36 seconds
+Iteration: 735
+Total iter time: 0.38 seconds
+Iteration: 736
+Total iter time: 0.35 seconds
+Iteration: 737
+Total iter time: 0.34 seconds
+Iteration: 738
+Total iter time: 0.33 seconds
+Iteration: 739
+Total iter time: 0.36 seconds
+Iteration: 740
+iter 740: train loss 7.4231, val loss 7.3773
+Total iter time: 1.97 seconds
+Iteration: 741
+Total iter time: 0.33 seconds
+Iteration: 742
+Total iter time: 0.33 seconds
+Iteration: 743
+Total iter time: 0.35 seconds
+Iteration: 744
+Total iter time: 0.33 seconds
+Iteration: 745
+Total iter time: 0.32 seconds
+Iteration: 746
+Total iter time: 0.34 seconds
+Iteration: 747
+Total iter time: 0.36 seconds
+Iteration: 748
+Total iter time: 0.33 seconds
+Iteration: 749
+Total iter time: 0.35 seconds
+Iteration: 750
+iter 750: train loss 7.4856, val loss 7.3708
+Total iter time: 1.92 seconds
+Iteration: 751
+Total iter time: 0.33 seconds
+Iteration: 752
+Total iter time: 0.32 seconds
+Iteration: 753
+Total iter time: 0.32 seconds
+Iteration: 754
+Total iter time: 0.34 seconds
+Iteration: 755
+Total iter time: 0.36 seconds
+Iteration: 756
+Total iter time: 0.34 seconds
+Iteration: 757
+Total iter time: 0.34 seconds
+Iteration: 758
+Total iter time: 0.34 seconds
+Iteration: 759
+Total iter time: 0.36 seconds
+Iteration: 760
+iter 760: train loss 7.4363, val loss 7.3910
+Total iter time: 1.94 seconds
+Iteration: 761
+Total iter time: 0.32 seconds
+Iteration: 762
+Total iter time: 0.32 seconds
+Iteration: 763
+Total iter time: 0.36 seconds
+Iteration: 764
+Total iter time: 0.34 seconds
+Iteration: 765
+Total iter time: 0.35 seconds
+Iteration: 766
+Total iter time: 0.34 seconds
+Iteration: 767
+Total iter time: 0.36 seconds
+Iteration: 768
+Total iter time: 0.33 seconds
+Iteration: 769
+Total iter time: 0.33 seconds
+Iteration: 770
+iter 770: train loss 7.4550, val loss 7.3744
+Total iter time: 1.94 seconds
+Iteration: 771
+Total iter time: 0.33 seconds
+Iteration: 772
+Total iter time: 0.33 seconds
+Iteration: 773
+Total iter time: 0.35 seconds
+Iteration: 774
+Total iter time: 0.35 seconds
+Iteration: 775
+Total iter time: 0.37 seconds
+Iteration: 776
+Total iter time: 0.35 seconds
+Iteration: 777
+Total iter time: 0.34 seconds
+Iteration: 778
+Total iter time: 0.34 seconds
+Iteration: 779
+Total iter time: 0.36 seconds
+Iteration: 780
+iter 780: train loss 7.4444, val loss 7.3851
+Total iter time: 1.97 seconds
+Iteration: 781
+Total iter time: 0.33 seconds
+Iteration: 782
+Total iter time: 0.34 seconds
+Iteration: 783
+Total iter time: 0.34 seconds
+Iteration: 784
+Total iter time: 0.33 seconds
+Iteration: 785
+Total iter time: 0.34 seconds
+Iteration: 786
+Total iter time: 0.34 seconds
+Iteration: 787
+Total iter time: 0.34 seconds
+Iteration: 788
+Total iter time: 0.34 seconds
+Iteration: 789
+Total iter time: 0.35 seconds
+Iteration: 790
+iter 790: train loss 7.4147, val loss 7.4229
+Total iter time: 1.94 seconds
+Iteration: 791
+Total iter time: 0.34 seconds
+Iteration: 792
+Total iter time: 0.32 seconds
+Iteration: 793
+Total iter time: 0.33 seconds
+Iteration: 794
+Total iter time: 0.35 seconds
+Iteration: 795
+Total iter time: 0.36 seconds
+Iteration: 796
+Total iter time: 0.33 seconds
+Iteration: 797
+Total iter time: 0.33 seconds
+Iteration: 798
+Total iter time: 0.35 seconds
+Iteration: 799
+Total iter time: 0.36 seconds
+Iteration: 800
+iter 800: train loss 7.4108, val loss 7.3595
+Total iter time: 1.96 seconds
+Iteration: 801
+Total iter time: 0.32 seconds
+Iteration: 802
+Total iter time: 0.34 seconds
+Iteration: 803
+Total iter time: 0.36 seconds
+Iteration: 804
+Total iter time: 0.34 seconds
+Iteration: 805
+Total iter time: 0.35 seconds
+Iteration: 806
+Total iter time: 0.34 seconds
+Iteration: 807
+Total iter time: 0.36 seconds
+Iteration: 808
+Total iter time: 0.34 seconds
+Iteration: 809
+Total iter time: 0.34 seconds
+Iteration: 810
+iter 810: train loss 7.3766, val loss 7.3819
+Total iter time: 1.97 seconds
+Iteration: 811
+Total iter time: 0.32 seconds
+Iteration: 812
+Total iter time: 0.32 seconds
+Iteration: 813
+Total iter time: 0.32 seconds
+Iteration: 814
+Total iter time: 0.34 seconds
+Iteration: 815
+Total iter time: 0.36 seconds
+Iteration: 816
+Total iter time: 0.33 seconds
+Iteration: 817
+Total iter time: 0.34 seconds
+Iteration: 818
+Total iter time: 0.33 seconds
+Iteration: 819
+Total iter time: 0.34 seconds
+Iteration: 820
+iter 820: train loss 7.4027, val loss 7.3507
+Total iter time: 1.92 seconds
+Iteration: 821
+Total iter time: 0.32 seconds
+Iteration: 822
+Total iter time: 0.32 seconds
+Iteration: 823
+Total iter time: 0.34 seconds
+Iteration: 824
+Total iter time: 0.34 seconds
+Iteration: 825
+Total iter time: 0.34 seconds
+Iteration: 826
+Total iter time: 0.34 seconds
+Iteration: 827
+Total iter time: 0.36 seconds
+Iteration: 828
+Total iter time: 0.33 seconds
+Iteration: 829
+Total iter time: 0.35 seconds
+Iteration: 830
+iter 830: train loss 7.3737, val loss 7.3548
+Total iter time: 1.93 seconds
+Iteration: 831
+Total iter time: 0.33 seconds
+Iteration: 832
+Total iter time: 0.33 seconds
+Iteration: 833
+Total iter time: 0.34 seconds
+Iteration: 834
+Total iter time: 0.34 seconds
+Iteration: 835
+Total iter time: 0.36 seconds
+Iteration: 836
+Total iter time: 0.34 seconds
+Iteration: 837
+Total iter time: 0.34 seconds
+Iteration: 838
+Total iter time: 0.35 seconds
+Iteration: 839
+Total iter time: 0.37 seconds
+Iteration: 840
+iter 840: train loss 7.4925, val loss 7.3185
+Total iter time: 1.91 seconds
+Iteration: 841
+Total iter time: 0.32 seconds
+Iteration: 842
+Total iter time: 0.33 seconds
+Iteration: 843
+Total iter time: 0.36 seconds
+Iteration: 844
+Total iter time: 0.34 seconds
+Iteration: 845
+Total iter time: 0.39 seconds
+Iteration: 846
+Total iter time: 0.38 seconds
+Iteration: 847
+Total iter time: 0.39 seconds
+Iteration: 848
+Total iter time: 0.38 seconds
+Iteration: 849
+Total iter time: 0.38 seconds
+Iteration: 850
+iter 850: train loss 7.3936, val loss 7.3381
+Total iter time: 2.27 seconds
+Iteration: 851
+Total iter time: 0.38 seconds
+Iteration: 852
+Total iter time: 0.37 seconds
+Iteration: 853
+Total iter time: 0.38 seconds
+Iteration: 854
+Total iter time: 0.38 seconds
+Iteration: 855
+Total iter time: 0.39 seconds
+Iteration: 856
+Total iter time: 0.37 seconds
+Iteration: 857
+Total iter time: 0.38 seconds
+Iteration: 858
+Total iter time: 0.38 seconds
+Iteration: 859
+Total iter time: 0.40 seconds
+Iteration: 860
+iter 860: train loss 7.4085, val loss 7.3517
+Total iter time: 2.25 seconds
+Iteration: 861
+Total iter time: 0.35 seconds
+Iteration: 862
+Total iter time: 0.38 seconds
+Iteration: 863
+Total iter time: 0.39 seconds
+Iteration: 864
+Total iter time: 0.37 seconds
+Iteration: 865
+Total iter time: 0.38 seconds
+Iteration: 866
+Total iter time: 0.38 seconds
+Iteration: 867
+Total iter time: 0.39 seconds
+Iteration: 868
+Total iter time: 0.37 seconds
+Iteration: 869
+Total iter time: 0.38 seconds
+Iteration: 870
+iter 870: train loss 7.3985, val loss 7.3982
+Total iter time: 2.27 seconds
+Iteration: 871
+Total iter time: 0.36 seconds
+Iteration: 872
+Total iter time: 0.38 seconds
+Iteration: 873
+Total iter time: 0.37 seconds
+Iteration: 874
+Total iter time: 0.38 seconds
+Iteration: 875
+Total iter time: 0.39 seconds
+Iteration: 876
+Total iter time: 0.37 seconds
+Iteration: 877
+Total iter time: 0.38 seconds
+Iteration: 878
+Total iter time: 0.38 seconds
+Iteration: 879
+Total iter time: 0.39 seconds
+Iteration: 880
+iter 880: train loss 7.3554, val loss 7.3214
+Total iter time: 2.26 seconds
+Iteration: 881
+Total iter time: 0.35 seconds
+Iteration: 882
+Total iter time: 0.38 seconds
+Iteration: 883
+Total iter time: 0.38 seconds
+Iteration: 884
+Total iter time: 0.37 seconds
+Iteration: 885
+Total iter time: 0.38 seconds
+Iteration: 886
+Total iter time: 0.38 seconds
+Iteration: 887
+Total iter time: 0.39 seconds
+Iteration: 888
+Total iter time: 0.37 seconds
+Iteration: 889
+Total iter time: 0.38 seconds
+Iteration: 890
+iter 890: train loss 7.3651, val loss 7.3193
+Total iter time: 2.27 seconds
+Iteration: 891
+Total iter time: 0.36 seconds
+Iteration: 892
+Total iter time: 0.37 seconds
+Iteration: 893
+Total iter time: 0.37 seconds
+Iteration: 894
+Total iter time: 0.38 seconds
+Iteration: 895
+Total iter time: 0.39 seconds
+Iteration: 896
+Total iter time: 0.37 seconds
+Iteration: 897
+Total iter time: 0.38 seconds
+Iteration: 898
+Total iter time: 0.38 seconds
+Iteration: 899
+Total iter time: 0.40 seconds
+Iteration: 900
+iter 900: train loss 7.3792, val loss 7.3040
+Total iter time: 1.94 seconds
+Iteration: 901
+Total iter time: 0.66 seconds
+Iteration: 902
+Total iter time: 0.38 seconds
+Iteration: 903
+Total iter time: 0.40 seconds
+Iteration: 904
+Total iter time: 0.38 seconds
+Iteration: 905
+Total iter time: 0.38 seconds
+Iteration: 906
+Total iter time: 0.38 seconds
+Iteration: 907
+Total iter time: 0.40 seconds
+Iteration: 908
+Total iter time: 0.37 seconds
+Iteration: 909
+Total iter time: 0.39 seconds
+Iteration: 910
+iter 910: train loss 7.3167, val loss 7.3157
+Total iter time: 2.00 seconds
+Iteration: 911
+Total iter time: 0.66 seconds
+Iteration: 912
+Total iter time: 0.37 seconds
+Iteration: 913
+Total iter time: 0.38 seconds
+Iteration: 914
+Total iter time: 0.38 seconds
+Iteration: 915
+Total iter time: 0.39 seconds
+Iteration: 916
+Total iter time: 0.38 seconds
+Iteration: 917
+Total iter time: 0.38 seconds
+Iteration: 918
+Total iter time: 0.38 seconds
+Iteration: 919
+Total iter time: 0.39 seconds
+Iteration: 920
+iter 920: train loss 7.3558, val loss 7.2716
+Total iter time: 2.28 seconds
+Iteration: 921
+Total iter time: 0.36 seconds
+Iteration: 922
+Total iter time: 0.39 seconds
+Iteration: 923
+Total iter time: 0.40 seconds
+Iteration: 924
+Total iter time: 0.38 seconds
+Iteration: 925
+Total iter time: 0.39 seconds
+Iteration: 926
+Total iter time: 0.39 seconds
+Iteration: 927
+Total iter time: 0.41 seconds
+Iteration: 928
+Total iter time: 0.39 seconds
+Iteration: 929
+Total iter time: 0.39 seconds
+Iteration: 930
+iter 930: train loss 7.3787, val loss 7.3223
+Total iter time: 2.27 seconds
+Iteration: 931
+Total iter time: 0.37 seconds
+Iteration: 932
+Total iter time: 0.38 seconds
+Iteration: 933
+Total iter time: 0.39 seconds
+Iteration: 934
+Total iter time: 0.39 seconds
+Iteration: 935
+Total iter time: 0.40 seconds
+Iteration: 936
+Total iter time: 0.39 seconds
+Iteration: 937
+Total iter time: 0.38 seconds
+Iteration: 938
+Total iter time: 0.39 seconds
+Iteration: 939
+Total iter time: 0.40 seconds
+Iteration: 940
+iter 940: train loss 7.3872, val loss 7.3050
+Total iter time: 2.28 seconds
+Iteration: 941
+Total iter time: 0.36 seconds
+Iteration: 942
+Total iter time: 0.38 seconds
+Iteration: 943
+Total iter time: 0.39 seconds
+Iteration: 944
+Total iter time: 0.37 seconds
+Iteration: 945
+Total iter time: 0.37 seconds
+Iteration: 946
+Total iter time: 0.38 seconds
+Iteration: 947
+Total iter time: 0.39 seconds
+Iteration: 948
+Total iter time: 0.37 seconds
+Iteration: 949
+Total iter time: 0.38 seconds
+Iteration: 950
+iter 950: train loss 7.3334, val loss 7.2829
+Total iter time: 2.27 seconds
+Iteration: 951
+Total iter time: 0.37 seconds
+Iteration: 952
+Total iter time: 0.37 seconds
+Iteration: 953
+Total iter time: 0.37 seconds
+Iteration: 954
+Total iter time: 0.38 seconds
+Iteration: 955
+Total iter time: 0.39 seconds
+Iteration: 956
+Total iter time: 0.38 seconds
+Iteration: 957
+Total iter time: 0.36 seconds
+Iteration: 958
+Total iter time: 0.36 seconds
+Iteration: 959
+Total iter time: 0.38 seconds
+Iteration: 960
+iter 960: train loss 7.3200, val loss 7.2648
+Total iter time: 2.04 seconds
+Iteration: 961
+Total iter time: 0.31 seconds
+Iteration: 962
+Total iter time: 0.31 seconds
+Iteration: 963
+Total iter time: 0.32 seconds
+Iteration: 964
+Total iter time: 0.31 seconds
+Iteration: 965
+Total iter time: 0.32 seconds
+Iteration: 966
+Total iter time: 0.32 seconds
+Iteration: 967
+Total iter time: 0.36 seconds
+Iteration: 968
+Total iter time: 0.32 seconds
+Iteration: 969
+Total iter time: 0.31 seconds
+Iteration: 970
+iter 970: train loss 7.3521, val loss 7.2627
+Total iter time: 1.89 seconds
+Iteration: 971
+Total iter time: 0.31 seconds
+Iteration: 972
+Total iter time: 0.31 seconds
+Iteration: 973
+Total iter time: 0.28 seconds
+Iteration: 974
+Total iter time: 0.30 seconds
+Iteration: 975
+Total iter time: 0.30 seconds
+Iteration: 976
+Total iter time: 0.30 seconds
+Iteration: 977
+Total iter time: 0.31 seconds
+Iteration: 978
+Total iter time: 0.31 seconds
+Iteration: 979
+Total iter time: 0.37 seconds
+Iteration: 980
+iter 980: train loss 7.3609, val loss 7.2573
+Total iter time: 1.90 seconds
+Iteration: 981
+Total iter time: 0.31 seconds
+Iteration: 982
+Total iter time: 0.33 seconds
+Iteration: 983
+Total iter time: 0.36 seconds
+Iteration: 984
+Total iter time: 0.33 seconds
+Iteration: 985
+Total iter time: 0.33 seconds
+Iteration: 986
+Total iter time: 0.32 seconds
+Iteration: 987
+Total iter time: 0.36 seconds
+Iteration: 988
+Total iter time: 0.34 seconds
+Iteration: 989
+Total iter time: 0.35 seconds
+Iteration: 990
+iter 990: train loss 7.3323, val loss 7.2231
+Total iter time: 1.98 seconds
+Iteration: 991
+Total iter time: 0.34 seconds
+Iteration: 992
+Total iter time: 0.33 seconds
+Iteration: 993
+Total iter time: 0.34 seconds
+Iteration: 994
+Total iter time: 0.35 seconds
+Iteration: 995
+Total iter time: 0.36 seconds
+Iteration: 996
+Total iter time: 0.32 seconds
+Iteration: 997
+Total iter time: 0.33 seconds
+Iteration: 998
+Total iter time: 0.35 seconds
+Iteration: 999
+iter 999: train loss 7.3759, val loss 7.2408
+Total iter time: 1.98 seconds
+Total training time: 541.08 seconds
+generated text: tensor([[    0,   273,   543, 42309,    12,   645,   257,   838,  2534,    11,
+           903, 11289,  3724, 33172,  3940,   416,   257,  3833, 13104,  6755,
+          1816,   642,   685, 29867,  8088,  4793,   287,   262,   306,  2941,
+           262,  6431, 11476,    11,   734,   284, 31449,    11,   290,  2372,
+           617,   554, 40783,   257,   347,   373,  7486,   262,  1338,  6798,
+          1097,    11, 16005,   319,   329, 34020,    13, 12256,    11,   290,
+          1566, 10741,   832,   257, 17187,    13,   770,   326,  3667,    13,
+          1114,  2733,   326,   867,    12, 14923,   329,   262,   338,  1227,
+          5855,  2643,  3940,  2105, 34453,  6135,   546,   259,  7953,   257,
+           907,   795,   326,    73,   287, 32801,   290, 23034, 40173,  8672,
+         44404,  1936, 31154,    11,  6135, 16341,    13,    44,  3473, 13089,
+            83,  5840,  1107,    11, 43676,  8379, 49525,  9860,  5838,  2348,
+            13,  6032,    11,   262,  3224,    13,  4570, 21516,   705,   257,
+         14104,   285,  1566,  6157,   262,  3303, 25151,   338,   412,    13,
+           383,   378,   362, 27188,  3496,   262,   890,    11,  8155,   828,
+           257, 42289,   736,  1636,     8,   284, 30596,  5652,   642,    13,
+           554, 43701,    11,   290, 17422,   284,   262,    82, 11832, 25331,
+          2310, 10692,   287,  5767,   287,   262,   546,   611,   257,   981,
+           318,  7317,   286,  3785, 38237,   726,   351,   262, 15911,   379,
+         35796,  2254,   286,  2297,   370,    11, 22104, 26013,   319, 28199,
+         28070]], device='cuda:0')
+Generated text: !or which fluorescent- no a 10 22,ble Award died ", followed by a pressure Patriots Far went 5 [ silicon reviews 2006 in thelyccording the gather partly, two toStaff, and threat some InSwe a B was Though the Sp assets car,cision on for FIL.White, and until duties through anik. This that claims. Forctions that many- rumors for the's month (" statement followedppingsol 65 aboutin engaged ams em thatj in Dawson and activism428 visited motel five Nielsen, 65except.M consist revenuestAm really, Fiji sequence Scenesyer BattleAl. typically, the additional. 36 Television ' a twelve m until performed the languageür's E. Theate 2 transitions song the long, purchased), agorithm backley) to Stafford Angeles 5. Intin, and charter to thes decreased Drum 21 Ocean inwar in the about if a while is initially of figure decompoy with the manga at licensee City of Red W, Enhanced Hannah on BradfordPicture
