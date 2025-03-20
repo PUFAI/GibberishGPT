@@ -511,7 +511,7 @@ for iter in range(max_iters):
     xb, yb = get_batch("train", batch_size)
     
     # mixed precision: autocast the forward pass
-    with torch.cuda.amp.autocast:
+    with torch.cuda.amp.autocast():
         logits, loss = model(xb, yb)
     
     # normalize the loss by the accumulation steps
