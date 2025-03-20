@@ -37,14 +37,14 @@ print(f"Using device: {device}")
 
 batch_size = 16  # Kept the same; could be adjusted based on hardware
 block_size = 512  # GPT-2 uses a context length of 1024 tokens
-max_iters = 100  # More iterations needed for larger models
+max_iters = 1000  # More iterations needed for larger models
 eval_interval = 10  # Increase since more iterations are done
 learning_rate = 3.5e-5  # GPT-2 uses a lower learning rate
 eval_iters = 5  # More frequent evaluation for stability
 
-n_embd = 384  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
-n_head = 6 # GPT-2 uses 12 attention heads
-n_layer = 6  # GPT-2 has 12 transformer blocks in the small version
+n_embd = 768  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
+n_head = 12 # GPT-2 uses 12 attention heads
+n_layer = 12  # GPT-2 has 12 transformer blocks in the small version
 dropout = 0.08  # GPT-2 uses 0.1 dropout for better generalization
 
 
