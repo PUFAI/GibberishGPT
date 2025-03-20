@@ -35,7 +35,7 @@ from tokenization import get_tiktoken_tokenizer
 print(f"Using device: {device}")
 
 
-batch_size = 16  # Kept the same; could be adjusted based on hardware
+batch_size = 32  # Kept the same; could be adjusted based on hardware
 block_size = 512  # GPT-2 uses a context length of 1024 tokens
 max_iters = 10000  # More iterations needed for larger models
 eval_interval = 100  # Increase since more iterations are done
