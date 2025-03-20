@@ -549,7 +549,7 @@ print(f"Total training time: {end_time - start_time:.2f} seconds")  # Print the 
 
 # generation example after training
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
-generated_sequence = model.generate(context, max_new_tokens=200, max_seq_len=block_size)
+generated_sequence = model.module.generate(context, max_new_tokens=200, max_seq_len=block_size)
 print("generated text:", generated_sequence)
 
 
