@@ -39,7 +39,7 @@ batch_size = 128  # Kept the same; could be adjusted based on hardware
 block_size = 512  # GPT-2 uses a context length of 1024 tokens
 max_iters = 10000  # More iterations needed for larger models
 eval_interval = 100  # Increase since more iterations are done
-learning_rate = 4.5e-5  # GPT-2 uses a lower learning rate
+learning_rate = 3e-4  # GPT-2 uses a lower learning rate
 eval_iters = 5  # More frequent evaluation for stability
 
 n_embd = 768  # GPT-2 uses 768 for the small version, 1024 for medium, 1280 for large, 1600 for XL
