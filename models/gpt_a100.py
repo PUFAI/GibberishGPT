@@ -4,7 +4,7 @@ import json
 import time
 import logging
 import math
-
+import multiprocessing
 import numpy as np
 
 # torch imports and shit
@@ -20,7 +20,6 @@ from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 from functools import partial
 from typing import Optional
-
 
 base_folder = os.path.abspath("..")
 print(f"Your base folder is: {base_folder}")
@@ -688,6 +687,74 @@ def main():
     
     tokenizer = get_tiktoken_tokenizer()
     vocab_size = tokenizer.n_vocab
+    
+    dataset = get_wikitext_data()
+    num_cores = multiprocessing.cpu_count()
+    
+    def clean_batch(examples):
+        cleaned_texts = [clean_textdata(text) for text in examples["text"]]
+        cleaned_texts = list(filter(None, cleaned_texts))
+        return {"text": cleaned_texts}
+    
+    cleaned_dataset = dataset.map(
+        clean_batch,
+        batched=True,
+        batch_size=1000,
+        num_proc=num_cores,
+        desc="Cleaning text"
+    )
+    
+    logger.info("Tokenizing dataset...")
+    def tokenize_batch(examples, tokenizer):
+        return {
+            "input_ids": [tokenizer.encode(text) for text in examples["text"]]
+        }
+    
+    tokenized_dataset = cleaned_dataset.map(
+        tokenize_batch, 
+        fn_kwargs={"tokenizer": tokenizer},
+        batched=True, 
+        batch_size=10_000,
+        num_proc=num_cores,
+        remove_columns=cleaned_dataset["train"].column_names,
+        desc="Tokenizing"
+    )
+    
+    logger.info("Chunking dataset...")
+    def group_texts(examples):
+        concatenated = []
+        for ids in examples["input_ids"]:
+            concatenated.extend(ids)
+        
+        total_length = (len(concatenated) // config.block_size) * config.block_size
+        concatenated = concatenated[:total_length]
+    
+        return {"input_ids": [concatenated[i : i + config.block_size] 
+                for i in range(0, total_length, config.block_size)]}
+    
+    lm_dataset = tokenized_dataset.map(
+        group_texts,
+        batched=True, 
+        batch_size=config.block_size, 
+        num_proc=num_cores,
+        desc="Chunking"
+    )
+    
+    tokenized_dataset_text = lm_dataset.filter(lambda x: any(token != 0 for token in x["input_ids"]))
+    
+    logger.info("Converting to tensors...")
+    train_tensor = np.array(tokenized_dataset_text["train"]["input_ids"], dtype=np.int32)
+    val_tensor = np.array(tokenized_dataset_text["validation"]["input_ids"], dtype=np.int32)
+    test_tensor = np.array(tokenized_dataset_text["test"]["input_ids"], dtype=np.int32)
+    
+    train_data = torch.from_numpy(train_tensor).long()
+    val_data = torch.from_numpy(val_tensor).long()
+    test_data = torch.from_numpy(test_tensor).long()
+    
+    logger.info(f"Train Data: {train_data.shape}, {train_data.dtype}")
+    logger.info(f"Val Data: {val_data.shape}, {val_data.dtype}")
+    logger.info(f"Test Data: {test_data.shape}, {test_data.dtype}")
+    logger.info(f"Vocabulary size: {vocab_size}")
     
     print(f"Train Data: {train_data.shape}, {train_data.dtype}")
     print(f"Val   Data: {val_data.shape}, {val_data.dtype}")
