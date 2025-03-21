@@ -554,6 +554,7 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
     
     # main training loop
     for iter_num in range(config.max_iters):
+        logger.info(f"Main loop iteration: {iter_num}")
         iter_start_time = time.time()
         model.train()
         
