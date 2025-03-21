@@ -22,6 +22,13 @@ from functools import partial
 from typing import Optional
 
 
+base_folder = os.path.abspath("..")
+print(f"Your base folder is: {base_folder}")
+sys.path.append(base_folder)
+from data import get_wikitext_data, clean_textdata
+from tokenization import get_tiktoken_tokenizer
+
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -675,9 +682,6 @@ def main():
     
     num_gpus = torch.cuda.device_count()
     print(f"Training with {num_gpus} GPUs")
-    
-    from data import get_wikitext_data, clean_textdata
-    from tokenization import get_tiktoken_tokenizer
     
     torch.manual_seed(config.seed)
     np.random.seed(config.seed)
