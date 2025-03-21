@@ -224,7 +224,8 @@ class Block(nn.Module):
         if self.use_checkpointing and self.training:
             attn_output = torch.utils.checkpoint.checkpoint(
                 create_custom_forward(self.self_attention),
-                normed_input1
+                normed_input1,
+                use_reentrant=False
             )
         else:
             attn_output = self.self_attention(normed_input1)
@@ -411,7 +412,7 @@ def estimate_loss(model, dataloaders, eval_iters):
                 x, y = x.to(model.device), y.to(model.device)
                 
                 # Compute loss
-                with torch.cuda.amp.autocast():
+                with torch.amp.autocast('cuda'):
                     _, loss = model(x, y)
                 
                 if loss.ndim > 0:
