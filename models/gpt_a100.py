@@ -74,7 +74,7 @@ class ModelConfig:
         # Optimization flags
         self.gradient_checkpointing = False  # Use gradient checkpointing
         # Above does not work
-        self.use_flash_attn = True          # Use Flash Attention if available
+        self.use_flash_attn = False          # Use Flash Attention if available
         
         self.checkpoint_dir = 'checkpoints' # Directory to save checkpoints
         self.log_dir = 'logs'               # Directory to save logs
