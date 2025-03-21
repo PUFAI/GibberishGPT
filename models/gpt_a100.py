@@ -67,7 +67,8 @@ class ModelConfig:
         self.warmup_iters = 100             # Learning rate warmup iterations
         
         # Optimization flags
-        self.gradient_checkpointing = True  # Use gradient checkpointing
+        self.gradient_checkpointing = False  # Use gradient checkpointing
+        # Above does not work
         self.use_flash_attn = True          # Use Flash Attention if available
         
         self.checkpoint_dir = 'checkpoints' # Directory to save checkpoints
