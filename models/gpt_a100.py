@@ -53,7 +53,7 @@ class ModelConfig:
         # model architecture
         self.batch_size = 64                # Batch size per GPU
         self.block_size = 512               # Context size
-        self.n_embd = 1024                  # Embedding dimension
+        self.n_embd = 768                  # Embedding dimension
         self.n_head = 12                    # Number of attention heads
         self.n_layer = 12                   # Number of transformer layers
         self.dropout = 0.1                  # Dropout rate
@@ -61,7 +61,7 @@ class ModelConfig:
         # training parameters
         self.max_iters = 1000               # Number of iterations
         self.eval_interval = 100            # Evaluation interval
-        self.learning_rate = 3e-4           # Learning rate
+        self.learning_rate = 4e-4           # Learning rate
         self.eval_iters = 5                 # Evaluation iterations
         self.accumulation_steps = 4         # Gradient accumulation steps
         self.warmup_iters = 100             # Learning rate warmup iterations
@@ -69,7 +69,6 @@ class ModelConfig:
         # Optimization flags
         self.gradient_checkpointing = True  # Use gradient checkpointing
         self.use_flash_attn = True          # Use Flash Attention if available
-        
         
         self.checkpoint_dir = 'checkpoints' # Directory to save checkpoints
         self.log_dir = 'logs'               # Directory to save logs
@@ -99,7 +98,7 @@ class FlashAttentionHead(nn.Module):
         queries = self.query_proj(input_tensor)  # shape: (batch_size, seq_len, head_dim)
         values = self.value_proj(input_tensor)   # shape: (batch_size, seq_len, head_dim)
         
-        if self.use_flash and seq_len <= 2048:  # Flash attention has seq length limitations
+        if self.use_flash and seq_len <= 1024:  # Flash attention has seq length limitations
             # reshape for flash attention which expects (batch, seqlen, nheads, headdim)
             # for single head, we use nheads=1
             q = queries.unsqueeze(2)  # [batch_size, seq_len, 1, head_dim]
@@ -675,6 +674,7 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
 
 
 # main function to setup distributed training
+# https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
 def main():    
     os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '12355'
@@ -699,7 +699,7 @@ def main():
     cleaned_dataset = dataset.map(
         clean_batch,
         batched=True,
-        batch_size=1000,
+        batch_size=10_000,
         num_proc=num_cores,
         desc="Cleaning text"
     )
