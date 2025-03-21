@@ -97,7 +97,7 @@ length_dataset = cleaned_dataset.map(
     analyze_lengths,
     fn_kwargs={"tokenizer": tokenizer},
     batched=True,
-    batch_size=1000,
+    batch_size=10_000,
     num_proc=num_cores,
     desc="Analyzing sequence lengths"
 )
@@ -143,6 +143,7 @@ tokenized_dataset = cleaned_dataset.map(
     tokenize_batch, 
     fn_kwargs={"tokenizer": tokenizer},
     batched=True, 
+    batch_size=10_000,
     num_proc=num_cores,
     remove_columns=cleaned_dataset["train"].column_names,
     desc="Tokenizing"
