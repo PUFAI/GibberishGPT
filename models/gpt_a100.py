@@ -55,7 +55,7 @@ class ModelConfig:
         self.block_size = 512               # Context size
         self.n_embd = 512                  # Embedding dimension
         self.n_head = 8                    # Number of attention heads
-        self.n_layer = 2                   # Number of transformer layers
+        self.n_layer = 4                   # Number of transformer layers
         self.dropout = 0.1                  # Dropout rate
         
         # training parameters
@@ -665,6 +665,8 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
         context = torch.zeros((1, 1), dtype=torch.long, device=device)
         generated_sequence = model.module.generate(context, max_new_tokens=200, max_seq_len=config.block_size)
         generated_ids = generated_sequence[0].tolist()
+        decoded_text = tokenizer.decode(generated_ids)  # Decode the generated token IDs into text
+        print("Generated text:", decoded_text) 
         
         print("Training completed!")
         
