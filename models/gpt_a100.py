@@ -53,7 +53,7 @@ class ModelConfig:
     def __init__(self):
         # model architecture
         self.batch_size = 64                # Batch size per GPU
-        self.block_size = 1024               # Context size
+        self.block_size = 512               # Context size
         self.n_embd = 512                  # Embedding dimension
         self.n_head = 12                    # Number of attention heads
         self.n_layer = 12                   # Number of transformer layers
@@ -65,7 +65,7 @@ class ModelConfig:
         self.learning_rate = 4e-5           # Learning rate
         self.eval_iters = 5                 # Evaluation iterations
         self.accumulation_steps = 4         # Gradient accumulation steps
-        self.warmup_iters = 100             # Learning rate warmup iterations
+        self.warmup_iters = 500             # Learning rate warmup iterations
         
         # Optimizer Settings
         self.weight_decay = 1e-4
