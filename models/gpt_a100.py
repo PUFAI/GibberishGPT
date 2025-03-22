@@ -66,10 +66,15 @@ class ModelConfig:
         self.accumulation_steps = 4         # Gradient accumulation steps
         self.warmup_iters = 100             # Learning rate warmup iterations
         
+        # Optimizer Settings
+        self.weight_decay = 1e-1
+        self.beta1 = 0.9
+        self.beta2 = 0.95
+        
         # Optimization flags
         self.gradient_checkpointing = False  # Use gradient checkpointing
         # Above does not work
-        self.use_flash_attn = True          # Use Flash Attention if available
+        self.use_flash_attn = False          # Use Flash Attention if available
         
         self.checkpoint_dir = 'checkpoints' # Directory to save checkpoints
         self.log_dir = 'logs'               # Directory to save logs
@@ -427,7 +432,7 @@ def estimate_loss(model, dataloaders, eval_iters):
     
     # average losses
     avg_losses = {split: np.mean(split_losses) if split_losses else 0.0 
-                 for split, split_losses in losses.items()}
+                for split, split_losses in losses.items()}
     
     return avg_losses
 
@@ -510,7 +515,12 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
     model = DDP(model, device_ids=[gpu_id], output_device=gpu_id, find_unused_parameters=False)
     model.device = device 
     
-    optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate, weight_decay=0.01)
+    optimizer = torch.optim.AdamW(
+        model.parameters(), 
+        lr=config.learning_rate, 
+        weight_decay=config.weight_decay, 
+        betas=(config.beta1, config.beta2)
+    )
     
     # set initial learning rate for scheduler
     for param_group in optimizer.param_groups:
@@ -520,7 +530,7 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
     scheduler = CosineWarmupScheduler(optimizer, config.warmup_iters, config.max_iters)
     
     # create gradient scaler for mixed precision
-    scaler = torch.cuda.amp.GradScaler()
+    scaler = torch.amp.GradScaler('cuda')
     
     # zero gradients
     optimizer.zero_grad()
@@ -544,6 +554,7 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
     
     # main training loop
     for iter_num in range(config.max_iters):
+        logger.info(f"Main loop iteration: {iter_num}")
         iter_start_time = time.time()
         model.train()
         
@@ -561,7 +572,7 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
         x, y = x.to(device), y.to(device)
         
         # mixed precision forward pass
-        with torch.cuda.amp.autocast():
+        with torch.amp.autocast('cuda'):
             logits, loss = model(x, y)
         
         if loss.ndim > 0:
