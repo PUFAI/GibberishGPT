@@ -27,6 +27,7 @@ sys.path.append(base_folder)
 from data import get_wikitext_data, clean_textdata
 from tokenization import get_tiktoken_tokenizer
 
+tokenizer = get_tiktoken_tokenizer()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -700,7 +701,6 @@ def main():
     torch.manual_seed(config.seed)
     np.random.seed(config.seed)
     
-    tokenizer = get_tiktoken_tokenizer()
     vocab_size = tokenizer.n_vocab
     
     dataset = get_wikitext_data()
