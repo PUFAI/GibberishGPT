@@ -60,12 +60,12 @@ class ModelConfig:
         self.dropout = 0.1                  # Dropout rate
         
         # training parameters
-        self.max_iters = 1000               # Number of iterations
+        self.max_iters = 10000               # Number of iterations
         self.eval_interval = 100            # Evaluation interval
         self.learning_rate = 5e-3           # Learning rate
         self.eval_iters = 5                 # Evaluation iterations
         self.accumulation_steps = 4         # Gradient accumulation steps
-        self.warmup_iters = 100             # Learning rate warmup iterations
+        self.warmup_iters = 500             # Learning rate warmup iterations
         
         # Optimizer Settings
         self.weight_decay = 1e-4
