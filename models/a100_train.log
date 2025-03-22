@@ -1,0 +1,1604 @@
+nohup: ignoring input
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Training with 1 GPUs
+Cleaning text (num_proc=256):   0%|          | 0/4358 [00:00<?, ? examples/s]Cleaning text (num_proc=256):   0%|          | 18/4358 [00:00<00:49, 87.81 examples/s]Cleaning text (num_proc=256):   2%|▏         | 69/4358 [00:00<00:20, 209.32 examples/s]Cleaning text (num_proc=256):  15%|█▍        | 635/4358 [00:00<00:01, 1950.60 examples/s]Cleaning text (num_proc=256):  27%|██▋       | 1179/4358 [00:00<00:01, 3029.74 examples/s]Cleaning text (num_proc=256):  40%|███▉      | 1740/4358 [00:00<00:00, 3793.42 examples/s]Cleaning text (num_proc=256):  54%|█████▎    | 2335/4358 [00:00<00:00, 4423.27 examples/s]Cleaning text (num_proc=256):  65%|██████▌   | 2845/4358 [00:00<00:00, 4497.78 examples/s]Cleaning text (num_proc=256):  77%|███████▋  | 3338/4358 [00:00<00:00, 4428.18 examples/s]Cleaning text (num_proc=256):  88%|████████▊ | 3814/4358 [00:01<00:00, 4166.64 examples/s]Cleaning text (num_proc=256):  98%|█████████▊| 4273/4358 [00:01<00:00, 4267.64 examples/s]Cleaning text (num_proc=256): 100%|██████████| 4358/4358 [00:01<00:00, 3209.31 examples/s]
+Cleaning text (num_proc=256):   0%|          | 0/1801350 [00:00<?, ? examples/s]Cleaning text (num_proc=256):   0%|          | 7037/1801350 [00:02<09:28, 3156.08 examples/s]Cleaning text (num_proc=256):   1%|          | 14074/1801350 [00:03<06:20, 4700.46 examples/s]Cleaning text (num_proc=256):   2%|▏         | 28148/1801350 [00:03<02:29, 11833.25 examples/s]Cleaning text (num_proc=256):   3%|▎         | 56296/1801350 [00:03<00:56, 30709.30 examples/s]Cleaning text (num_proc=256):   4%|▍         | 77407/1801350 [00:03<00:49, 34611.80 examples/s]Cleaning text (num_proc=256):   5%|▌         | 91480/1801350 [00:04<00:52, 32681.69 examples/s]Cleaning text (num_proc=256):   6%|▌         | 105553/1801350 [00:04<00:40, 41683.70 examples/s]Cleaning text (num_proc=256):   7%|▋         | 133697/1801350 [00:04<00:30, 55268.44 examples/s]Cleaning text (num_proc=256):   9%|▉         | 168880/1801350 [00:05<00:22, 72882.59 examples/s]Cleaning text (num_proc=256):  11%|█         | 189990/1801350 [00:05<00:20, 78978.11 examples/s]Cleaning text (num_proc=256):  12%|█▏        | 211100/1801350 [00:05<00:16, 95924.25 examples/s]Cleaning text (num_proc=256):  13%|█▎        | 225173/1801350 [00:05<00:15, 102338.02 examples/s]Cleaning text (num_proc=256):  14%|█▍        | 253320/1801350 [00:05<00:13, 116535.68 examples/s]Cleaning text (num_proc=256):  16%|█▌        | 281466/1801350 [00:05<00:10, 144444.72 examples/s]Cleaning text (num_proc=256):  17%|█▋        | 302576/1801350 [00:05<00:09, 154946.89 examples/s]Cleaning text (num_proc=256):  19%|█▉        | 344796/1801350 [00:06<00:07, 183153.34 examples/s]Cleaning text (num_proc=256):  21%|██        | 379980/1801350 [00:06<00:06, 218439.45 examples/s]Cleaning text (num_proc=256):  23%|██▎       | 422198/1801350 [00:06<00:05, 262218.36 examples/s]Cleaning text (num_proc=256):  26%|██▌       | 464418/1801350 [00:06<00:04, 301559.56 examples/s]Cleaning text (num_proc=256):  29%|██▉       | 520711/1801350 [00:06<00:03, 365216.27 examples/s]Cleaning text (num_proc=256):  31%|███▏      | 562930/1801350 [00:06<00:04, 297728.34 examples/s]Cleaning text (num_proc=256):  33%|███▎      | 598113/1801350 [00:06<00:03, 309226.35 examples/s]Cleaning text (num_proc=256):  38%|███▊      | 675515/1801350 [00:06<00:02, 415227.77 examples/s]Cleaning text (num_proc=256):  41%|████      | 738845/1801350 [00:07<00:02, 465622.62 examples/s]Cleaning text (num_proc=256):  44%|████▍     | 795140/1801350 [00:07<00:02, 486424.49 examples/s]Cleaning text (num_proc=256):  49%|████▉     | 879578/1801350 [00:07<00:01, 564396.45 examples/s]Cleaning text (num_proc=256):  54%|█████▍    | 978092/1801350 [00:07<00:01, 666795.45 examples/s]Cleaning text (num_proc=256):  64%|██████▍   | 1154003/1801350 [00:07<00:00, 967691.03 examples/s]Cleaning text (num_proc=256):  72%|███████▏  | 1301767/1801350 [00:07<00:00, 1111618.68 examples/s]Cleaning text (num_proc=256):  82%|████████▏ | 1470639/1801350 [00:07<00:00, 1274048.36 examples/s]Cleaning text (num_proc=256):  94%|█████████▍| 1688768/1801350 [00:07<00:00, 1536995.76 examples/s]Cleaning text (num_proc=256): 100%|██████████| 1801350/1801350 [00:07<00:00, 228588.00 examples/s] 
+Cleaning text (num_proc=256):   0%|          | 0/3760 [00:00<?, ? examples/s]Cleaning text (num_proc=256):   0%|          | 15/3760 [00:00<01:20, 46.29 examples/s]Cleaning text (num_proc=256):  12%|█▏        | 465/3760 [00:00<00:02, 1407.16 examples/s]Cleaning text (num_proc=256):  26%|██▌       | 960/3760 [00:00<00:01, 2476.96 examples/s]Cleaning text (num_proc=256):  38%|███▊      | 1425/3760 [00:00<00:00, 3112.15 examples/s]Cleaning text (num_proc=256):  50%|█████     | 1887/3760 [00:00<00:00, 3564.04 examples/s]Cleaning text (num_proc=256):  62%|██████▏   | 2319/3760 [00:00<00:00, 3588.26 examples/s]Cleaning text (num_proc=256):  73%|███████▎  | 2735/3760 [00:00<00:00, 3503.38 examples/s]Cleaning text (num_proc=256):  83%|████████▎ | 3128/3760 [00:01<00:00, 3381.30 examples/s]Cleaning text (num_proc=256):  93%|█████████▎| 3508/3760 [00:01<00:00, 3456.80 examples/s]Cleaning text (num_proc=256): 100%|██████████| 3760/3760 [00:01<00:00, 2757.56 examples/s]
+2025-03-22 04:46:40,404 - transformer_training - INFO - Tokenizing dataset...
+Tokenizing (num_proc=256):   0%|          | 0/2530 [00:00<?, ? examples/s]Tokenizing (num_proc=256):   0%|          | 10/2530 [00:00<00:59, 42.01 examples/s]Tokenizing (num_proc=256):   1%|          | 20/2530 [00:00<00:43, 57.43 examples/s]Tokenizing (num_proc=256):  10%|▉         | 250/2530 [00:00<00:02, 779.82 examples/s]Tokenizing (num_proc=256):  22%|██▏       | 550/2530 [00:00<00:01, 1472.05 examples/s]Tokenizing (num_proc=256):  35%|███▍      | 880/2530 [00:00<00:00, 2036.13 examples/s]Tokenizing (num_proc=256):  44%|████▍     | 1120/2530 [00:00<00:00, 2047.26 examples/s]Tokenizing (num_proc=256):  53%|█████▎    | 1350/2530 [00:00<00:00, 2048.19 examples/s]Tokenizing (num_proc=256):  66%|██████▌   | 1659/2530 [00:01<00:00, 2340.82 examples/s]Tokenizing (num_proc=256):  78%|███████▊  | 1978/2530 [00:01<00:00, 2572.52 examples/s]Tokenizing (num_proc=256):  95%|█████████▌| 2410/2530 [00:01<00:00, 3078.37 examples/s]Tokenizing (num_proc=256): 100%|██████████| 2530/2530 [00:01<00:00, 1937.11 examples/s]
+Tokenizing (num_proc=256):   0%|          | 0/1014942 [00:00<?, ? examples/s]Tokenizing (num_proc=256):   0%|          | 3965/1014942 [00:00<03:31, 4781.15 examples/s]Tokenizing (num_proc=256):   1%|          | 7930/1014942 [00:01<02:12, 7625.03 examples/s]Tokenizing (num_proc=256):   2%|▏         | 23790/1014942 [00:01<00:34, 28627.86 examples/s]Tokenizing (num_proc=256):   3%|▎         | 31720/1014942 [00:01<00:26, 36652.64 examples/s]Tokenizing (num_proc=256):   4%|▍         | 39650/1014942 [00:01<00:25, 38744.12 examples/s]Tokenizing (num_proc=256):   5%|▌         | 55510/1014942 [00:01<00:15, 61189.67 examples/s]Tokenizing (num_proc=256):   7%|▋         | 67405/1014942 [00:01<00:13, 70895.17 examples/s]Tokenizing (num_proc=256):   8%|▊         | 79300/1014942 [00:01<00:14, 66829.29 examples/s]Tokenizing (num_proc=256):  10%|▉         | 99125/1014942 [00:02<00:09, 94015.50 examples/s]Tokenizing (num_proc=256):  11%|█▏        | 114985/1014942 [00:02<00:08, 106871.21 examples/s]Tokenizing (num_proc=256):  13%|█▎        | 130845/1014942 [00:02<00:10, 81201.09 examples/s] Tokenizing (num_proc=256):  14%|█▍        | 146705/1014942 [00:02<00:10, 82188.34 examples/s]Tokenizing (num_proc=256):  16%|█▋        | 166530/1014942 [00:02<00:08, 102695.43 examples/s]Tokenizing (num_proc=256):  20%|█▉        | 202215/1014942 [00:02<00:05, 155742.75 examples/s]Tokenizing (num_proc=256):  25%|██▌       | 257725/1014942 [00:02<00:03, 246501.52 examples/s]Tokenizing (num_proc=256):  34%|███▎      | 340989/1014942 [00:03<00:01, 389748.43 examples/s]Tokenizing (num_proc=256):  41%|████      | 416324/1014942 [00:03<00:01, 482452.41 examples/s]Tokenizing (num_proc=256):  49%|████▉     | 495623/1014942 [00:03<00:00, 558600.05 examples/s]Tokenizing (num_proc=256):  56%|█████▋    | 570954/1014942 [00:03<00:00, 610500.88 examples/s]Tokenizing (num_proc=256):  66%|██████▌   | 670068/1014942 [00:03<00:00, 713626.19 examples/s]Tokenizing (num_proc=256):  75%|███████▍  | 757278/1014942 [00:03<00:00, 741487.35 examples/s]Tokenizing (num_proc=256):  89%|████████▊ | 899983/1014942 [00:03<00:00, 931110.90 examples/s]Tokenizing (num_proc=256): 100%|██████████| 1014942/1014942 [00:03<00:00, 266068.12 examples/s]
+Tokenizing (num_proc=256):   0%|          | 0/2163 [00:00<?, ? examples/s]Tokenizing (num_proc=256):   0%|          | 9/2163 [00:00<01:33, 23.03 examples/s]Tokenizing (num_proc=256):  12%|█▏        | 261/2163 [00:00<00:02, 680.91 examples/s]Tokenizing (num_proc=256):  24%|██▎       | 513/2163 [00:00<00:01, 1169.99 examples/s]Tokenizing (num_proc=256):  37%|███▋      | 792/2163 [00:00<00:00, 1615.93 examples/s]Tokenizing (num_proc=256):  52%|█████▏    | 1129/2163 [00:00<00:00, 2062.47 examples/s]Tokenizing (num_proc=256):  64%|██████▍   | 1387/2163 [00:00<00:00, 2124.64 examples/s]Tokenizing (num_proc=256):  76%|███████▌  | 1635/2163 [00:01<00:00, 2167.24 examples/s]Tokenizing (num_proc=256):  87%|████████▋ | 1875/2163 [00:01<00:00, 2199.25 examples/s]Tokenizing (num_proc=256):  98%|█████████▊| 2115/2163 [00:01<00:00, 2233.18 examples/s]Tokenizing (num_proc=256): 100%|██████████| 2163/2163 [00:01<00:00, 1592.33 examples/s]
+2025-03-22 04:47:06,981 - transformer_training - INFO - Chunking dataset...
+Chunking (num_proc=256):   0%|          | 0/2530 [00:00<?, ? examples/s]Chunking (num_proc=256):   0%|          | 10/2530 [00:00<02:42, 15.51 examples/s]Chunking (num_proc=256):  15%|█▌        | 390/2530 [00:00<00:03, 701.00 examples/s]Chunking (num_proc=256):  29%|██▉       | 740/2530 [00:00<00:01, 995.51 examples/s]Chunking (num_proc=256):  40%|████      | 1020/2530 [00:01<00:01, 1325.58 examples/s]Chunking (num_proc=256):  51%|█████▏    | 1300/2530 [00:01<00:00, 1633.84 examples/s]Chunking (num_proc=256):  63%|██████▎   | 1589/2530 [00:01<00:00, 1921.56 examples/s]Chunking (num_proc=256):  75%|███████▌  | 1898/2530 [00:01<00:00, 2196.07 examples/s]Chunking (num_proc=256):  99%|█████████▉| 2502/2530 [00:01<00:00, 3191.70 examples/s]Chunking (num_proc=256): 100%|██████████| 2530/2530 [00:01<00:00, 1610.48 examples/s]
+Chunking (num_proc=256):   0%|          | 0/1014942 [00:00<?, ? examples/s]Chunking (num_proc=256):   0%|          | 1024/1014942 [00:00<03:55, 4300.51 examples/s]Chunking (num_proc=256):   0%|          | 1536/1014942 [00:00<04:08, 4084.65 examples/s]Chunking (num_proc=256):   1%|          | 7168/1014942 [00:00<00:48, 20702.46 examples/s]Chunking (num_proc=256):   6%|▌         | 60928/1014942 [00:00<00:05, 181981.71 examples/s]Chunking (num_proc=256):  14%|█▎        | 137597/1014942 [00:00<00:02, 361926.29 examples/s]Chunking (num_proc=256):  18%|█▊        | 180069/1014942 [00:00<00:02, 378988.73 examples/s]Chunking (num_proc=256):  22%|██▏       | 222517/1014942 [00:00<00:02, 361846.65 examples/s]Chunking (num_proc=256):  26%|██▌       | 265739/1014942 [00:01<00:01, 380040.40 examples/s]Chunking (num_proc=256):  30%|███       | 306508/1014942 [00:01<00:02, 321362.84 examples/s]Chunking (num_proc=256):  34%|███▎      | 341657/1014942 [00:01<00:02, 300511.92 examples/s]Chunking (num_proc=256):  39%|███▉      | 399739/1014942 [00:01<00:01, 363983.90 examples/s]Chunking (num_proc=256):  46%|████▌     | 464084/1014942 [00:01<00:01, 434302.09 examples/s]Chunking (num_proc=256):  55%|█████▌    | 558315/1014942 [00:01<00:00, 570934.70 examples/s]Chunking (num_proc=256):  78%|███████▊  | 796110/1014942 [00:01<00:00, 1068619.08 examples/s]Chunking (num_proc=256):  92%|█████████▏| 931498/1014942 [00:01<00:00, 1146187.43 examples/s]Chunking (num_proc=256): 100%|██████████| 1014942/1014942 [00:01<00:00, 511582.82 examples/s]
+Chunking (num_proc=256):   0%|          | 0/2163 [00:00<?, ? examples/s]Chunking (num_proc=256):   0%|          | 9/2163 [00:00<01:34, 22.88 examples/s]Chunking (num_proc=256):  12%|█▏        | 270/2163 [00:00<00:02, 709.26 examples/s]Chunking (num_proc=256):  27%|██▋       | 594/2163 [00:00<00:01, 1392.59 examples/s]Chunking (num_proc=256):  41%|████      | 890/2163 [00:00<00:00, 1817.75 examples/s]Chunking (num_proc=256):  55%|█████▌    | 1194/2163 [00:00<00:00, 2160.42 examples/s]Chunking (num_proc=256):  68%|██████▊   | 1467/2163 [00:00<00:00, 2177.77 examples/s]Chunking (num_proc=256):  80%|███████▉  | 1723/2163 [00:01<00:00, 2172.61 examples/s]Chunking (num_proc=256):  91%|█████████ | 1971/2163 [00:01<00:00, 2255.49 examples/s]Chunking (num_proc=256): 100%|██████████| 2163/2163 [00:01<00:00, 1677.58 examples/s]
+Filter:   0%|          | 0/394 [00:00<?, ? examples/s]Filter: 100%|██████████| 394/394 [00:00<00:00, 4719.46 examples/s]
+Filter:   0%|          | 0/213838 [00:00<?, ? examples/s]Filter:   0%|          | 1000/213838 [00:00<00:41, 5090.43 examples/s]Filter:   1%|          | 2000/213838 [00:00<00:38, 5528.12 examples/s]Filter:   1%|▏         | 3000/213838 [00:00<00:37, 5658.94 examples/s]Filter:   2%|▏         | 4000/213838 [00:00<00:36, 5735.10 examples/s]Filter:   2%|▏         | 5000/213838 [00:00<00:35, 5811.81 examples/s]Filter:   3%|▎         | 6000/213838 [00:01<00:35, 5838.64 examples/s]Filter:   3%|▎         | 7000/213838 [00:01<00:35, 5789.45 examples/s]Filter:   4%|▎         | 8000/213838 [00:01<00:35, 5838.24 examples/s]Filter:   4%|▍         | 9000/213838 [00:01<00:35, 5771.26 examples/s]Filter:   5%|▍         | 10000/213838 [00:01<00:35, 5793.40 examples/s]Filter:   5%|▌         | 11000/213838 [00:01<00:35, 5756.35 examples/s]Filter:   6%|▌         | 12000/213838 [00:02<00:34, 5794.05 examples/s]Filter:   6%|▌         | 13000/213838 [00:02<00:34, 5765.89 examples/s]Filter:   7%|▋         | 14000/213838 [00:02<00:34, 5795.19 examples/s]Filter:   7%|▋         | 15000/213838 [00:02<00:34, 5815.97 examples/s]Filter:   7%|▋         | 16000/213838 [00:02<00:33, 5827.92 examples/s]Filter:   8%|▊         | 17000/213838 [00:02<00:34, 5787.96 examples/s]Filter:   8%|▊         | 18000/213838 [00:03<00:33, 5828.87 examples/s]Filter:   9%|▉         | 19000/213838 [00:03<00:33, 5813.72 examples/s]Filter:   9%|▉         | 20000/213838 [00:03<00:33, 5822.24 examples/s]Filter:  10%|▉         | 21000/213838 [00:03<00:33, 5827.24 examples/s]Filter:  10%|█         | 22000/213838 [00:03<00:32, 5833.31 examples/s]Filter:  11%|█         | 23000/213838 [00:03<00:32, 5838.02 examples/s]Filter:  11%|█         | 24000/213838 [00:04<00:32, 5849.02 examples/s]Filter:  12%|█▏        | 25000/213838 [00:04<00:32, 5842.57 examples/s]Filter:  12%|█▏        | 26000/213838 [00:04<00:32, 5862.06 examples/s]Filter:  13%|█▎        | 27000/213838 [00:04<00:32, 5810.76 examples/s]Filter:  13%|█▎        | 28000/213838 [00:04<00:32, 5778.05 examples/s]Filter:  14%|█▎        | 29000/213838 [00:05<00:31, 5802.03 examples/s]Filter:  14%|█▍        | 30000/213838 [00:05<00:31, 5846.42 examples/s]Filter:  14%|█▍        | 31000/213838 [00:05<00:31, 5850.53 examples/s]Filter:  15%|█▍        | 32000/213838 [00:05<00:31, 5858.09 examples/s]Filter:  15%|█▌        | 33000/213838 [00:05<00:30, 5837.28 examples/s]Filter:  16%|█▌        | 34000/213838 [00:05<00:30, 5847.76 examples/s]Filter:  16%|█▋        | 35000/213838 [00:06<00:30, 5839.36 examples/s]Filter:  17%|█▋        | 36000/213838 [00:06<00:30, 5851.60 examples/s]Filter:  17%|█▋        | 37000/213838 [00:06<00:30, 5825.25 examples/s]Filter:  18%|█▊        | 38000/213838 [00:06<00:30, 5834.91 examples/s]Filter:  18%|█▊        | 39000/213838 [00:06<00:30, 5779.84 examples/s]Filter:  19%|█▊        | 40000/213838 [00:06<00:29, 5808.47 examples/s]Filter:  19%|█▉        | 41000/213838 [00:07<00:29, 5796.05 examples/s]Filter:  20%|█▉        | 42000/213838 [00:07<00:29, 5830.91 examples/s]Filter:  20%|██        | 43000/213838 [00:07<00:29, 5829.12 examples/s]Filter:  21%|██        | 44000/213838 [00:07<00:29, 5834.28 examples/s]Filter:  21%|██        | 45000/213838 [00:07<00:28, 5841.96 examples/s]Filter:  22%|██▏       | 46000/213838 [00:07<00:28, 5846.75 examples/s]Filter:  22%|██▏       | 47000/213838 [00:08<00:28, 5833.48 examples/s]Filter:  22%|██▏       | 48000/213838 [00:08<00:28, 5831.20 examples/s]Filter:  23%|██▎       | 49000/213838 [00:08<00:28, 5851.16 examples/s]Filter:  23%|██▎       | 50000/213838 [00:08<00:28, 5814.98 examples/s]Filter:  24%|██▍       | 51000/213838 [00:08<00:28, 5778.05 examples/s]Filter:  24%|██▍       | 52000/213838 [00:08<00:27, 5817.22 examples/s]Filter:  25%|██▍       | 53000/213838 [00:09<00:27, 5825.44 examples/s]Filter:  25%|██▌       | 54000/213838 [00:09<00:27, 5820.14 examples/s]Filter:  26%|██▌       | 55000/213838 [00:09<00:27, 5775.67 examples/s]Filter:  26%|██▌       | 56000/213838 [00:09<00:27, 5768.41 examples/s]Filter:  27%|██▋       | 57000/213838 [00:09<00:27, 5785.87 examples/s]Filter:  27%|██▋       | 58000/213838 [00:09<00:26, 5814.01 examples/s]Filter:  28%|██▊       | 59000/213838 [00:10<00:26, 5825.78 examples/s]Filter:  28%|██▊       | 60000/213838 [00:10<00:26, 5823.26 examples/s]Filter:  29%|██▊       | 61000/213838 [00:10<00:26, 5825.21 examples/s]Filter:  29%|██▉       | 62000/213838 [00:10<00:26, 5812.74 examples/s]Filter:  29%|██▉       | 63000/213838 [00:10<00:25, 5814.19 examples/s]Filter:  30%|██▉       | 64000/213838 [00:11<00:25, 5815.13 examples/s]Filter:  30%|███       | 65000/213838 [00:11<00:25, 5835.79 examples/s]Filter:  31%|███       | 66000/213838 [00:11<00:25, 5846.51 examples/s]Filter:  31%|███▏      | 67000/213838 [00:11<00:25, 5817.37 examples/s]Filter:  32%|███▏      | 68000/213838 [00:11<00:25, 5783.24 examples/s]Filter:  32%|███▏      | 69000/213838 [00:11<00:25, 5788.83 examples/s]Filter:  33%|███▎      | 70000/213838 [00:12<00:24, 5795.94 examples/s]Filter:  33%|███▎      | 71000/213838 [00:12<00:24, 5817.41 examples/s]Filter:  34%|███▎      | 72000/213838 [00:12<00:24, 5829.17 examples/s]Filter:  34%|███▍      | 73000/213838 [00:12<00:24, 5827.02 examples/s]Filter:  35%|███▍      | 74000/213838 [00:12<00:24, 5799.17 examples/s]Filter:  35%|███▌      | 75000/213838 [00:12<00:23, 5806.59 examples/s]Filter:  36%|███▌      | 76000/213838 [00:13<00:23, 5814.63 examples/s]Filter:  36%|███▌      | 77000/213838 [00:13<00:23, 5831.97 examples/s]Filter:  36%|███▋      | 78000/213838 [00:13<00:23, 5830.68 examples/s]Filter:  37%|███▋      | 79000/213838 [00:13<00:23, 5841.08 examples/s]Filter:  37%|███▋      | 80000/213838 [00:13<00:23, 5802.66 examples/s]Filter:  38%|███▊      | 81000/213838 [00:13<00:22, 5817.58 examples/s]Filter:  38%|███▊      | 82000/213838 [00:14<00:22, 5823.18 examples/s]Filter:  39%|███▉      | 83000/213838 [00:14<00:22, 5827.41 examples/s]Filter:  39%|███▉      | 84000/213838 [00:14<00:22, 5839.08 examples/s]Filter:  40%|███▉      | 85000/213838 [00:14<00:22, 5838.89 examples/s]Filter:  40%|████      | 86000/213838 [00:14<00:22, 5790.73 examples/s]Filter:  41%|████      | 87000/213838 [00:14<00:21, 5808.20 examples/s]Filter:  41%|████      | 88000/213838 [00:15<00:21, 5811.18 examples/s]Filter:  42%|████▏     | 89000/213838 [00:15<00:21, 5810.89 examples/s]Filter:  42%|████▏     | 90000/213838 [00:15<00:21, 5832.62 examples/s]Filter:  43%|████▎     | 91000/213838 [00:15<00:21, 5837.98 examples/s]Filter:  43%|████▎     | 92000/213838 [00:15<00:20, 5802.27 examples/s]Filter:  43%|████▎     | 93000/213838 [00:16<00:20, 5824.69 examples/s]Filter:  44%|████▍     | 94000/213838 [00:16<00:20, 5834.16 examples/s]Filter:  44%|████▍     | 95000/213838 [00:16<00:20, 5845.02 examples/s]Filter:  45%|████▍     | 96000/213838 [00:16<00:20, 5861.36 examples/s]Filter:  45%|████▌     | 97000/213838 [00:16<00:19, 5858.44 examples/s]Filter:  46%|████▌     | 98000/213838 [00:16<00:19, 5815.64 examples/s]Filter:  46%|████▋     | 99000/213838 [00:17<00:19, 5819.85 examples/s]Filter:  47%|████▋     | 100000/213838 [00:17<00:19, 5816.81 examples/s]Filter:  47%|████▋     | 101000/213838 [00:17<00:19, 5832.39 examples/s]Filter:  48%|████▊     | 102000/213838 [00:17<00:19, 5840.72 examples/s]Filter:  48%|████▊     | 103000/213838 [00:17<00:18, 5847.00 examples/s]Filter:  49%|████▊     | 104000/213838 [00:17<00:18, 5802.12 examples/s]Filter:  49%|████▉     | 105000/213838 [00:18<00:18, 5785.23 examples/s]Filter:  50%|████▉     | 106000/213838 [00:18<00:18, 5818.76 examples/s]Filter:  50%|█████     | 107000/213838 [00:18<00:18, 5838.94 examples/s]Filter:  51%|█████     | 108000/213838 [00:18<00:18, 5849.59 examples/s]Filter:  51%|█████     | 109000/213838 [00:18<00:17, 5863.65 examples/s]Filter:  51%|█████▏    | 110000/213838 [00:18<00:17, 5813.19 examples/s]Filter:  52%|█████▏    | 111000/213838 [00:19<00:17, 5778.14 examples/s]Filter:  52%|█████▏    | 112000/213838 [00:19<00:17, 5795.11 examples/s]Filter:  53%|█████▎    | 113000/213838 [00:19<00:17, 5819.04 examples/s]Filter:  53%|█████▎    | 114000/213838 [00:19<00:17, 5829.63 examples/s]Filter:  54%|█████▍    | 115000/213838 [00:19<00:17, 5788.34 examples/s]Filter:  54%|█████▍    | 116000/213838 [00:19<00:16, 5786.56 examples/s]Filter:  55%|█████▍    | 117000/213838 [00:20<00:16, 5796.27 examples/s]Filter:  55%|█████▌    | 118000/213838 [00:20<00:16, 5815.83 examples/s]Filter:  56%|█████▌    | 119000/213838 [00:20<00:16, 5829.97 examples/s]Filter:  56%|█████▌    | 120000/213838 [00:20<00:16, 5833.92 examples/s]Filter:  57%|█████▋    | 121000/213838 [00:20<00:15, 5836.14 examples/s]Filter:  57%|█████▋    | 122000/213838 [00:20<00:15, 5804.05 examples/s]Filter:  58%|█████▊    | 123000/213838 [00:21<00:15, 5782.93 examples/s]Filter:  58%|█████▊    | 124000/213838 [00:21<00:15, 5802.72 examples/s]Filter:  58%|█████▊    | 125000/213838 [00:21<00:15, 5835.92 examples/s]Filter:  59%|█████▉    | 126000/213838 [00:21<00:15, 5826.22 examples/s]Filter:  59%|█████▉    | 127000/213838 [00:21<00:14, 5832.58 examples/s]Filter:  60%|█████▉    | 128000/213838 [00:22<00:14, 5816.18 examples/s]Filter:  60%|██████    | 129000/213838 [00:22<00:14, 5824.07 examples/s]Filter:  61%|██████    | 130000/213838 [00:22<00:14, 5833.65 examples/s]Filter:  61%|██████▏   | 131000/213838 [00:22<00:14, 5805.84 examples/s]Filter:  62%|██████▏   | 132000/213838 [00:22<00:14, 5825.09 examples/s]Filter:  62%|██████▏   | 133000/213838 [00:22<00:13, 5839.54 examples/s]Filter:  63%|██████▎   | 134000/213838 [00:23<00:13, 5806.17 examples/s]Filter:  63%|██████▎   | 135000/213838 [00:23<00:13, 5753.74 examples/s]Filter:  64%|██████▎   | 136000/213838 [00:23<00:13, 5780.69 examples/s]Filter:  64%|██████▍   | 137000/213838 [00:23<00:13, 5788.68 examples/s]Filter:  65%|██████▍   | 138000/213838 [00:23<00:13, 5803.53 examples/s]Filter:  65%|██████▌   | 139000/213838 [00:23<00:12, 5813.14 examples/s]Filter:  65%|██████▌   | 140000/213838 [00:24<00:12, 5748.84 examples/s]Filter:  66%|██████▌   | 141000/213838 [00:24<00:12, 5733.30 examples/s]Filter:  66%|██████▋   | 142000/213838 [00:24<00:12, 5762.98 examples/s]Filter:  67%|██████▋   | 143000/213838 [00:24<00:12, 5753.67 examples/s]Filter:  67%|██████▋   | 144000/213838 [00:24<00:12, 5784.80 examples/s]Filter:  68%|██████▊   | 145000/213838 [00:24<00:11, 5791.87 examples/s]Filter:  68%|██████▊   | 146000/213838 [00:25<00:11, 5771.96 examples/s]Filter:  69%|██████▊   | 147000/213838 [00:25<00:11, 5786.24 examples/s]Filter:  69%|██████▉   | 148000/213838 [00:25<00:11, 5809.89 examples/s]Filter:  70%|██████▉   | 149000/213838 [00:25<00:11, 5779.58 examples/s]Filter:  70%|███████   | 150000/213838 [00:25<00:10, 5804.21 examples/s]Filter:  71%|███████   | 151000/213838 [00:25<00:10, 5816.87 examples/s]Filter:  71%|███████   | 152000/213838 [00:26<00:10, 5787.02 examples/s]Filter:  72%|███████▏  | 153000/213838 [00:26<00:10, 5757.71 examples/s]Filter:  72%|███████▏  | 154000/213838 [00:26<00:10, 5779.16 examples/s]Filter:  72%|███████▏  | 155000/213838 [00:26<00:10, 5807.89 examples/s]Filter:  73%|███████▎  | 156000/213838 [00:26<00:09, 5839.64 examples/s]Filter:  73%|███████▎  | 157000/213838 [00:27<00:09, 5831.42 examples/s]Filter:  74%|███████▍  | 158000/213838 [00:27<00:09, 5791.36 examples/s]Filter:  74%|███████▍  | 159000/213838 [00:27<00:09, 5812.37 examples/s]Filter:  75%|███████▍  | 160000/213838 [00:27<00:09, 5823.36 examples/s]Filter:  75%|███████▌  | 161000/213838 [00:27<00:09, 5827.09 examples/s]Filter:  76%|███████▌  | 162000/213838 [00:27<00:08, 5841.56 examples/s]Filter:  76%|███████▌  | 163000/213838 [00:28<00:08, 5849.69 examples/s]Filter:  77%|███████▋  | 164000/213838 [00:28<00:08, 5796.77 examples/s]Filter:  77%|███████▋  | 165000/213838 [00:28<00:08, 5801.52 examples/s]Filter:  78%|███████▊  | 166000/213838 [00:28<00:08, 5832.05 examples/s]Filter:  78%|███████▊  | 167000/213838 [00:28<00:08, 5836.00 examples/s]Filter:  79%|███████▊  | 168000/213838 [00:28<00:07, 5844.14 examples/s]Filter:  79%|███████▉  | 169000/213838 [00:29<00:07, 5858.45 examples/s]Filter:  79%|███████▉  | 170000/213838 [00:29<00:07, 5835.01 examples/s]Filter:  80%|███████▉  | 171000/213838 [00:29<00:07, 5835.74 examples/s]Filter:  80%|████████  | 172000/213838 [00:29<00:07, 5826.17 examples/s]Filter:  81%|████████  | 173000/213838 [00:29<00:07, 5786.01 examples/s]Filter:  81%|████████▏ | 174000/213838 [00:29<00:06, 5801.51 examples/s]Filter:  82%|████████▏ | 175000/213838 [00:30<00:06, 5818.12 examples/s]Filter:  82%|████████▏ | 176000/213838 [00:30<00:06, 5791.82 examples/s]Filter:  83%|████████▎ | 177000/213838 [00:30<00:06, 5786.68 examples/s]Filter:  83%|████████▎ | 178000/213838 [00:30<00:06, 5803.48 examples/s]Filter:  84%|████████▎ | 179000/213838 [00:30<00:06, 5785.12 examples/s]Filter:  84%|████████▍ | 180000/213838 [00:30<00:05, 5794.95 examples/s]Filter:  85%|████████▍ | 181000/213838 [00:31<00:05, 5798.47 examples/s]Filter:  85%|████████▌ | 182000/213838 [00:31<00:05, 5776.95 examples/s]Filter:  86%|████████▌ | 183000/213838 [00:31<00:05, 5792.03 examples/s]Filter:  86%|████████▌ | 184000/213838 [00:31<00:05, 5805.67 examples/s]Filter:  87%|████████▋ | 185000/213838 [00:31<00:04, 5829.26 examples/s]Filter:  87%|████████▋ | 186000/213838 [00:32<00:04, 5834.66 examples/s]Filter:  87%|████████▋ | 187000/213838 [00:32<00:04, 5832.73 examples/s]Filter:  88%|████████▊ | 188000/213838 [00:32<00:04, 5800.76 examples/s]Filter:  88%|████████▊ | 189000/213838 [00:32<00:04, 5813.15 examples/s]Filter:  89%|████████▉ | 190000/213838 [00:32<00:04, 5812.25 examples/s]Filter:  89%|████████▉ | 191000/213838 [00:32<00:03, 5817.57 examples/s]Filter:  90%|████████▉ | 192000/213838 [00:33<00:03, 5815.74 examples/s]Filter:  90%|█████████ | 193000/213838 [00:33<00:03, 5766.91 examples/s]Filter:  91%|█████████ | 194000/213838 [00:33<00:03, 5757.79 examples/s]Filter:  91%|█████████ | 195000/213838 [00:33<00:03, 5789.93 examples/s]Filter:  92%|█████████▏| 196000/213838 [00:33<00:03, 5817.56 examples/s]Filter:  92%|█████████▏| 197000/213838 [00:33<00:02, 5824.19 examples/s]Filter:  93%|█████████▎| 198000/213838 [00:34<00:02, 5845.22 examples/s]Filter:  93%|█████████▎| 199000/213838 [00:34<00:02, 5839.90 examples/s]Filter:  94%|█████████▎| 200000/213838 [00:34<00:02, 5800.61 examples/s]Filter:  94%|█████████▍| 201000/213838 [00:34<00:02, 5821.00 examples/s]Filter:  94%|█████████▍| 202000/213838 [00:34<00:02, 5817.68 examples/s]Filter:  95%|█████████▍| 203000/213838 [00:34<00:01, 5832.80 examples/s]Filter:  95%|█████████▌| 204000/213838 [00:35<00:01, 5832.39 examples/s]Filter:  96%|█████████▌| 205000/213838 [00:35<00:01, 5829.35 examples/s]Filter:  96%|█████████▋| 206000/213838 [00:35<00:01, 5796.08 examples/s]Filter:  97%|█████████▋| 207000/213838 [00:35<00:01, 5808.38 examples/s]Filter:  97%|█████████▋| 208000/213838 [00:35<00:01, 5823.26 examples/s]Filter:  98%|█████████▊| 209000/213838 [00:35<00:00, 5835.81 examples/s]Filter:  98%|█████████▊| 210000/213838 [00:36<00:00, 5834.20 examples/s]Filter:  99%|█████████▊| 211000/213838 [00:36<00:00, 5843.63 examples/s]Filter:  99%|█████████▉| 212000/213838 [00:36<00:00, 5821.55 examples/s]Filter: 100%|█████████▉| 213000/213838 [00:36<00:00, 5785.05 examples/s]Filter: 100%|██████████| 213838/213838 [00:36<00:00, 5799.36 examples/s]Filter: 100%|██████████| 213838/213838 [00:36<00:00, 5810.70 examples/s]
+Filter:   0%|          | 0/324 [00:00<?, ? examples/s]Filter: 100%|██████████| 324/324 [00:00<00:00, 4868.76 examples/s]
+2025-03-22 04:48:05,598 - transformer_training - INFO - Converting to tensors...
+2025-03-22 04:48:47,873 - transformer_training - INFO - Train Data: torch.Size([213838, 512]), torch.int64
+2025-03-22 04:48:47,874 - transformer_training - INFO - Val Data: torch.Size([324, 512]), torch.int64
+2025-03-22 04:48:47,874 - transformer_training - INFO - Test Data: torch.Size([394, 512]), torch.int64
+2025-03-22 04:48:47,874 - transformer_training - INFO - Vocabulary size: 50257
+Train Data: torch.Size([213838, 512]), torch.int64
+Val   Data: torch.Size([324, 512]), torch.int64
+Test  Data: torch.Size([394, 512]), torch.int64
+Vocabulary size: 50257
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Model initialized with 60,179,537 parameters
+Total iterations: 1000
+Batches per epoch: 3342
+2025-03-22 04:48:53,546 - transformer_training - INFO - Main loop iteration: 0
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 0: loss 10.9234, lr 0.000400, 9143.03 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 0: train loss 10.9251, val loss 10.9261
+New best model saved with val loss: 10.9261
+2025-03-22 04:49:13,117 - transformer_training - INFO - Main loop iteration: 1
+2025-03-22 04:49:13,180 - transformer_training - INFO - Main loop iteration: 2
+2025-03-22 04:49:13,279 - transformer_training - INFO - Main loop iteration: 3
+2025-03-22 04:49:13,548 - transformer_training - INFO - Main loop iteration: 4
+2025-03-22 04:49:13,606 - transformer_training - INFO - Main loop iteration: 5
+2025-03-22 04:49:13,706 - transformer_training - INFO - Main loop iteration: 6
+2025-03-22 04:49:13,804 - transformer_training - INFO - Main loop iteration: 7
+2025-03-22 04:49:13,948 - transformer_training - INFO - Main loop iteration: 8
+2025-03-22 04:49:14,005 - transformer_training - INFO - Main loop iteration: 9
+2025-03-22 04:49:14,105 - transformer_training - INFO - Main loop iteration: 10
+Iter 10: loss 10.4681, lr 0.000008, 332903.69 tokens/sec
+2025-03-22 04:49:14,204 - transformer_training - INFO - Main loop iteration: 11
+2025-03-22 04:49:14,347 - transformer_training - INFO - Main loop iteration: 12
+2025-03-22 04:49:14,404 - transformer_training - INFO - Main loop iteration: 13
+2025-03-22 04:49:14,504 - transformer_training - INFO - Main loop iteration: 14
+2025-03-22 04:49:14,603 - transformer_training - INFO - Main loop iteration: 15
+2025-03-22 04:49:14,746 - transformer_training - INFO - Main loop iteration: 16
+2025-03-22 04:49:14,804 - transformer_training - INFO - Main loop iteration: 17
+2025-03-22 04:49:14,903 - transformer_training - INFO - Main loop iteration: 18
+2025-03-22 04:49:15,002 - transformer_training - INFO - Main loop iteration: 19
+2025-03-22 04:49:15,145 - transformer_training - INFO - Main loop iteration: 20
+Iter 20: loss 10.3781, lr 0.000020, 570316.88 tokens/sec
+2025-03-22 04:49:15,203 - transformer_training - INFO - Main loop iteration: 21
+2025-03-22 04:49:15,302 - transformer_training - INFO - Main loop iteration: 22
+2025-03-22 04:49:15,400 - transformer_training - INFO - Main loop iteration: 23
+2025-03-22 04:49:15,543 - transformer_training - INFO - Main loop iteration: 24
+2025-03-22 04:49:15,601 - transformer_training - INFO - Main loop iteration: 25
+2025-03-22 04:49:15,700 - transformer_training - INFO - Main loop iteration: 26
+2025-03-22 04:49:15,799 - transformer_training - INFO - Main loop iteration: 27
+2025-03-22 04:49:15,942 - transformer_training - INFO - Main loop iteration: 28
+2025-03-22 04:49:16,000 - transformer_training - INFO - Main loop iteration: 29
+2025-03-22 04:49:16,099 - transformer_training - INFO - Main loop iteration: 30
+Iter 30: loss 10.2894, lr 0.000028, 331893.97 tokens/sec
+2025-03-22 04:49:16,198 - transformer_training - INFO - Main loop iteration: 31
+2025-03-22 04:49:16,347 - transformer_training - INFO - Main loop iteration: 32
+2025-03-22 04:49:16,405 - transformer_training - INFO - Main loop iteration: 33
+2025-03-22 04:49:16,504 - transformer_training - INFO - Main loop iteration: 34
+2025-03-22 04:49:16,603 - transformer_training - INFO - Main loop iteration: 35
+2025-03-22 04:49:16,746 - transformer_training - INFO - Main loop iteration: 36
+2025-03-22 04:49:16,804 - transformer_training - INFO - Main loop iteration: 37
+2025-03-22 04:49:16,903 - transformer_training - INFO - Main loop iteration: 38
+2025-03-22 04:49:17,002 - transformer_training - INFO - Main loop iteration: 39
+2025-03-22 04:49:17,145 - transformer_training - INFO - Main loop iteration: 40
+Iter 40: loss 10.1092, lr 0.000040, 569275.12 tokens/sec
+2025-03-22 04:49:17,203 - transformer_training - INFO - Main loop iteration: 41
+2025-03-22 04:49:17,301 - transformer_training - INFO - Main loop iteration: 42
+2025-03-22 04:49:17,401 - transformer_training - INFO - Main loop iteration: 43
+2025-03-22 04:49:17,543 - transformer_training - INFO - Main loop iteration: 44
+2025-03-22 04:49:17,601 - transformer_training - INFO - Main loop iteration: 45
+2025-03-22 04:49:17,700 - transformer_training - INFO - Main loop iteration: 46
+2025-03-22 04:49:17,799 - transformer_training - INFO - Main loop iteration: 47
+2025-03-22 04:49:17,942 - transformer_training - INFO - Main loop iteration: 48
+2025-03-22 04:49:18,000 - transformer_training - INFO - Main loop iteration: 49
+2025-03-22 04:49:18,099 - transformer_training - INFO - Main loop iteration: 50
+Iter 50: loss 10.0281, lr 0.000048, 331842.69 tokens/sec
+2025-03-22 04:49:18,198 - transformer_training - INFO - Main loop iteration: 51
+2025-03-22 04:49:18,341 - transformer_training - INFO - Main loop iteration: 52
+2025-03-22 04:49:18,399 - transformer_training - INFO - Main loop iteration: 53
+2025-03-22 04:49:18,498 - transformer_training - INFO - Main loop iteration: 54
+2025-03-22 04:49:18,597 - transformer_training - INFO - Main loop iteration: 55
+2025-03-22 04:49:18,740 - transformer_training - INFO - Main loop iteration: 56
+2025-03-22 04:49:18,798 - transformer_training - INFO - Main loop iteration: 57
+2025-03-22 04:49:18,897 - transformer_training - INFO - Main loop iteration: 58
+2025-03-22 04:49:18,996 - transformer_training - INFO - Main loop iteration: 59
+2025-03-22 04:49:19,139 - transformer_training - INFO - Main loop iteration: 60
+Iter 60: loss 9.8940, lr 0.000060, 565624.99 tokens/sec
+2025-03-22 04:49:19,198 - transformer_training - INFO - Main loop iteration: 61
+2025-03-22 04:49:19,296 - transformer_training - INFO - Main loop iteration: 62
+2025-03-22 04:49:19,395 - transformer_training - INFO - Main loop iteration: 63
+2025-03-22 04:49:19,538 - transformer_training - INFO - Main loop iteration: 64
+2025-03-22 04:49:19,596 - transformer_training - INFO - Main loop iteration: 65
+2025-03-22 04:49:19,695 - transformer_training - INFO - Main loop iteration: 66
+2025-03-22 04:49:19,794 - transformer_training - INFO - Main loop iteration: 67
+2025-03-22 04:49:19,938 - transformer_training - INFO - Main loop iteration: 68
+2025-03-22 04:49:20,008 - transformer_training - INFO - Main loop iteration: 69
+2025-03-22 04:49:20,106 - transformer_training - INFO - Main loop iteration: 70
+Iter 70: loss 9.8111, lr 0.000068, 332335.37 tokens/sec
+2025-03-22 04:49:20,205 - transformer_training - INFO - Main loop iteration: 71
+2025-03-22 04:49:20,337 - transformer_training - INFO - Main loop iteration: 72
+2025-03-22 04:49:20,406 - transformer_training - INFO - Main loop iteration: 73
+2025-03-22 04:49:20,505 - transformer_training - INFO - Main loop iteration: 74
+2025-03-22 04:49:20,604 - transformer_training - INFO - Main loop iteration: 75
+2025-03-22 04:49:20,738 - transformer_training - INFO - Main loop iteration: 76
+2025-03-22 04:49:20,809 - transformer_training - INFO - Main loop iteration: 77
+2025-03-22 04:49:20,908 - transformer_training - INFO - Main loop iteration: 78
+2025-03-22 04:49:21,007 - transformer_training - INFO - Main loop iteration: 79
+2025-03-22 04:49:21,138 - transformer_training - INFO - Main loop iteration: 80
+Iter 80: loss 9.6902, lr 0.000080, 473595.91 tokens/sec
+2025-03-22 04:49:21,208 - transformer_training - INFO - Main loop iteration: 81
+2025-03-22 04:49:21,307 - transformer_training - INFO - Main loop iteration: 82
+2025-03-22 04:49:21,408 - transformer_training - INFO - Main loop iteration: 83
+2025-03-22 04:49:21,538 - transformer_training - INFO - Main loop iteration: 84
+2025-03-22 04:49:21,608 - transformer_training - INFO - Main loop iteration: 85
+2025-03-22 04:49:21,707 - transformer_training - INFO - Main loop iteration: 86
+2025-03-22 04:49:21,806 - transformer_training - INFO - Main loop iteration: 87
+2025-03-22 04:49:21,938 - transformer_training - INFO - Main loop iteration: 88
+2025-03-22 04:49:22,007 - transformer_training - INFO - Main loop iteration: 89
+2025-03-22 04:49:22,109 - transformer_training - INFO - Main loop iteration: 90
+Iter 90: loss 9.5768, lr 0.000088, 336674.51 tokens/sec
+2025-03-22 04:49:22,207 - transformer_training - INFO - Main loop iteration: 91
+2025-03-22 04:49:22,338 - transformer_training - INFO - Main loop iteration: 92
+2025-03-22 04:49:22,407 - transformer_training - INFO - Main loop iteration: 93
+2025-03-22 04:49:22,506 - transformer_training - INFO - Main loop iteration: 94
+2025-03-22 04:49:22,605 - transformer_training - INFO - Main loop iteration: 95
+2025-03-22 04:49:22,736 - transformer_training - INFO - Main loop iteration: 96
+2025-03-22 04:49:22,805 - transformer_training - INFO - Main loop iteration: 97
+2025-03-22 04:49:22,905 - transformer_training - INFO - Main loop iteration: 98
+2025-03-22 04:49:23,004 - transformer_training - INFO - Main loop iteration: 99
+2025-03-22 04:49:23,135 - transformer_training - INFO - Main loop iteration: 100
+Iter 100: loss 9.4439, lr 0.000100, 477082.75 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 100: train loss 9.3927, val loss 9.3677
+New best model saved with val loss: 9.3677
+2025-03-22 04:49:40,146 - transformer_training - INFO - Main loop iteration: 101
+2025-03-22 04:49:40,223 - transformer_training - INFO - Main loop iteration: 102
+2025-03-22 04:49:40,323 - transformer_training - INFO - Main loop iteration: 103
+2025-03-22 04:49:40,456 - transformer_training - INFO - Main loop iteration: 104
+2025-03-22 04:49:40,524 - transformer_training - INFO - Main loop iteration: 105
+2025-03-22 04:49:40,623 - transformer_training - INFO - Main loop iteration: 106
+2025-03-22 04:49:40,722 - transformer_training - INFO - Main loop iteration: 107
+2025-03-22 04:49:40,854 - transformer_training - INFO - Main loop iteration: 108
+2025-03-22 04:49:40,922 - transformer_training - INFO - Main loop iteration: 109
+2025-03-22 04:49:41,021 - transformer_training - INFO - Main loop iteration: 110
+Iter 110: loss 9.3318, lr 0.000108, 331908.40 tokens/sec
+2025-03-22 04:49:41,121 - transformer_training - INFO - Main loop iteration: 111
+2025-03-22 04:49:41,253 - transformer_training - INFO - Main loop iteration: 112
+2025-03-22 04:49:41,321 - transformer_training - INFO - Main loop iteration: 113
+2025-03-22 04:49:41,420 - transformer_training - INFO - Main loop iteration: 114
+2025-03-22 04:49:41,519 - transformer_training - INFO - Main loop iteration: 115
+2025-03-22 04:49:41,652 - transformer_training - INFO - Main loop iteration: 116
+2025-03-22 04:49:41,719 - transformer_training - INFO - Main loop iteration: 117
+2025-03-22 04:49:41,819 - transformer_training - INFO - Main loop iteration: 118
+2025-03-22 04:49:41,918 - transformer_training - INFO - Main loop iteration: 119
+2025-03-22 04:49:42,050 - transformer_training - INFO - Main loop iteration: 120
+Iter 120: loss 9.1674, lr 0.000120, 482724.67 tokens/sec
+2025-03-22 04:49:42,118 - transformer_training - INFO - Main loop iteration: 121
+2025-03-22 04:49:42,217 - transformer_training - INFO - Main loop iteration: 122
+2025-03-22 04:49:42,316 - transformer_training - INFO - Main loop iteration: 123
+2025-03-22 04:49:42,448 - transformer_training - INFO - Main loop iteration: 124
+2025-03-22 04:49:42,517 - transformer_training - INFO - Main loop iteration: 125
+2025-03-22 04:49:42,615 - transformer_training - INFO - Main loop iteration: 126
+2025-03-22 04:49:42,714 - transformer_training - INFO - Main loop iteration: 127
+2025-03-22 04:49:42,847 - transformer_training - INFO - Main loop iteration: 128
+2025-03-22 04:49:42,915 - transformer_training - INFO - Main loop iteration: 129
+2025-03-22 04:49:43,014 - transformer_training - INFO - Main loop iteration: 130
+Iter 130: loss 9.0465, lr 0.000128, 331823.46 tokens/sec
+2025-03-22 04:49:43,113 - transformer_training - INFO - Main loop iteration: 131
+2025-03-22 04:49:43,245 - transformer_training - INFO - Main loop iteration: 132
+2025-03-22 04:49:43,313 - transformer_training - INFO - Main loop iteration: 133
+2025-03-22 04:49:43,401 - transformer_training - INFO - Main loop iteration: 134
+2025-03-22 04:49:43,511 - transformer_training - INFO - Main loop iteration: 135
+2025-03-22 04:49:43,643 - transformer_training - INFO - Main loop iteration: 136
+2025-03-22 04:49:43,711 - transformer_training - INFO - Main loop iteration: 137
+2025-03-22 04:49:43,810 - transformer_training - INFO - Main loop iteration: 138
+2025-03-22 04:49:43,909 - transformer_training - INFO - Main loop iteration: 139
+2025-03-22 04:49:44,042 - transformer_training - INFO - Main loop iteration: 140
+Iter 140: loss 8.8495, lr 0.000140, 483024.95 tokens/sec
+2025-03-22 04:49:44,110 - transformer_training - INFO - Main loop iteration: 141
+2025-03-22 04:49:44,209 - transformer_training - INFO - Main loop iteration: 142
+2025-03-22 04:49:44,308 - transformer_training - INFO - Main loop iteration: 143
+2025-03-22 04:49:44,440 - transformer_training - INFO - Main loop iteration: 144
+2025-03-22 04:49:44,508 - transformer_training - INFO - Main loop iteration: 145
+2025-03-22 04:49:44,607 - transformer_training - INFO - Main loop iteration: 146
+2025-03-22 04:49:44,706 - transformer_training - INFO - Main loop iteration: 147
+2025-03-22 04:49:44,838 - transformer_training - INFO - Main loop iteration: 148
+2025-03-22 04:49:44,906 - transformer_training - INFO - Main loop iteration: 149
+2025-03-22 04:49:45,005 - transformer_training - INFO - Main loop iteration: 150
+Iter 150: loss 8.7248, lr 0.000148, 331877.14 tokens/sec
+2025-03-22 04:49:45,105 - transformer_training - INFO - Main loop iteration: 151
+2025-03-22 04:49:45,236 - transformer_training - INFO - Main loop iteration: 152
+2025-03-22 04:49:45,304 - transformer_training - INFO - Main loop iteration: 153
+2025-03-22 04:49:45,403 - transformer_training - INFO - Main loop iteration: 154
+2025-03-22 04:49:45,502 - transformer_training - INFO - Main loop iteration: 155
+2025-03-22 04:49:45,635 - transformer_training - INFO - Main loop iteration: 156
+2025-03-22 04:49:45,703 - transformer_training - INFO - Main loop iteration: 157
+2025-03-22 04:49:45,802 - transformer_training - INFO - Main loop iteration: 158
+2025-03-22 04:49:45,900 - transformer_training - INFO - Main loop iteration: 159
+2025-03-22 04:49:46,033 - transformer_training - INFO - Main loop iteration: 160
+Iter 160: loss 8.5735, lr 0.000160, 482385.81 tokens/sec
+2025-03-22 04:49:46,101 - transformer_training - INFO - Main loop iteration: 161
+2025-03-22 04:49:46,200 - transformer_training - INFO - Main loop iteration: 162
+2025-03-22 04:49:46,299 - transformer_training - INFO - Main loop iteration: 163
+2025-03-22 04:49:46,431 - transformer_training - INFO - Main loop iteration: 164
+2025-03-22 04:49:46,499 - transformer_training - INFO - Main loop iteration: 165
+2025-03-22 04:49:46,598 - transformer_training - INFO - Main loop iteration: 166
+2025-03-22 04:49:46,698 - transformer_training - INFO - Main loop iteration: 167
+2025-03-22 04:49:46,830 - transformer_training - INFO - Main loop iteration: 168
+2025-03-22 04:49:46,898 - transformer_training - INFO - Main loop iteration: 169
+2025-03-22 04:49:46,997 - transformer_training - INFO - Main loop iteration: 170
+Iter 170: loss 8.4699, lr 0.000168, 331339.48 tokens/sec
+2025-03-22 04:49:47,096 - transformer_training - INFO - Main loop iteration: 171
+2025-03-22 04:49:47,228 - transformer_training - INFO - Main loop iteration: 172
+2025-03-22 04:49:47,296 - transformer_training - INFO - Main loop iteration: 173
+2025-03-22 04:49:47,395 - transformer_training - INFO - Main loop iteration: 174
+2025-03-22 04:49:47,494 - transformer_training - INFO - Main loop iteration: 175
+2025-03-22 04:49:47,626 - transformer_training - INFO - Main loop iteration: 176
+2025-03-22 04:49:47,694 - transformer_training - INFO - Main loop iteration: 177
+2025-03-22 04:49:47,793 - transformer_training - INFO - Main loop iteration: 178
+2025-03-22 04:49:47,892 - transformer_training - INFO - Main loop iteration: 179
+2025-03-22 04:49:48,025 - transformer_training - INFO - Main loop iteration: 180
+Iter 180: loss 8.2252, lr 0.000180, 483796.88 tokens/sec
+2025-03-22 04:49:48,093 - transformer_training - INFO - Main loop iteration: 181
+2025-03-22 04:49:48,192 - transformer_training - INFO - Main loop iteration: 182
+2025-03-22 04:49:48,291 - transformer_training - INFO - Main loop iteration: 183
+2025-03-22 04:49:48,423 - transformer_training - INFO - Main loop iteration: 184
+2025-03-22 04:49:48,491 - transformer_training - INFO - Main loop iteration: 185
+2025-03-22 04:49:48,590 - transformer_training - INFO - Main loop iteration: 186
+2025-03-22 04:49:48,689 - transformer_training - INFO - Main loop iteration: 187
+2025-03-22 04:49:48,822 - transformer_training - INFO - Main loop iteration: 188
+2025-03-22 04:49:48,890 - transformer_training - INFO - Main loop iteration: 189
+2025-03-22 04:49:48,989 - transformer_training - INFO - Main loop iteration: 190
+Iter 190: loss 8.0973, lr 0.000188, 331937.26 tokens/sec
+2025-03-22 04:49:49,088 - transformer_training - INFO - Main loop iteration: 191
+2025-03-22 04:49:49,220 - transformer_training - INFO - Main loop iteration: 192
+2025-03-22 04:49:49,288 - transformer_training - INFO - Main loop iteration: 193
+2025-03-22 04:49:49,388 - transformer_training - INFO - Main loop iteration: 194
+2025-03-22 04:49:49,486 - transformer_training - INFO - Main loop iteration: 195
+2025-03-22 04:49:49,619 - transformer_training - INFO - Main loop iteration: 196
+2025-03-22 04:49:49,687 - transformer_training - INFO - Main loop iteration: 197
+2025-03-22 04:49:49,786 - transformer_training - INFO - Main loop iteration: 198
+2025-03-22 04:49:49,885 - transformer_training - INFO - Main loop iteration: 199
+2025-03-22 04:49:50,017 - transformer_training - INFO - Main loop iteration: 200
+Iter 200: loss 7.9633, lr 0.000200, 482826.42 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 200: train loss 7.9221, val loss 7.8794
+New best model saved with val loss: 7.8794
+2025-03-22 04:50:06,239 - transformer_training - INFO - Main loop iteration: 201
+2025-03-22 04:50:06,313 - transformer_training - INFO - Main loop iteration: 202
+2025-03-22 04:50:06,413 - transformer_training - INFO - Main loop iteration: 203
+2025-03-22 04:50:06,544 - transformer_training - INFO - Main loop iteration: 204
+2025-03-22 04:50:06,612 - transformer_training - INFO - Main loop iteration: 205
+2025-03-22 04:50:06,711 - transformer_training - INFO - Main loop iteration: 206
+2025-03-22 04:50:06,810 - transformer_training - INFO - Main loop iteration: 207
+2025-03-22 04:50:06,943 - transformer_training - INFO - Main loop iteration: 208
+2025-03-22 04:50:07,011 - transformer_training - INFO - Main loop iteration: 209
+2025-03-22 04:50:07,110 - transformer_training - INFO - Main loop iteration: 210
+Iter 210: loss 7.8938, lr 0.000208, 331934.05 tokens/sec
+2025-03-22 04:50:07,210 - transformer_training - INFO - Main loop iteration: 211
+2025-03-22 04:50:07,342 - transformer_training - INFO - Main loop iteration: 212
+2025-03-22 04:50:07,410 - transformer_training - INFO - Main loop iteration: 213
+2025-03-22 04:50:07,509 - transformer_training - INFO - Main loop iteration: 214
+2025-03-22 04:50:07,608 - transformer_training - INFO - Main loop iteration: 215
+2025-03-22 04:50:07,740 - transformer_training - INFO - Main loop iteration: 216
+2025-03-22 04:50:07,808 - transformer_training - INFO - Main loop iteration: 217
+2025-03-22 04:50:07,907 - transformer_training - INFO - Main loop iteration: 218
+2025-03-22 04:50:08,006 - transformer_training - INFO - Main loop iteration: 219
+2025-03-22 04:50:08,138 - transformer_training - INFO - Main loop iteration: 220
+Iter 220: loss 7.7280, lr 0.000220, 482850.16 tokens/sec
+2025-03-22 04:50:08,207 - transformer_training - INFO - Main loop iteration: 221
+2025-03-22 04:50:08,294 - transformer_training - INFO - Main loop iteration: 222
+2025-03-22 04:50:08,406 - transformer_training - INFO - Main loop iteration: 223
+2025-03-22 04:50:08,538 - transformer_training - INFO - Main loop iteration: 224
+2025-03-22 04:50:08,606 - transformer_training - INFO - Main loop iteration: 225
+2025-03-22 04:50:08,705 - transformer_training - INFO - Main loop iteration: 226
+2025-03-22 04:50:08,804 - transformer_training - INFO - Main loop iteration: 227
+2025-03-22 04:50:08,936 - transformer_training - INFO - Main loop iteration: 228
+2025-03-22 04:50:09,004 - transformer_training - INFO - Main loop iteration: 229
+2025-03-22 04:50:09,103 - transformer_training - INFO - Main loop iteration: 230
+Iter 230: loss 7.6460, lr 0.000228, 332005.41 tokens/sec
+2025-03-22 04:50:09,203 - transformer_training - INFO - Main loop iteration: 231
+2025-03-22 04:50:09,335 - transformer_training - INFO - Main loop iteration: 232
+2025-03-22 04:50:09,403 - transformer_training - INFO - Main loop iteration: 233
+2025-03-22 04:50:09,503 - transformer_training - INFO - Main loop iteration: 234
+2025-03-22 04:50:09,601 - transformer_training - INFO - Main loop iteration: 235
+2025-03-22 04:50:09,734 - transformer_training - INFO - Main loop iteration: 236
+2025-03-22 04:50:09,802 - transformer_training - INFO - Main loop iteration: 237
+2025-03-22 04:50:09,901 - transformer_training - INFO - Main loop iteration: 238
+2025-03-22 04:50:10,000 - transformer_training - INFO - Main loop iteration: 239
+2025-03-22 04:50:10,133 - transformer_training - INFO - Main loop iteration: 240
+Iter 240: loss 7.6379, lr 0.000240, 478447.93 tokens/sec
+2025-03-22 04:50:10,202 - transformer_training - INFO - Main loop iteration: 241
+2025-03-22 04:50:10,300 - transformer_training - INFO - Main loop iteration: 242
+2025-03-22 04:50:10,400 - transformer_training - INFO - Main loop iteration: 243
+2025-03-22 04:50:10,532 - transformer_training - INFO - Main loop iteration: 244
+2025-03-22 04:50:10,600 - transformer_training - INFO - Main loop iteration: 245
+2025-03-22 04:50:10,699 - transformer_training - INFO - Main loop iteration: 246
+2025-03-22 04:50:10,799 - transformer_training - INFO - Main loop iteration: 247
+2025-03-22 04:50:10,931 - transformer_training - INFO - Main loop iteration: 248
+2025-03-22 04:50:10,999 - transformer_training - INFO - Main loop iteration: 249
+2025-03-22 04:50:11,098 - transformer_training - INFO - Main loop iteration: 250
+Iter 250: loss 7.5145, lr 0.000248, 331800.23 tokens/sec
+2025-03-22 04:50:11,197 - transformer_training - INFO - Main loop iteration: 251
+2025-03-22 04:50:11,329 - transformer_training - INFO - Main loop iteration: 252
+2025-03-22 04:50:11,397 - transformer_training - INFO - Main loop iteration: 253
+2025-03-22 04:50:11,497 - transformer_training - INFO - Main loop iteration: 254
+2025-03-22 04:50:11,596 - transformer_training - INFO - Main loop iteration: 255
+2025-03-22 04:50:11,729 - transformer_training - INFO - Main loop iteration: 256
+2025-03-22 04:50:11,797 - transformer_training - INFO - Main loop iteration: 257
+2025-03-22 04:50:11,896 - transformer_training - INFO - Main loop iteration: 258
+2025-03-22 04:50:11,995 - transformer_training - INFO - Main loop iteration: 259
+2025-03-22 04:50:12,127 - transformer_training - INFO - Main loop iteration: 260
+Iter 260: loss 7.4735, lr 0.000260, 482897.67 tokens/sec
+2025-03-22 04:50:12,196 - transformer_training - INFO - Main loop iteration: 261
+2025-03-22 04:50:12,295 - transformer_training - INFO - Main loop iteration: 262
+2025-03-22 04:50:12,394 - transformer_training - INFO - Main loop iteration: 263
+2025-03-22 04:50:12,526 - transformer_training - INFO - Main loop iteration: 264
+2025-03-22 04:50:12,594 - transformer_training - INFO - Main loop iteration: 265
+2025-03-22 04:50:12,693 - transformer_training - INFO - Main loop iteration: 266
+2025-03-22 04:50:12,792 - transformer_training - INFO - Main loop iteration: 267
+2025-03-22 04:50:12,925 - transformer_training - INFO - Main loop iteration: 268
+2025-03-22 04:50:12,994 - transformer_training - INFO - Main loop iteration: 269
+2025-03-22 04:50:13,093 - transformer_training - INFO - Main loop iteration: 270
+Iter 270: loss 7.4918, lr 0.000268, 375068.44 tokens/sec
+2025-03-22 04:50:13,181 - transformer_training - INFO - Main loop iteration: 271
+2025-03-22 04:50:13,324 - transformer_training - INFO - Main loop iteration: 272
+2025-03-22 04:50:13,392 - transformer_training - INFO - Main loop iteration: 273
+2025-03-22 04:50:13,491 - transformer_training - INFO - Main loop iteration: 274
+2025-03-22 04:50:13,590 - transformer_training - INFO - Main loop iteration: 275
+2025-03-22 04:50:13,723 - transformer_training - INFO - Main loop iteration: 276
+2025-03-22 04:50:13,791 - transformer_training - INFO - Main loop iteration: 277
+2025-03-22 04:50:13,890 - transformer_training - INFO - Main loop iteration: 278
+2025-03-22 04:50:13,989 - transformer_training - INFO - Main loop iteration: 279
+2025-03-22 04:50:14,121 - transformer_training - INFO - Main loop iteration: 280
+Iter 280: loss 7.4012, lr 0.000280, 480322.34 tokens/sec
+2025-03-22 04:50:14,190 - transformer_training - INFO - Main loop iteration: 281
+2025-03-22 04:50:14,290 - transformer_training - INFO - Main loop iteration: 282
+2025-03-22 04:50:14,388 - transformer_training - INFO - Main loop iteration: 283
+2025-03-22 04:50:14,521 - transformer_training - INFO - Main loop iteration: 284
+2025-03-22 04:50:14,589 - transformer_training - INFO - Main loop iteration: 285
+2025-03-22 04:50:14,688 - transformer_training - INFO - Main loop iteration: 286
+2025-03-22 04:50:14,787 - transformer_training - INFO - Main loop iteration: 287
+2025-03-22 04:50:14,919 - transformer_training - INFO - Main loop iteration: 288
+2025-03-22 04:50:14,987 - transformer_training - INFO - Main loop iteration: 289
+2025-03-22 04:50:15,086 - transformer_training - INFO - Main loop iteration: 290
+Iter 290: loss 7.3757, lr 0.000288, 331978.15 tokens/sec
+2025-03-22 04:50:15,185 - transformer_training - INFO - Main loop iteration: 291
+2025-03-22 04:50:15,317 - transformer_training - INFO - Main loop iteration: 292
+2025-03-22 04:50:15,386 - transformer_training - INFO - Main loop iteration: 293
+2025-03-22 04:50:15,485 - transformer_training - INFO - Main loop iteration: 294
+2025-03-22 04:50:15,584 - transformer_training - INFO - Main loop iteration: 295
+2025-03-22 04:50:15,717 - transformer_training - INFO - Main loop iteration: 296
+2025-03-22 04:50:15,786 - transformer_training - INFO - Main loop iteration: 297
+2025-03-22 04:50:15,885 - transformer_training - INFO - Main loop iteration: 298
+2025-03-22 04:50:15,984 - transformer_training - INFO - Main loop iteration: 299
+2025-03-22 04:50:16,116 - transformer_training - INFO - Main loop iteration: 300
+Iter 300: loss 7.2984, lr 0.000300, 483453.12 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 300: train loss 7.2812, val loss 7.2597
+New best model saved with val loss: 7.2597
+2025-03-22 04:50:32,557 - transformer_training - INFO - Main loop iteration: 301
+2025-03-22 04:50:32,630 - transformer_training - INFO - Main loop iteration: 302
+2025-03-22 04:50:32,718 - transformer_training - INFO - Main loop iteration: 303
+2025-03-22 04:50:32,864 - transformer_training - INFO - Main loop iteration: 304
+2025-03-22 04:50:32,920 - transformer_training - INFO - Main loop iteration: 305
+2025-03-22 04:50:33,018 - transformer_training - INFO - Main loop iteration: 306
+2025-03-22 04:50:33,117 - transformer_training - INFO - Main loop iteration: 307
+2025-03-22 04:50:33,261 - transformer_training - INFO - Main loop iteration: 308
+2025-03-22 04:50:33,317 - transformer_training - INFO - Main loop iteration: 309
+2025-03-22 04:50:33,415 - transformer_training - INFO - Main loop iteration: 310
+Iter 310: loss 7.2939, lr 0.000308, 334385.07 tokens/sec
+2025-03-22 04:50:33,514 - transformer_training - INFO - Main loop iteration: 311
+2025-03-22 04:50:33,658 - transformer_training - INFO - Main loop iteration: 312
+2025-03-22 04:50:33,714 - transformer_training - INFO - Main loop iteration: 313
+2025-03-22 04:50:33,812 - transformer_training - INFO - Main loop iteration: 314
+2025-03-22 04:50:33,911 - transformer_training - INFO - Main loop iteration: 315
+2025-03-22 04:50:34,056 - transformer_training - INFO - Main loop iteration: 316
+2025-03-22 04:50:34,112 - transformer_training - INFO - Main loop iteration: 317
+2025-03-22 04:50:34,210 - transformer_training - INFO - Main loop iteration: 318
+2025-03-22 04:50:34,308 - transformer_training - INFO - Main loop iteration: 319
+2025-03-22 04:50:34,452 - transformer_training - INFO - Main loop iteration: 320
+Iter 320: loss 7.2476, lr 0.000320, 596080.83 tokens/sec
+2025-03-22 04:50:34,508 - transformer_training - INFO - Main loop iteration: 321
+2025-03-22 04:50:34,607 - transformer_training - INFO - Main loop iteration: 322
+2025-03-22 04:50:34,704 - transformer_training - INFO - Main loop iteration: 323
+2025-03-22 04:50:34,849 - transformer_training - INFO - Main loop iteration: 324
+2025-03-22 04:50:34,904 - transformer_training - INFO - Main loop iteration: 325
+2025-03-22 04:50:35,002 - transformer_training - INFO - Main loop iteration: 326
+2025-03-22 04:50:35,101 - transformer_training - INFO - Main loop iteration: 327
+2025-03-22 04:50:35,247 - transformer_training - INFO - Main loop iteration: 328
+2025-03-22 04:50:35,302 - transformer_training - INFO - Main loop iteration: 329
+2025-03-22 04:50:35,401 - transformer_training - INFO - Main loop iteration: 330
+Iter 330: loss 7.2214, lr 0.000328, 333606.70 tokens/sec
+2025-03-22 04:50:35,499 - transformer_training - INFO - Main loop iteration: 331
+2025-03-22 04:50:35,643 - transformer_training - INFO - Main loop iteration: 332
+2025-03-22 04:50:35,699 - transformer_training - INFO - Main loop iteration: 333
+2025-03-22 04:50:35,798 - transformer_training - INFO - Main loop iteration: 334
+2025-03-22 04:50:35,896 - transformer_training - INFO - Main loop iteration: 335
+2025-03-22 04:50:36,040 - transformer_training - INFO - Main loop iteration: 336
+2025-03-22 04:50:36,096 - transformer_training - INFO - Main loop iteration: 337
+2025-03-22 04:50:36,194 - transformer_training - INFO - Main loop iteration: 338
+2025-03-22 04:50:36,293 - transformer_training - INFO - Main loop iteration: 339
+2025-03-22 04:50:36,437 - transformer_training - INFO - Main loop iteration: 340
+Iter 340: loss 7.0827, lr 0.000340, 596668.26 tokens/sec
+2025-03-22 04:50:36,493 - transformer_training - INFO - Main loop iteration: 341
+2025-03-22 04:50:36,591 - transformer_training - INFO - Main loop iteration: 342
+2025-03-22 04:50:36,689 - transformer_training - INFO - Main loop iteration: 343
+2025-03-22 04:50:36,833 - transformer_training - INFO - Main loop iteration: 344
+2025-03-22 04:50:36,889 - transformer_training - INFO - Main loop iteration: 345
+2025-03-22 04:50:36,988 - transformer_training - INFO - Main loop iteration: 346
+2025-03-22 04:50:37,086 - transformer_training - INFO - Main loop iteration: 347
+2025-03-22 04:50:37,231 - transformer_training - INFO - Main loop iteration: 348
+2025-03-22 04:50:37,286 - transformer_training - INFO - Main loop iteration: 349
+2025-03-22 04:50:37,384 - transformer_training - INFO - Main loop iteration: 350
+Iter 350: loss 7.0717, lr 0.000348, 334220.01 tokens/sec
+2025-03-22 04:50:37,483 - transformer_training - INFO - Main loop iteration: 351
+2025-03-22 04:50:37,627 - transformer_training - INFO - Main loop iteration: 352
+2025-03-22 04:50:37,682 - transformer_training - INFO - Main loop iteration: 353
+2025-03-22 04:50:37,780 - transformer_training - INFO - Main loop iteration: 354
+2025-03-22 04:50:37,879 - transformer_training - INFO - Main loop iteration: 355
+2025-03-22 04:50:38,023 - transformer_training - INFO - Main loop iteration: 356
+2025-03-22 04:50:38,078 - transformer_training - INFO - Main loop iteration: 357
+2025-03-22 04:50:38,178 - transformer_training - INFO - Main loop iteration: 358
+2025-03-22 04:50:38,277 - transformer_training - INFO - Main loop iteration: 359
+2025-03-22 04:50:38,421 - transformer_training - INFO - Main loop iteration: 360
+Iter 360: loss 7.0511, lr 0.000360, 594048.04 tokens/sec
+2025-03-22 04:50:38,477 - transformer_training - INFO - Main loop iteration: 361
+2025-03-22 04:50:38,575 - transformer_training - INFO - Main loop iteration: 362
+2025-03-22 04:50:38,674 - transformer_training - INFO - Main loop iteration: 363
+2025-03-22 04:50:38,818 - transformer_training - INFO - Main loop iteration: 364
+2025-03-22 04:50:38,873 - transformer_training - INFO - Main loop iteration: 365
+2025-03-22 04:50:38,972 - transformer_training - INFO - Main loop iteration: 366
+2025-03-22 04:50:39,070 - transformer_training - INFO - Main loop iteration: 367
+2025-03-22 04:50:39,214 - transformer_training - INFO - Main loop iteration: 368
+2025-03-22 04:50:39,269 - transformer_training - INFO - Main loop iteration: 369
+2025-03-22 04:50:39,368 - transformer_training - INFO - Main loop iteration: 370
+Iter 370: loss 6.9757, lr 0.000368, 335234.13 tokens/sec
+2025-03-22 04:50:39,466 - transformer_training - INFO - Main loop iteration: 371
+2025-03-22 04:50:39,610 - transformer_training - INFO - Main loop iteration: 372
+2025-03-22 04:50:39,665 - transformer_training - INFO - Main loop iteration: 373
+2025-03-22 04:50:39,764 - transformer_training - INFO - Main loop iteration: 374
+2025-03-22 04:50:39,863 - transformer_training - INFO - Main loop iteration: 375
+2025-03-22 04:50:40,007 - transformer_training - INFO - Main loop iteration: 376
+2025-03-22 04:50:40,062 - transformer_training - INFO - Main loop iteration: 377
+2025-03-22 04:50:40,160 - transformer_training - INFO - Main loop iteration: 378
+2025-03-22 04:50:40,259 - transformer_training - INFO - Main loop iteration: 379
+2025-03-22 04:50:40,403 - transformer_training - INFO - Main loop iteration: 380
+Iter 380: loss 6.9597, lr 0.000380, 594544.00 tokens/sec
+2025-03-22 04:50:40,459 - transformer_training - INFO - Main loop iteration: 381
+2025-03-22 04:50:40,557 - transformer_training - INFO - Main loop iteration: 382
+2025-03-22 04:50:40,655 - transformer_training - INFO - Main loop iteration: 383
+2025-03-22 04:50:40,800 - transformer_training - INFO - Main loop iteration: 384
+2025-03-22 04:50:40,855 - transformer_training - INFO - Main loop iteration: 385
+2025-03-22 04:50:40,954 - transformer_training - INFO - Main loop iteration: 386
+2025-03-22 04:50:41,052 - transformer_training - INFO - Main loop iteration: 387
+2025-03-22 04:50:41,196 - transformer_training - INFO - Main loop iteration: 388
+2025-03-22 04:50:41,251 - transformer_training - INFO - Main loop iteration: 389
+2025-03-22 04:50:41,349 - transformer_training - INFO - Main loop iteration: 390
+Iter 390: loss 6.9470, lr 0.000388, 333758.19 tokens/sec
+2025-03-22 04:50:41,448 - transformer_training - INFO - Main loop iteration: 391
+2025-03-22 04:50:41,592 - transformer_training - INFO - Main loop iteration: 392
+2025-03-22 04:50:41,648 - transformer_training - INFO - Main loop iteration: 393
+2025-03-22 04:50:41,746 - transformer_training - INFO - Main loop iteration: 394
+2025-03-22 04:50:41,844 - transformer_training - INFO - Main loop iteration: 395
+2025-03-22 04:50:41,989 - transformer_training - INFO - Main loop iteration: 396
+2025-03-22 04:50:42,044 - transformer_training - INFO - Main loop iteration: 397
+2025-03-22 04:50:42,142 - transformer_training - INFO - Main loop iteration: 398
+2025-03-22 04:50:42,240 - transformer_training - INFO - Main loop iteration: 399
+2025-03-22 04:50:42,385 - transformer_training - INFO - Main loop iteration: 400
+Iter 400: loss 6.9417, lr 0.000400, 596016.21 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 400: train loss 6.8175, val loss 6.8165
+New best model saved with val loss: 6.8165
+2025-03-22 04:50:58,818 - transformer_training - INFO - Main loop iteration: 401
+2025-03-22 04:50:58,891 - transformer_training - INFO - Main loop iteration: 402
+2025-03-22 04:50:58,990 - transformer_training - INFO - Main loop iteration: 403
+2025-03-22 04:50:59,124 - transformer_training - INFO - Main loop iteration: 404
+2025-03-22 04:50:59,191 - transformer_training - INFO - Main loop iteration: 405
+2025-03-22 04:50:59,290 - transformer_training - INFO - Main loop iteration: 406
+2025-03-22 04:50:59,389 - transformer_training - INFO - Main loop iteration: 407
+2025-03-22 04:50:59,522 - transformer_training - INFO - Main loop iteration: 408
+2025-03-22 04:50:59,589 - transformer_training - INFO - Main loop iteration: 409
+2025-03-22 04:50:59,688 - transformer_training - INFO - Main loop iteration: 410
+Iter 410: loss 6.8695, lr 0.000400, 330864.88 tokens/sec
+2025-03-22 04:50:59,788 - transformer_training - INFO - Main loop iteration: 411
+2025-03-22 04:50:59,922 - transformer_training - INFO - Main loop iteration: 412
+2025-03-22 04:50:59,989 - transformer_training - INFO - Main loop iteration: 413
+2025-03-22 04:51:00,089 - transformer_training - INFO - Main loop iteration: 414
+2025-03-22 04:51:00,187 - transformer_training - INFO - Main loop iteration: 415
+2025-03-22 04:51:00,321 - transformer_training - INFO - Main loop iteration: 416
+2025-03-22 04:51:00,388 - transformer_training - INFO - Main loop iteration: 417
+2025-03-22 04:51:00,487 - transformer_training - INFO - Main loop iteration: 418
+2025-03-22 04:51:00,586 - transformer_training - INFO - Main loop iteration: 419
+2025-03-22 04:51:00,720 - transformer_training - INFO - Main loop iteration: 420
+Iter 420: loss 6.8141, lr 0.000400, 495132.77 tokens/sec
+2025-03-22 04:51:00,786 - transformer_training - INFO - Main loop iteration: 421
+2025-03-22 04:51:00,885 - transformer_training - INFO - Main loop iteration: 422
+2025-03-22 04:51:00,984 - transformer_training - INFO - Main loop iteration: 423
+2025-03-22 04:51:01,118 - transformer_training - INFO - Main loop iteration: 424
+2025-03-22 04:51:01,185 - transformer_training - INFO - Main loop iteration: 425
+2025-03-22 04:51:01,284 - transformer_training - INFO - Main loop iteration: 426
+2025-03-22 04:51:01,383 - transformer_training - INFO - Main loop iteration: 427
+2025-03-22 04:51:01,517 - transformer_training - INFO - Main loop iteration: 428
+2025-03-22 04:51:01,584 - transformer_training - INFO - Main loop iteration: 429
+2025-03-22 04:51:01,683 - transformer_training - INFO - Main loop iteration: 430
+Iter 430: loss 6.7987, lr 0.000400, 331854.70 tokens/sec
+2025-03-22 04:51:01,782 - transformer_training - INFO - Main loop iteration: 431
+2025-03-22 04:51:01,916 - transformer_training - INFO - Main loop iteration: 432
+2025-03-22 04:51:01,983 - transformer_training - INFO - Main loop iteration: 433
+2025-03-22 04:51:02,082 - transformer_training - INFO - Main loop iteration: 434
+2025-03-22 04:51:02,181 - transformer_training - INFO - Main loop iteration: 435
+2025-03-22 04:51:02,315 - transformer_training - INFO - Main loop iteration: 436
+2025-03-22 04:51:02,382 - transformer_training - INFO - Main loop iteration: 437
+2025-03-22 04:51:02,481 - transformer_training - INFO - Main loop iteration: 438
+2025-03-22 04:51:02,581 - transformer_training - INFO - Main loop iteration: 439
+2025-03-22 04:51:02,714 - transformer_training - INFO - Main loop iteration: 440
+Iter 440: loss 6.7965, lr 0.000400, 492828.24 tokens/sec
+2025-03-22 04:51:02,781 - transformer_training - INFO - Main loop iteration: 441
+2025-03-22 04:51:02,880 - transformer_training - INFO - Main loop iteration: 442
+2025-03-22 04:51:02,979 - transformer_training - INFO - Main loop iteration: 443
+2025-03-22 04:51:03,113 - transformer_training - INFO - Main loop iteration: 444
+2025-03-22 04:51:03,182 - transformer_training - INFO - Main loop iteration: 445
+2025-03-22 04:51:03,279 - transformer_training - INFO - Main loop iteration: 446
+2025-03-22 04:51:03,378 - transformer_training - INFO - Main loop iteration: 447
+2025-03-22 04:51:03,512 - transformer_training - INFO - Main loop iteration: 448
+2025-03-22 04:51:03,578 - transformer_training - INFO - Main loop iteration: 449
+2025-03-22 04:51:03,677 - transformer_training - INFO - Main loop iteration: 450
+Iter 450: loss 6.6788, lr 0.000400, 332638.60 tokens/sec
+2025-03-22 04:51:03,777 - transformer_training - INFO - Main loop iteration: 451
+2025-03-22 04:51:03,910 - transformer_training - INFO - Main loop iteration: 452
+2025-03-22 04:51:03,977 - transformer_training - INFO - Main loop iteration: 453
+2025-03-22 04:51:04,076 - transformer_training - INFO - Main loop iteration: 454
+2025-03-22 04:51:04,175 - transformer_training - INFO - Main loop iteration: 455
+2025-03-22 04:51:04,309 - transformer_training - INFO - Main loop iteration: 456
+2025-03-22 04:51:04,376 - transformer_training - INFO - Main loop iteration: 457
+2025-03-22 04:51:04,475 - transformer_training - INFO - Main loop iteration: 458
+2025-03-22 04:51:04,574 - transformer_training - INFO - Main loop iteration: 459
+2025-03-22 04:51:04,708 - transformer_training - INFO - Main loop iteration: 460
+Iter 460: loss 6.6962, lr 0.000400, 480360.95 tokens/sec
+2025-03-22 04:51:04,777 - transformer_training - INFO - Main loop iteration: 461
+2025-03-22 04:51:04,875 - transformer_training - INFO - Main loop iteration: 462
+2025-03-22 04:51:04,974 - transformer_training - INFO - Main loop iteration: 463
+2025-03-22 04:51:05,106 - transformer_training - INFO - Main loop iteration: 464
+2025-03-22 04:51:05,175 - transformer_training - INFO - Main loop iteration: 465
+2025-03-22 04:51:05,275 - transformer_training - INFO - Main loop iteration: 466
+2025-03-22 04:51:05,373 - transformer_training - INFO - Main loop iteration: 467
+2025-03-22 04:51:05,505 - transformer_training - INFO - Main loop iteration: 468
+2025-03-22 04:51:05,574 - transformer_training - INFO - Main loop iteration: 469
+2025-03-22 04:51:05,673 - transformer_training - INFO - Main loop iteration: 470
+Iter 470: loss 6.6596, lr 0.000400, 332542.02 tokens/sec
+2025-03-22 04:51:05,772 - transformer_training - INFO - Main loop iteration: 471
+2025-03-22 04:51:05,904 - transformer_training - INFO - Main loop iteration: 472
+2025-03-22 04:51:05,973 - transformer_training - INFO - Main loop iteration: 473
+2025-03-22 04:51:06,069 - transformer_training - INFO - Main loop iteration: 474
+2025-03-22 04:51:06,169 - transformer_training - INFO - Main loop iteration: 475
+2025-03-22 04:51:06,302 - transformer_training - INFO - Main loop iteration: 476
+2025-03-22 04:51:06,369 - transformer_training - INFO - Main loop iteration: 477
+2025-03-22 04:51:06,468 - transformer_training - INFO - Main loop iteration: 478
+2025-03-22 04:51:06,567 - transformer_training - INFO - Main loop iteration: 479
+2025-03-22 04:51:06,701 - transformer_training - INFO - Main loop iteration: 480
+Iter 480: loss 6.6386, lr 0.000400, 493858.89 tokens/sec
+2025-03-22 04:51:06,767 - transformer_training - INFO - Main loop iteration: 481
+2025-03-22 04:51:06,866 - transformer_training - INFO - Main loop iteration: 482
+2025-03-22 04:51:06,965 - transformer_training - INFO - Main loop iteration: 483
+2025-03-22 04:51:07,099 - transformer_training - INFO - Main loop iteration: 484
+2025-03-22 04:51:07,166 - transformer_training - INFO - Main loop iteration: 485
+2025-03-22 04:51:07,265 - transformer_training - INFO - Main loop iteration: 486
+2025-03-22 04:51:07,364 - transformer_training - INFO - Main loop iteration: 487
+2025-03-22 04:51:07,498 - transformer_training - INFO - Main loop iteration: 488
+2025-03-22 04:51:07,565 - transformer_training - INFO - Main loop iteration: 489
+2025-03-22 04:51:07,664 - transformer_training - INFO - Main loop iteration: 490
+Iter 490: loss 6.5477, lr 0.000399, 332123.35 tokens/sec
+2025-03-22 04:51:07,763 - transformer_training - INFO - Main loop iteration: 491
+2025-03-22 04:51:07,897 - transformer_training - INFO - Main loop iteration: 492
+2025-03-22 04:51:07,964 - transformer_training - INFO - Main loop iteration: 493
+2025-03-22 04:51:08,063 - transformer_training - INFO - Main loop iteration: 494
+2025-03-22 04:51:08,162 - transformer_training - INFO - Main loop iteration: 495
+2025-03-22 04:51:08,296 - transformer_training - INFO - Main loop iteration: 496
+2025-03-22 04:51:08,363 - transformer_training - INFO - Main loop iteration: 497
+2025-03-22 04:51:08,462 - transformer_training - INFO - Main loop iteration: 498
+2025-03-22 04:51:08,561 - transformer_training - INFO - Main loop iteration: 499
+2025-03-22 04:51:08,695 - transformer_training - INFO - Main loop iteration: 500
+Iter 500: loss 6.5676, lr 0.000399, 494121.67 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 500: train loss 6.4879, val loss 6.4845
+New best model saved with val loss: 6.4845
+2025-03-22 04:51:26,325 - transformer_training - INFO - Main loop iteration: 501
+2025-03-22 04:51:26,384 - transformer_training - INFO - Main loop iteration: 502
+2025-03-22 04:51:26,483 - transformer_training - INFO - Main loop iteration: 503
+2025-03-22 04:51:26,624 - transformer_training - INFO - Main loop iteration: 504
+2025-03-22 04:51:26,683 - transformer_training - INFO - Main loop iteration: 505
+2025-03-22 04:51:26,782 - transformer_training - INFO - Main loop iteration: 506
+2025-03-22 04:51:26,880 - transformer_training - INFO - Main loop iteration: 507
+2025-03-22 04:51:27,022 - transformer_training - INFO - Main loop iteration: 508
+2025-03-22 04:51:27,081 - transformer_training - INFO - Main loop iteration: 509
+2025-03-22 04:51:27,180 - transformer_training - INFO - Main loop iteration: 510
+Iter 510: loss 6.4924, lr 0.000399, 332941.59 tokens/sec
+2025-03-22 04:51:27,280 - transformer_training - INFO - Main loop iteration: 511
+2025-03-22 04:51:27,420 - transformer_training - INFO - Main loop iteration: 512
+2025-03-22 04:51:27,480 - transformer_training - INFO - Main loop iteration: 513
+2025-03-22 04:51:27,579 - transformer_training - INFO - Main loop iteration: 514
+2025-03-22 04:51:27,678 - transformer_training - INFO - Main loop iteration: 515
+2025-03-22 04:51:27,819 - transformer_training - INFO - Main loop iteration: 516
+2025-03-22 04:51:27,878 - transformer_training - INFO - Main loop iteration: 517
+2025-03-22 04:51:27,977 - transformer_training - INFO - Main loop iteration: 518
+2025-03-22 04:51:28,075 - transformer_training - INFO - Main loop iteration: 519
+2025-03-22 04:51:28,217 - transformer_training - INFO - Main loop iteration: 520
+Iter 520: loss 6.5587, lr 0.000399, 555847.91 tokens/sec
+2025-03-22 04:51:28,276 - transformer_training - INFO - Main loop iteration: 521
+2025-03-22 04:51:28,375 - transformer_training - INFO - Main loop iteration: 522
+2025-03-22 04:51:28,474 - transformer_training - INFO - Main loop iteration: 523
+2025-03-22 04:51:28,615 - transformer_training - INFO - Main loop iteration: 524
+2025-03-22 04:51:28,674 - transformer_training - INFO - Main loop iteration: 525
+2025-03-22 04:51:28,773 - transformer_training - INFO - Main loop iteration: 526
+2025-03-22 04:51:28,872 - transformer_training - INFO - Main loop iteration: 527
+2025-03-22 04:51:29,014 - transformer_training - INFO - Main loop iteration: 528
+2025-03-22 04:51:29,073 - transformer_training - INFO - Main loop iteration: 529
+2025-03-22 04:51:29,171 - transformer_training - INFO - Main loop iteration: 530
+Iter 530: loss 6.5853, lr 0.000399, 332595.14 tokens/sec
+2025-03-22 04:51:29,271 - transformer_training - INFO - Main loop iteration: 531
+2025-03-22 04:51:29,412 - transformer_training - INFO - Main loop iteration: 532
+2025-03-22 04:51:29,471 - transformer_training - INFO - Main loop iteration: 533
+2025-03-22 04:51:29,570 - transformer_training - INFO - Main loop iteration: 534
+2025-03-22 04:51:29,669 - transformer_training - INFO - Main loop iteration: 535
+2025-03-22 04:51:29,810 - transformer_training - INFO - Main loop iteration: 536
+2025-03-22 04:51:29,869 - transformer_training - INFO - Main loop iteration: 537
+2025-03-22 04:51:29,968 - transformer_training - INFO - Main loop iteration: 538
+2025-03-22 04:51:30,067 - transformer_training - INFO - Main loop iteration: 539
+2025-03-22 04:51:30,209 - transformer_training - INFO - Main loop iteration: 540
+Iter 540: loss 6.4505, lr 0.000399, 559500.07 tokens/sec
+2025-03-22 04:51:30,268 - transformer_training - INFO - Main loop iteration: 541
+2025-03-22 04:51:30,366 - transformer_training - INFO - Main loop iteration: 542
+2025-03-22 04:51:30,465 - transformer_training - INFO - Main loop iteration: 543
+2025-03-22 04:51:30,607 - transformer_training - INFO - Main loop iteration: 544
+2025-03-22 04:51:30,666 - transformer_training - INFO - Main loop iteration: 545
+2025-03-22 04:51:30,764 - transformer_training - INFO - Main loop iteration: 546
+2025-03-22 04:51:30,863 - transformer_training - INFO - Main loop iteration: 547
+2025-03-22 04:51:31,006 - transformer_training - INFO - Main loop iteration: 548
+2025-03-22 04:51:31,065 - transformer_training - INFO - Main loop iteration: 549
+2025-03-22 04:51:31,163 - transformer_training - INFO - Main loop iteration: 550
+Iter 550: loss 6.5021, lr 0.000398, 331964.52 tokens/sec
+2025-03-22 04:51:31,263 - transformer_training - INFO - Main loop iteration: 551
+2025-03-22 04:51:31,404 - transformer_training - INFO - Main loop iteration: 552
+2025-03-22 04:51:31,463 - transformer_training - INFO - Main loop iteration: 553
+2025-03-22 04:51:31,562 - transformer_training - INFO - Main loop iteration: 554
+2025-03-22 04:51:31,661 - transformer_training - INFO - Main loop iteration: 555
+2025-03-22 04:51:31,803 - transformer_training - INFO - Main loop iteration: 556
+2025-03-22 04:51:31,870 - transformer_training - INFO - Main loop iteration: 557
+2025-03-22 04:51:31,969 - transformer_training - INFO - Main loop iteration: 558
+2025-03-22 04:51:32,068 - transformer_training - INFO - Main loop iteration: 559
+2025-03-22 04:51:32,202 - transformer_training - INFO - Main loop iteration: 560
+Iter 560: loss 6.4632, lr 0.000398, 493417.41 tokens/sec
+2025-03-22 04:51:32,269 - transformer_training - INFO - Main loop iteration: 561
+2025-03-22 04:51:32,367 - transformer_training - INFO - Main loop iteration: 562
+2025-03-22 04:51:32,466 - transformer_training - INFO - Main loop iteration: 563
+2025-03-22 04:51:32,601 - transformer_training - INFO - Main loop iteration: 564
+2025-03-22 04:51:32,667 - transformer_training - INFO - Main loop iteration: 565
+2025-03-22 04:51:32,766 - transformer_training - INFO - Main loop iteration: 566
+2025-03-22 04:51:32,865 - transformer_training - INFO - Main loop iteration: 567
+2025-03-22 04:51:32,999 - transformer_training - INFO - Main loop iteration: 568
+2025-03-22 04:51:33,065 - transformer_training - INFO - Main loop iteration: 569
+2025-03-22 04:51:33,164 - transformer_training - INFO - Main loop iteration: 570
+Iter 570: loss 6.3821, lr 0.000398, 332835.96 tokens/sec
+2025-03-22 04:51:33,264 - transformer_training - INFO - Main loop iteration: 571
+2025-03-22 04:51:33,397 - transformer_training - INFO - Main loop iteration: 572
+2025-03-22 04:51:33,464 - transformer_training - INFO - Main loop iteration: 573
+2025-03-22 04:51:33,563 - transformer_training - INFO - Main loop iteration: 574
+2025-03-22 04:51:33,662 - transformer_training - INFO - Main loop iteration: 575
+2025-03-22 04:51:33,796 - transformer_training - INFO - Main loop iteration: 576
+2025-03-22 04:51:33,863 - transformer_training - INFO - Main loop iteration: 577
+2025-03-22 04:51:33,962 - transformer_training - INFO - Main loop iteration: 578
+2025-03-22 04:51:34,061 - transformer_training - INFO - Main loop iteration: 579
+2025-03-22 04:51:34,194 - transformer_training - INFO - Main loop iteration: 580
+Iter 580: loss 6.3938, lr 0.000398, 494843.97 tokens/sec
+2025-03-22 04:51:34,261 - transformer_training - INFO - Main loop iteration: 581
+2025-03-22 04:51:34,360 - transformer_training - INFO - Main loop iteration: 582
+2025-03-22 04:51:34,459 - transformer_training - INFO - Main loop iteration: 583
+2025-03-22 04:51:34,593 - transformer_training - INFO - Main loop iteration: 584
+2025-03-22 04:51:34,660 - transformer_training - INFO - Main loop iteration: 585
+2025-03-22 04:51:34,758 - transformer_training - INFO - Main loop iteration: 586
+2025-03-22 04:51:34,857 - transformer_training - INFO - Main loop iteration: 587
+2025-03-22 04:51:34,991 - transformer_training - INFO - Main loop iteration: 588
+2025-03-22 04:51:35,058 - transformer_training - INFO - Main loop iteration: 589
+2025-03-22 04:51:35,158 - transformer_training - INFO - Main loop iteration: 590
+Iter 590: loss 6.3762, lr 0.000397, 333257.24 tokens/sec
+2025-03-22 04:51:35,257 - transformer_training - INFO - Main loop iteration: 591
+2025-03-22 04:51:35,391 - transformer_training - INFO - Main loop iteration: 592
+2025-03-22 04:51:35,458 - transformer_training - INFO - Main loop iteration: 593
+2025-03-22 04:51:35,557 - transformer_training - INFO - Main loop iteration: 594
+2025-03-22 04:51:35,656 - transformer_training - INFO - Main loop iteration: 595
+2025-03-22 04:51:35,790 - transformer_training - INFO - Main loop iteration: 596
+2025-03-22 04:51:35,857 - transformer_training - INFO - Main loop iteration: 597
+2025-03-22 04:51:35,956 - transformer_training - INFO - Main loop iteration: 598
+2025-03-22 04:51:36,054 - transformer_training - INFO - Main loop iteration: 599
+2025-03-22 04:51:36,188 - transformer_training - INFO - Main loop iteration: 600
+Iter 600: loss 6.3245, lr 0.000397, 493190.78 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 600: train loss 6.2766, val loss 6.2664
+New best model saved with val loss: 6.2664
+2025-03-22 04:51:53,066 - transformer_training - INFO - Main loop iteration: 601
+2025-03-22 04:51:53,132 - transformer_training - INFO - Main loop iteration: 602
+2025-03-22 04:51:53,230 - transformer_training - INFO - Main loop iteration: 603
+2025-03-22 04:51:53,371 - transformer_training - INFO - Main loop iteration: 604
+2025-03-22 04:51:53,430 - transformer_training - INFO - Main loop iteration: 605
+2025-03-22 04:51:53,529 - transformer_training - INFO - Main loop iteration: 606
+2025-03-22 04:51:53,628 - transformer_training - INFO - Main loop iteration: 607
+2025-03-22 04:51:53,769 - transformer_training - INFO - Main loop iteration: 608
+2025-03-22 04:51:53,828 - transformer_training - INFO - Main loop iteration: 609
+2025-03-22 04:51:53,927 - transformer_training - INFO - Main loop iteration: 610
+Iter 610: loss 6.3425, lr 0.000397, 307382.36 tokens/sec
+2025-03-22 04:51:54,035 - transformer_training - INFO - Main loop iteration: 611
+2025-03-22 04:51:54,167 - transformer_training - INFO - Main loop iteration: 612
+2025-03-22 04:51:54,235 - transformer_training - INFO - Main loop iteration: 613
+2025-03-22 04:51:54,334 - transformer_training - INFO - Main loop iteration: 614
+2025-03-22 04:51:54,433 - transformer_training - INFO - Main loop iteration: 615
+2025-03-22 04:51:54,566 - transformer_training - INFO - Main loop iteration: 616
+2025-03-22 04:51:54,634 - transformer_training - INFO - Main loop iteration: 617
+2025-03-22 04:51:54,733 - transformer_training - INFO - Main loop iteration: 618
+2025-03-22 04:51:54,832 - transformer_training - INFO - Main loop iteration: 619
+2025-03-22 04:51:54,964 - transformer_training - INFO - Main loop iteration: 620
+Iter 620: loss 6.3016, lr 0.000396, 481488.45 tokens/sec
+2025-03-22 04:51:55,033 - transformer_training - INFO - Main loop iteration: 621
+2025-03-22 04:51:55,131 - transformer_training - INFO - Main loop iteration: 622
+2025-03-22 04:51:55,230 - transformer_training - INFO - Main loop iteration: 623
+2025-03-22 04:51:55,363 - transformer_training - INFO - Main loop iteration: 624
+2025-03-22 04:51:55,431 - transformer_training - INFO - Main loop iteration: 625
+2025-03-22 04:51:55,530 - transformer_training - INFO - Main loop iteration: 626
+2025-03-22 04:51:55,629 - transformer_training - INFO - Main loop iteration: 627
+2025-03-22 04:51:55,762 - transformer_training - INFO - Main loop iteration: 628
+2025-03-22 04:51:55,829 - transformer_training - INFO - Main loop iteration: 629
+2025-03-22 04:51:55,928 - transformer_training - INFO - Main loop iteration: 630
+Iter 630: loss 6.2374, lr 0.000396, 332618.48 tokens/sec
+2025-03-22 04:51:56,028 - transformer_training - INFO - Main loop iteration: 631
+2025-03-22 04:51:56,160 - transformer_training - INFO - Main loop iteration: 632
+2025-03-22 04:51:56,228 - transformer_training - INFO - Main loop iteration: 633
+2025-03-22 04:51:56,327 - transformer_training - INFO - Main loop iteration: 634
+2025-03-22 04:51:56,426 - transformer_training - INFO - Main loop iteration: 635
+2025-03-22 04:51:56,559 - transformer_training - INFO - Main loop iteration: 636
+2025-03-22 04:51:56,627 - transformer_training - INFO - Main loop iteration: 637
+2025-03-22 04:51:56,725 - transformer_training - INFO - Main loop iteration: 638
+2025-03-22 04:51:56,824 - transformer_training - INFO - Main loop iteration: 639
+2025-03-22 04:51:56,957 - transformer_training - INFO - Main loop iteration: 640
+Iter 640: loss 6.3305, lr 0.000396, 484352.70 tokens/sec
+2025-03-22 04:51:57,025 - transformer_training - INFO - Main loop iteration: 641
+2025-03-22 04:51:57,124 - transformer_training - INFO - Main loop iteration: 642
+2025-03-22 04:51:57,223 - transformer_training - INFO - Main loop iteration: 643
+2025-03-22 04:51:57,355 - transformer_training - INFO - Main loop iteration: 644
+2025-03-22 04:51:57,423 - transformer_training - INFO - Main loop iteration: 645
+2025-03-22 04:51:57,523 - transformer_training - INFO - Main loop iteration: 646
+2025-03-22 04:51:57,622 - transformer_training - INFO - Main loop iteration: 647
+2025-03-22 04:51:57,754 - transformer_training - INFO - Main loop iteration: 648
+2025-03-22 04:51:57,822 - transformer_training - INFO - Main loop iteration: 649
+2025-03-22 04:51:57,921 - transformer_training - INFO - Main loop iteration: 650
+Iter 650: loss 6.2591, lr 0.000395, 332472.84 tokens/sec
+2025-03-22 04:51:58,020 - transformer_training - INFO - Main loop iteration: 651
+2025-03-22 04:51:58,153 - transformer_training - INFO - Main loop iteration: 652
+2025-03-22 04:51:58,221 - transformer_training - INFO - Main loop iteration: 653
+2025-03-22 04:51:58,320 - transformer_training - INFO - Main loop iteration: 654
+2025-03-22 04:51:58,418 - transformer_training - INFO - Main loop iteration: 655
+2025-03-22 04:51:58,551 - transformer_training - INFO - Main loop iteration: 656
+2025-03-22 04:51:58,619 - transformer_training - INFO - Main loop iteration: 657
+2025-03-22 04:51:58,718 - transformer_training - INFO - Main loop iteration: 658
+2025-03-22 04:51:58,817 - transformer_training - INFO - Main loop iteration: 659
+2025-03-22 04:51:58,949 - transformer_training - INFO - Main loop iteration: 660
+Iter 660: loss 6.2146, lr 0.000395, 484670.40 tokens/sec
+2025-03-22 04:51:59,017 - transformer_training - INFO - Main loop iteration: 661
+2025-03-22 04:51:59,116 - transformer_training - INFO - Main loop iteration: 662
+2025-03-22 04:51:59,215 - transformer_training - INFO - Main loop iteration: 663
+2025-03-22 04:51:59,348 - transformer_training - INFO - Main loop iteration: 664
+2025-03-22 04:51:59,416 - transformer_training - INFO - Main loop iteration: 665
+2025-03-22 04:51:59,515 - transformer_training - INFO - Main loop iteration: 666
+2025-03-22 04:51:59,614 - transformer_training - INFO - Main loop iteration: 667
+2025-03-22 04:51:59,747 - transformer_training - INFO - Main loop iteration: 668
+2025-03-22 04:51:59,815 - transformer_training - INFO - Main loop iteration: 669
+2025-03-22 04:51:59,914 - transformer_training - INFO - Main loop iteration: 670
+Iter 670: loss 6.2218, lr 0.000395, 329122.57 tokens/sec
+2025-03-22 04:52:00,014 - transformer_training - INFO - Main loop iteration: 671
+2025-03-22 04:52:00,147 - transformer_training - INFO - Main loop iteration: 672
+2025-03-22 04:52:00,215 - transformer_training - INFO - Main loop iteration: 673
+2025-03-22 04:52:00,314 - transformer_training - INFO - Main loop iteration: 674
+2025-03-22 04:52:00,412 - transformer_training - INFO - Main loop iteration: 675
+2025-03-22 04:52:00,545 - transformer_training - INFO - Main loop iteration: 676
+2025-03-22 04:52:00,613 - transformer_training - INFO - Main loop iteration: 677
+2025-03-22 04:52:00,712 - transformer_training - INFO - Main loop iteration: 678
+2025-03-22 04:52:00,811 - transformer_training - INFO - Main loop iteration: 679
+2025-03-22 04:52:00,943 - transformer_training - INFO - Main loop iteration: 680
+Iter 680: loss 6.2000, lr 0.000394, 483013.07 tokens/sec
+2025-03-22 04:52:01,012 - transformer_training - INFO - Main loop iteration: 681
+2025-03-22 04:52:01,111 - transformer_training - INFO - Main loop iteration: 682
+2025-03-22 04:52:01,198 - transformer_training - INFO - Main loop iteration: 683
+2025-03-22 04:52:01,342 - transformer_training - INFO - Main loop iteration: 684
+2025-03-22 04:52:01,410 - transformer_training - INFO - Main loop iteration: 685
+2025-03-22 04:52:01,509 - transformer_training - INFO - Main loop iteration: 686
+2025-03-22 04:52:01,608 - transformer_training - INFO - Main loop iteration: 687
+2025-03-22 04:52:01,741 - transformer_training - INFO - Main loop iteration: 688
+2025-03-22 04:52:01,809 - transformer_training - INFO - Main loop iteration: 689
+2025-03-22 04:52:01,908 - transformer_training - INFO - Main loop iteration: 690
+Iter 690: loss 6.2207, lr 0.000394, 332956.91 tokens/sec
+2025-03-22 04:52:02,007 - transformer_training - INFO - Main loop iteration: 691
+2025-03-22 04:52:02,139 - transformer_training - INFO - Main loop iteration: 692
+2025-03-22 04:52:02,208 - transformer_training - INFO - Main loop iteration: 693
+2025-03-22 04:52:02,307 - transformer_training - INFO - Main loop iteration: 694
+2025-03-22 04:52:02,406 - transformer_training - INFO - Main loop iteration: 695
+2025-03-22 04:52:02,538 - transformer_training - INFO - Main loop iteration: 696
+2025-03-22 04:52:02,606 - transformer_training - INFO - Main loop iteration: 697
+2025-03-22 04:52:02,705 - transformer_training - INFO - Main loop iteration: 698
+2025-03-22 04:52:02,804 - transformer_training - INFO - Main loop iteration: 699
+2025-03-22 04:52:02,937 - transformer_training - INFO - Main loop iteration: 700
+Iter 700: loss 6.1830, lr 0.000393, 482958.75 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 700: train loss 6.1213, val loss 6.1094
+New best model saved with val loss: 6.1094
+2025-03-22 04:52:19,795 - transformer_training - INFO - Main loop iteration: 701
+2025-03-22 04:52:19,866 - transformer_training - INFO - Main loop iteration: 702
+2025-03-22 04:52:19,968 - transformer_training - INFO - Main loop iteration: 703
+2025-03-22 04:52:20,100 - transformer_training - INFO - Main loop iteration: 704
+2025-03-22 04:52:20,168 - transformer_training - INFO - Main loop iteration: 705
+2025-03-22 04:52:20,267 - transformer_training - INFO - Main loop iteration: 706
+2025-03-22 04:52:20,366 - transformer_training - INFO - Main loop iteration: 707
+2025-03-22 04:52:20,498 - transformer_training - INFO - Main loop iteration: 708
+2025-03-22 04:52:20,566 - transformer_training - INFO - Main loop iteration: 709
+2025-03-22 04:52:20,665 - transformer_training - INFO - Main loop iteration: 710
+Iter 710: loss 6.1476, lr 0.000393, 331096.82 tokens/sec
+2025-03-22 04:52:20,765 - transformer_training - INFO - Main loop iteration: 711
+2025-03-22 04:52:20,897 - transformer_training - INFO - Main loop iteration: 712
+2025-03-22 04:52:20,966 - transformer_training - INFO - Main loop iteration: 713
+2025-03-22 04:52:21,064 - transformer_training - INFO - Main loop iteration: 714
+2025-03-22 04:52:21,164 - transformer_training - INFO - Main loop iteration: 715
+2025-03-22 04:52:21,296 - transformer_training - INFO - Main loop iteration: 716
+2025-03-22 04:52:21,364 - transformer_training - INFO - Main loop iteration: 717
+2025-03-22 04:52:21,464 - transformer_training - INFO - Main loop iteration: 718
+2025-03-22 04:52:21,563 - transformer_training - INFO - Main loop iteration: 719
+2025-03-22 04:52:21,695 - transformer_training - INFO - Main loop iteration: 720
+Iter 720: loss 6.0935, lr 0.000392, 480290.45 tokens/sec
+2025-03-22 04:52:21,763 - transformer_training - INFO - Main loop iteration: 721
+2025-03-22 04:52:21,862 - transformer_training - INFO - Main loop iteration: 722
+2025-03-22 04:52:21,961 - transformer_training - INFO - Main loop iteration: 723
+2025-03-22 04:52:22,093 - transformer_training - INFO - Main loop iteration: 724
+2025-03-22 04:52:22,162 - transformer_training - INFO - Main loop iteration: 725
+2025-03-22 04:52:22,261 - transformer_training - INFO - Main loop iteration: 726
+2025-03-22 04:52:22,360 - transformer_training - INFO - Main loop iteration: 727
+2025-03-22 04:52:22,492 - transformer_training - INFO - Main loop iteration: 728
+2025-03-22 04:52:22,560 - transformer_training - INFO - Main loop iteration: 729
+2025-03-22 04:52:22,659 - transformer_training - INFO - Main loop iteration: 730
+Iter 730: loss 6.2690, lr 0.000392, 332414.14 tokens/sec
+2025-03-22 04:52:22,758 - transformer_training - INFO - Main loop iteration: 731
+2025-03-22 04:52:22,890 - transformer_training - INFO - Main loop iteration: 732
+2025-03-22 04:52:22,958 - transformer_training - INFO - Main loop iteration: 733
+2025-03-22 04:52:23,057 - transformer_training - INFO - Main loop iteration: 734
+2025-03-22 04:52:23,157 - transformer_training - INFO - Main loop iteration: 735
+2025-03-22 04:52:23,288 - transformer_training - INFO - Main loop iteration: 736
+2025-03-22 04:52:23,357 - transformer_training - INFO - Main loop iteration: 737
+2025-03-22 04:52:23,456 - transformer_training - INFO - Main loop iteration: 738
+2025-03-22 04:52:23,555 - transformer_training - INFO - Main loop iteration: 739
+2025-03-22 04:52:23,687 - transformer_training - INFO - Main loop iteration: 740
+Iter 740: loss 6.1966, lr 0.000391, 480357.59 tokens/sec
+2025-03-22 04:52:23,756 - transformer_training - INFO - Main loop iteration: 741
+2025-03-22 04:52:23,854 - transformer_training - INFO - Main loop iteration: 742
+2025-03-22 04:52:23,953 - transformer_training - INFO - Main loop iteration: 743
+2025-03-22 04:52:24,086 - transformer_training - INFO - Main loop iteration: 744
+2025-03-22 04:52:24,142 - transformer_training - INFO - Main loop iteration: 745
+2025-03-22 04:52:24,241 - transformer_training - INFO - Main loop iteration: 746
+2025-03-22 04:52:24,340 - transformer_training - INFO - Main loop iteration: 747
+2025-03-22 04:52:24,484 - transformer_training - INFO - Main loop iteration: 748
+2025-03-22 04:52:24,541 - transformer_training - INFO - Main loop iteration: 749
+2025-03-22 04:52:24,639 - transformer_training - INFO - Main loop iteration: 750
+Iter 750: loss 6.1173, lr 0.000391, 332734.44 tokens/sec
+2025-03-22 04:52:24,738 - transformer_training - INFO - Main loop iteration: 751
+2025-03-22 04:52:24,882 - transformer_training - INFO - Main loop iteration: 752
+2025-03-22 04:52:24,939 - transformer_training - INFO - Main loop iteration: 753
+2025-03-22 04:52:25,038 - transformer_training - INFO - Main loop iteration: 754
+2025-03-22 04:52:25,136 - transformer_training - INFO - Main loop iteration: 755
+2025-03-22 04:52:25,280 - transformer_training - INFO - Main loop iteration: 756
+2025-03-22 04:52:25,337 - transformer_training - INFO - Main loop iteration: 757
+2025-03-22 04:52:25,436 - transformer_training - INFO - Main loop iteration: 758
+2025-03-22 04:52:25,535 - transformer_training - INFO - Main loop iteration: 759
+2025-03-22 04:52:25,679 - transformer_training - INFO - Main loop iteration: 760
+Iter 760: loss 6.0753, lr 0.000390, 578763.44 tokens/sec
+2025-03-22 04:52:25,736 - transformer_training - INFO - Main loop iteration: 761
+2025-03-22 04:52:25,834 - transformer_training - INFO - Main loop iteration: 762
+2025-03-22 04:52:25,933 - transformer_training - INFO - Main loop iteration: 763
+2025-03-22 04:52:26,077 - transformer_training - INFO - Main loop iteration: 764
+2025-03-22 04:52:26,145 - transformer_training - INFO - Main loop iteration: 765
+2025-03-22 04:52:26,244 - transformer_training - INFO - Main loop iteration: 766
+2025-03-22 04:52:26,343 - transformer_training - INFO - Main loop iteration: 767
+2025-03-22 04:52:26,475 - transformer_training - INFO - Main loop iteration: 768
+2025-03-22 04:52:26,544 - transformer_training - INFO - Main loop iteration: 769
+2025-03-22 04:52:26,643 - transformer_training - INFO - Main loop iteration: 770
+Iter 770: loss 6.1087, lr 0.000390, 332644.24 tokens/sec
+2025-03-22 04:52:26,742 - transformer_training - INFO - Main loop iteration: 771
+2025-03-22 04:52:26,874 - transformer_training - INFO - Main loop iteration: 772
+2025-03-22 04:52:26,942 - transformer_training - INFO - Main loop iteration: 773
+2025-03-22 04:52:27,040 - transformer_training - INFO - Main loop iteration: 774
+2025-03-22 04:52:27,139 - transformer_training - INFO - Main loop iteration: 775
+2025-03-22 04:52:27,273 - transformer_training - INFO - Main loop iteration: 776
+2025-03-22 04:52:27,340 - transformer_training - INFO - Main loop iteration: 777
+2025-03-22 04:52:27,439 - transformer_training - INFO - Main loop iteration: 778
+2025-03-22 04:52:27,538 - transformer_training - INFO - Main loop iteration: 779
+2025-03-22 04:52:27,672 - transformer_training - INFO - Main loop iteration: 780
+Iter 780: loss 6.0999, lr 0.000389, 493779.05 tokens/sec
+2025-03-22 04:52:27,739 - transformer_training - INFO - Main loop iteration: 781
+2025-03-22 04:52:27,837 - transformer_training - INFO - Main loop iteration: 782
+2025-03-22 04:52:27,936 - transformer_training - INFO - Main loop iteration: 783
+2025-03-22 04:52:28,070 - transformer_training - INFO - Main loop iteration: 784
+2025-03-22 04:52:28,137 - transformer_training - INFO - Main loop iteration: 785
+2025-03-22 04:52:28,236 - transformer_training - INFO - Main loop iteration: 786
+2025-03-22 04:52:28,335 - transformer_training - INFO - Main loop iteration: 787
+2025-03-22 04:52:28,469 - transformer_training - INFO - Main loop iteration: 788
+2025-03-22 04:52:28,536 - transformer_training - INFO - Main loop iteration: 789
+2025-03-22 04:52:28,635 - transformer_training - INFO - Main loop iteration: 790
+Iter 790: loss 6.0854, lr 0.000389, 332792.44 tokens/sec
+2025-03-22 04:52:28,734 - transformer_training - INFO - Main loop iteration: 791
+2025-03-22 04:52:28,868 - transformer_training - INFO - Main loop iteration: 792
+2025-03-22 04:52:28,935 - transformer_training - INFO - Main loop iteration: 793
+2025-03-22 04:52:29,034 - transformer_training - INFO - Main loop iteration: 794
+2025-03-22 04:52:29,132 - transformer_training - INFO - Main loop iteration: 795
+2025-03-22 04:52:29,266 - transformer_training - INFO - Main loop iteration: 796
+2025-03-22 04:52:29,333 - transformer_training - INFO - Main loop iteration: 797
+2025-03-22 04:52:29,432 - transformer_training - INFO - Main loop iteration: 798
+2025-03-22 04:52:29,531 - transformer_training - INFO - Main loop iteration: 799
+2025-03-22 04:52:29,665 - transformer_training - INFO - Main loop iteration: 800
+Iter 800: loss 6.1712, lr 0.000388, 489788.12 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 800: train loss 5.9882, val loss 5.9821
+New best model saved with val loss: 5.9821
+2025-03-22 04:52:46,683 - transformer_training - INFO - Main loop iteration: 801
+2025-03-22 04:52:46,757 - transformer_training - INFO - Main loop iteration: 802
+2025-03-22 04:52:46,857 - transformer_training - INFO - Main loop iteration: 803
+2025-03-22 04:52:46,989 - transformer_training - INFO - Main loop iteration: 804
+2025-03-22 04:52:47,057 - transformer_training - INFO - Main loop iteration: 805
+2025-03-22 04:52:47,156 - transformer_training - INFO - Main loop iteration: 806
+2025-03-22 04:52:47,255 - transformer_training - INFO - Main loop iteration: 807
+2025-03-22 04:52:47,387 - transformer_training - INFO - Main loop iteration: 808
+2025-03-22 04:52:47,455 - transformer_training - INFO - Main loop iteration: 809
+2025-03-22 04:52:47,554 - transformer_training - INFO - Main loop iteration: 810
+Iter 810: loss 6.0096, lr 0.000388, 332116.93 tokens/sec
+2025-03-22 04:52:47,654 - transformer_training - INFO - Main loop iteration: 811
+2025-03-22 04:52:47,785 - transformer_training - INFO - Main loop iteration: 812
+2025-03-22 04:52:47,851 - transformer_training - INFO - Main loop iteration: 813
+2025-03-22 04:52:47,944 - transformer_training - INFO - Main loop iteration: 814
+2025-03-22 04:52:48,048 - transformer_training - INFO - Main loop iteration: 815
+2025-03-22 04:52:48,181 - transformer_training - INFO - Main loop iteration: 816
+2025-03-22 04:52:48,247 - transformer_training - INFO - Main loop iteration: 817
+2025-03-22 04:52:48,346 - transformer_training - INFO - Main loop iteration: 818
+2025-03-22 04:52:48,448 - transformer_training - INFO - Main loop iteration: 819
+2025-03-22 04:52:48,581 - transformer_training - INFO - Main loop iteration: 820
+Iter 820: loss 6.0733, lr 0.000387, 496463.44 tokens/sec
+2025-03-22 04:52:48,647 - transformer_training - INFO - Main loop iteration: 821
+2025-03-22 04:52:48,745 - transformer_training - INFO - Main loop iteration: 822
+2025-03-22 04:52:48,845 - transformer_training - INFO - Main loop iteration: 823
+2025-03-22 04:52:48,978 - transformer_training - INFO - Main loop iteration: 824
+2025-03-22 04:52:49,045 - transformer_training - INFO - Main loop iteration: 825
+2025-03-22 04:52:49,143 - transformer_training - INFO - Main loop iteration: 826
+2025-03-22 04:52:49,242 - transformer_training - INFO - Main loop iteration: 827
+2025-03-22 04:52:49,375 - transformer_training - INFO - Main loop iteration: 828
+2025-03-22 04:52:49,441 - transformer_training - INFO - Main loop iteration: 829
+2025-03-22 04:52:49,539 - transformer_training - INFO - Main loop iteration: 830
+Iter 830: loss 5.9990, lr 0.000386, 333848.99 tokens/sec
+2025-03-22 04:52:49,638 - transformer_training - INFO - Main loop iteration: 831
+2025-03-22 04:52:49,771 - transformer_training - INFO - Main loop iteration: 832
+2025-03-22 04:52:49,837 - transformer_training - INFO - Main loop iteration: 833
+2025-03-22 04:52:49,937 - transformer_training - INFO - Main loop iteration: 834
+2025-03-22 04:52:50,035 - transformer_training - INFO - Main loop iteration: 835
+2025-03-22 04:52:50,168 - transformer_training - INFO - Main loop iteration: 836
+2025-03-22 04:52:50,234 - transformer_training - INFO - Main loop iteration: 837
+2025-03-22 04:52:50,332 - transformer_training - INFO - Main loop iteration: 838
+2025-03-22 04:52:50,431 - transformer_training - INFO - Main loop iteration: 839
+2025-03-22 04:52:50,564 - transformer_training - INFO - Main loop iteration: 840
+Iter 840: loss 6.0356, lr 0.000386, 496081.75 tokens/sec
+2025-03-22 04:52:50,630 - transformer_training - INFO - Main loop iteration: 841
+2025-03-22 04:52:50,729 - transformer_training - INFO - Main loop iteration: 842
+2025-03-22 04:52:50,828 - transformer_training - INFO - Main loop iteration: 843
+2025-03-22 04:52:50,961 - transformer_training - INFO - Main loop iteration: 844
+2025-03-22 04:52:51,028 - transformer_training - INFO - Main loop iteration: 845
+2025-03-22 04:52:51,126 - transformer_training - INFO - Main loop iteration: 846
+2025-03-22 04:52:51,225 - transformer_training - INFO - Main loop iteration: 847
+2025-03-22 04:52:51,358 - transformer_training - INFO - Main loop iteration: 848
+2025-03-22 04:52:51,425 - transformer_training - INFO - Main loop iteration: 849
+2025-03-22 04:52:51,523 - transformer_training - INFO - Main loop iteration: 850
+Iter 850: loss 5.9879, lr 0.000385, 334244.39 tokens/sec
+2025-03-22 04:52:51,622 - transformer_training - INFO - Main loop iteration: 851
+2025-03-22 04:52:51,754 - transformer_training - INFO - Main loop iteration: 852
+2025-03-22 04:52:51,821 - transformer_training - INFO - Main loop iteration: 853
+2025-03-22 04:52:51,919 - transformer_training - INFO - Main loop iteration: 854
+2025-03-22 04:52:52,017 - transformer_training - INFO - Main loop iteration: 855
+2025-03-22 04:52:52,151 - transformer_training - INFO - Main loop iteration: 856
+2025-03-22 04:52:52,217 - transformer_training - INFO - Main loop iteration: 857
+2025-03-22 04:52:52,316 - transformer_training - INFO - Main loop iteration: 858
+2025-03-22 04:52:52,414 - transformer_training - INFO - Main loop iteration: 859
+2025-03-22 04:52:52,547 - transformer_training - INFO - Main loop iteration: 860
+Iter 860: loss 6.0165, lr 0.000384, 495536.22 tokens/sec
+2025-03-22 04:52:52,614 - transformer_training - INFO - Main loop iteration: 861
+2025-03-22 04:52:52,712 - transformer_training - INFO - Main loop iteration: 862
+2025-03-22 04:52:52,810 - transformer_training - INFO - Main loop iteration: 863
+2025-03-22 04:52:52,944 - transformer_training - INFO - Main loop iteration: 864
+2025-03-22 04:52:53,010 - transformer_training - INFO - Main loop iteration: 865
+2025-03-22 04:52:53,108 - transformer_training - INFO - Main loop iteration: 866
+2025-03-22 04:52:53,206 - transformer_training - INFO - Main loop iteration: 867
+2025-03-22 04:52:53,343 - transformer_training - INFO - Main loop iteration: 868
+2025-03-22 04:52:53,411 - transformer_training - INFO - Main loop iteration: 869
+2025-03-22 04:52:53,514 - transformer_training - INFO - Main loop iteration: 870
+Iter 870: loss 5.9643, lr 0.000384, 318720.46 tokens/sec
+2025-03-22 04:52:53,617 - transformer_training - INFO - Main loop iteration: 871
+2025-03-22 04:52:53,755 - transformer_training - INFO - Main loop iteration: 872
+2025-03-22 04:52:53,822 - transformer_training - INFO - Main loop iteration: 873
+2025-03-22 04:52:53,920 - transformer_training - INFO - Main loop iteration: 874
+2025-03-22 04:52:54,019 - transformer_training - INFO - Main loop iteration: 875
+2025-03-22 04:52:54,151 - transformer_training - INFO - Main loop iteration: 876
+2025-03-22 04:52:54,218 - transformer_training - INFO - Main loop iteration: 877
+2025-03-22 04:52:54,317 - transformer_training - INFO - Main loop iteration: 878
+2025-03-22 04:52:54,415 - transformer_training - INFO - Main loop iteration: 879
+2025-03-22 04:52:54,548 - transformer_training - INFO - Main loop iteration: 880
+Iter 880: loss 5.9990, lr 0.000383, 495038.25 tokens/sec
+2025-03-22 04:52:54,615 - transformer_training - INFO - Main loop iteration: 881
+2025-03-22 04:52:54,713 - transformer_training - INFO - Main loop iteration: 882
+2025-03-22 04:52:54,811 - transformer_training - INFO - Main loop iteration: 883
+2025-03-22 04:52:54,944 - transformer_training - INFO - Main loop iteration: 884
+2025-03-22 04:52:55,011 - transformer_training - INFO - Main loop iteration: 885
+2025-03-22 04:52:55,109 - transformer_training - INFO - Main loop iteration: 886
+2025-03-22 04:52:55,208 - transformer_training - INFO - Main loop iteration: 887
+2025-03-22 04:52:55,341 - transformer_training - INFO - Main loop iteration: 888
+2025-03-22 04:52:55,407 - transformer_training - INFO - Main loop iteration: 889
+2025-03-22 04:52:55,506 - transformer_training - INFO - Main loop iteration: 890
+Iter 890: loss 5.9347, lr 0.000382, 334490.87 tokens/sec
+2025-03-22 04:52:55,604 - transformer_training - INFO - Main loop iteration: 891
+2025-03-22 04:52:55,737 - transformer_training - INFO - Main loop iteration: 892
+2025-03-22 04:52:55,803 - transformer_training - INFO - Main loop iteration: 893
+2025-03-22 04:52:55,902 - transformer_training - INFO - Main loop iteration: 894
+2025-03-22 04:52:56,000 - transformer_training - INFO - Main loop iteration: 895
+2025-03-22 04:52:56,133 - transformer_training - INFO - Main loop iteration: 896
+2025-03-22 04:52:56,199 - transformer_training - INFO - Main loop iteration: 897
+2025-03-22 04:52:56,298 - transformer_training - INFO - Main loop iteration: 898
+2025-03-22 04:52:56,396 - transformer_training - INFO - Main loop iteration: 899
+2025-03-22 04:52:56,529 - transformer_training - INFO - Main loop iteration: 900
+Iter 900: loss 5.9435, lr 0.000382, 495273.72 tokens/sec
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 900: train loss 5.8899, val loss 5.8747
+New best model saved with val loss: 5.8747
+2025-03-22 04:53:12,586 - transformer_training - INFO - Main loop iteration: 901
+2025-03-22 04:53:12,657 - transformer_training - INFO - Main loop iteration: 902
+2025-03-22 04:53:12,755 - transformer_training - INFO - Main loop iteration: 903
+2025-03-22 04:53:12,887 - transformer_training - INFO - Main loop iteration: 904
+2025-03-22 04:53:12,955 - transformer_training - INFO - Main loop iteration: 905
+2025-03-22 04:53:13,054 - transformer_training - INFO - Main loop iteration: 906
+2025-03-22 04:53:13,153 - transformer_training - INFO - Main loop iteration: 907
+2025-03-22 04:53:13,285 - transformer_training - INFO - Main loop iteration: 908
+2025-03-22 04:53:13,353 - transformer_training - INFO - Main loop iteration: 909
+2025-03-22 04:53:13,452 - transformer_training - INFO - Main loop iteration: 910
+Iter 910: loss 5.9499, lr 0.000381, 331712.14 tokens/sec
+2025-03-22 04:53:13,552 - transformer_training - INFO - Main loop iteration: 911
+2025-03-22 04:53:13,684 - transformer_training - INFO - Main loop iteration: 912
+2025-03-22 04:53:13,752 - transformer_training - INFO - Main loop iteration: 913
+2025-03-22 04:53:13,851 - transformer_training - INFO - Main loop iteration: 914
+2025-03-22 04:53:13,950 - transformer_training - INFO - Main loop iteration: 915
+2025-03-22 04:53:14,083 - transformer_training - INFO - Main loop iteration: 916
+2025-03-22 04:53:14,151 - transformer_training - INFO - Main loop iteration: 917
+2025-03-22 04:53:14,250 - transformer_training - INFO - Main loop iteration: 918
+2025-03-22 04:53:14,349 - transformer_training - INFO - Main loop iteration: 919
+2025-03-22 04:53:14,481 - transformer_training - INFO - Main loop iteration: 920
+Iter 920: loss 5.8691, lr 0.000380, 483220.25 tokens/sec
+2025-03-22 04:53:14,550 - transformer_training - INFO - Main loop iteration: 921
+2025-03-22 04:53:14,648 - transformer_training - INFO - Main loop iteration: 922
+2025-03-22 04:53:14,747 - transformer_training - INFO - Main loop iteration: 923
+2025-03-22 04:53:14,880 - transformer_training - INFO - Main loop iteration: 924
+2025-03-22 04:53:14,948 - transformer_training - INFO - Main loop iteration: 925
+2025-03-22 04:53:15,047 - transformer_training - INFO - Main loop iteration: 926
+2025-03-22 04:53:15,146 - transformer_training - INFO - Main loop iteration: 927
+2025-03-22 04:53:15,278 - transformer_training - INFO - Main loop iteration: 928
+2025-03-22 04:53:15,347 - transformer_training - INFO - Main loop iteration: 929
+2025-03-22 04:53:15,446 - transformer_training - INFO - Main loop iteration: 930
+Iter 930: loss 5.9168, lr 0.000379, 332062.37 tokens/sec
+2025-03-22 04:53:15,545 - transformer_training - INFO - Main loop iteration: 931
+2025-03-22 04:53:15,677 - transformer_training - INFO - Main loop iteration: 932
+2025-03-22 04:53:15,745 - transformer_training - INFO - Main loop iteration: 933
+2025-03-22 04:53:15,844 - transformer_training - INFO - Main loop iteration: 934
+2025-03-22 04:53:15,943 - transformer_training - INFO - Main loop iteration: 935
+2025-03-22 04:53:16,075 - transformer_training - INFO - Main loop iteration: 936
+2025-03-22 04:53:16,144 - transformer_training - INFO - Main loop iteration: 937
+2025-03-22 04:53:16,243 - transformer_training - INFO - Main loop iteration: 938
+2025-03-22 04:53:16,341 - transformer_training - INFO - Main loop iteration: 939
+2025-03-22 04:53:16,473 - transformer_training - INFO - Main loop iteration: 940
+Iter 940: loss 5.9282, lr 0.000379, 480770.95 tokens/sec
+2025-03-22 04:53:16,542 - transformer_training - INFO - Main loop iteration: 941
+2025-03-22 04:53:16,641 - transformer_training - INFO - Main loop iteration: 942
+2025-03-22 04:53:16,740 - transformer_training - INFO - Main loop iteration: 943
+2025-03-22 04:53:16,871 - transformer_training - INFO - Main loop iteration: 944
+2025-03-22 04:53:16,940 - transformer_training - INFO - Main loop iteration: 945
+2025-03-22 04:53:17,039 - transformer_training - INFO - Main loop iteration: 946
+2025-03-22 04:53:17,138 - transformer_training - INFO - Main loop iteration: 947
+2025-03-22 04:53:17,270 - transformer_training - INFO - Main loop iteration: 948
+2025-03-22 04:53:17,339 - transformer_training - INFO - Main loop iteration: 949
+2025-03-22 04:53:17,438 - transformer_training - INFO - Main loop iteration: 950
+Iter 950: loss 5.8983, lr 0.000378, 331641.70 tokens/sec
+2025-03-22 04:53:17,537 - transformer_training - INFO - Main loop iteration: 951
+2025-03-22 04:53:17,669 - transformer_training - INFO - Main loop iteration: 952
+2025-03-22 04:53:17,737 - transformer_training - INFO - Main loop iteration: 953
+2025-03-22 04:53:17,836 - transformer_training - INFO - Main loop iteration: 954
+2025-03-22 04:53:17,935 - transformer_training - INFO - Main loop iteration: 955
+2025-03-22 04:53:18,067 - transformer_training - INFO - Main loop iteration: 956
+2025-03-22 04:53:18,134 - transformer_training - INFO - Main loop iteration: 957
+2025-03-22 04:53:18,233 - transformer_training - INFO - Main loop iteration: 958
+2025-03-22 04:53:18,332 - transformer_training - INFO - Main loop iteration: 959
+2025-03-22 04:53:18,466 - transformer_training - INFO - Main loop iteration: 960
+Iter 960: loss 5.8546, lr 0.000377, 494516.36 tokens/sec
+2025-03-22 04:53:18,532 - transformer_training - INFO - Main loop iteration: 961
+2025-03-22 04:53:18,631 - transformer_training - INFO - Main loop iteration: 962
+2025-03-22 04:53:18,731 - transformer_training - INFO - Main loop iteration: 963
+2025-03-22 04:53:18,864 - transformer_training - INFO - Main loop iteration: 964
+2025-03-22 04:53:18,931 - transformer_training - INFO - Main loop iteration: 965
+2025-03-22 04:53:19,030 - transformer_training - INFO - Main loop iteration: 966
+2025-03-22 04:53:19,129 - transformer_training - INFO - Main loop iteration: 967
+2025-03-22 04:53:19,263 - transformer_training - INFO - Main loop iteration: 968
+2025-03-22 04:53:19,330 - transformer_training - INFO - Main loop iteration: 969
+2025-03-22 04:53:19,429 - transformer_training - INFO - Main loop iteration: 970
+Iter 970: loss 5.8921, lr 0.000376, 331736.16 tokens/sec
+2025-03-22 04:53:19,528 - transformer_training - INFO - Main loop iteration: 971
+2025-03-22 04:53:19,662 - transformer_training - INFO - Main loop iteration: 972
+2025-03-22 04:53:19,728 - transformer_training - INFO - Main loop iteration: 973
+2025-03-22 04:53:19,828 - transformer_training - INFO - Main loop iteration: 974
+2025-03-22 04:53:19,927 - transformer_training - INFO - Main loop iteration: 975
+2025-03-22 04:53:20,060 - transformer_training - INFO - Main loop iteration: 976
+2025-03-22 04:53:20,127 - transformer_training - INFO - Main loop iteration: 977
+2025-03-22 04:53:20,226 - transformer_training - INFO - Main loop iteration: 978
+2025-03-22 04:53:20,325 - transformer_training - INFO - Main loop iteration: 979
+2025-03-22 04:53:20,459 - transformer_training - INFO - Main loop iteration: 980
+Iter 980: loss 5.9055, lr 0.000375, 491900.45 tokens/sec
+2025-03-22 04:53:20,526 - transformer_training - INFO - Main loop iteration: 981
+2025-03-22 04:53:20,625 - transformer_training - INFO - Main loop iteration: 982
+2025-03-22 04:53:20,724 - transformer_training - INFO - Main loop iteration: 983
+2025-03-22 04:53:20,858 - transformer_training - INFO - Main loop iteration: 984
+2025-03-22 04:53:20,924 - transformer_training - INFO - Main loop iteration: 985
+2025-03-22 04:53:21,024 - transformer_training - INFO - Main loop iteration: 986
+2025-03-22 04:53:21,125 - transformer_training - INFO - Main loop iteration: 987
+2025-03-22 04:53:21,256 - transformer_training - INFO - Main loop iteration: 988
+2025-03-22 04:53:21,325 - transformer_training - INFO - Main loop iteration: 989
+2025-03-22 04:53:21,422 - transformer_training - INFO - Main loop iteration: 990
+Iter 990: loss 5.8953, lr 0.000375, 331643.30 tokens/sec
+2025-03-22 04:53:21,522 - transformer_training - INFO - Main loop iteration: 991
+2025-03-22 04:53:21,655 - transformer_training - INFO - Main loop iteration: 992
+2025-03-22 04:53:21,722 - transformer_training - INFO - Main loop iteration: 993
+2025-03-22 04:53:21,821 - transformer_training - INFO - Main loop iteration: 994
+2025-03-22 04:53:21,920 - transformer_training - INFO - Main loop iteration: 995
+2025-03-22 04:53:22,054 - transformer_training - INFO - Main loop iteration: 996
+2025-03-22 04:53:22,121 - transformer_training - INFO - Main loop iteration: 997
+2025-03-22 04:53:22,220 - transformer_training - INFO - Main loop iteration: 998
+2025-03-22 04:53:22,319 - transformer_training - INFO - Main loop iteration: 999
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Your base folder is: /workspace/GPT
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Flash Attention is available!
+Iter 999: train loss 5.7943, val loss 5.7831
+New best model saved with val loss: 5.7831
+Training completed in 285.19 seconds
+Training completed!
