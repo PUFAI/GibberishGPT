@@ -1,3 +1,12 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.distributed as dist
+import torch.multiprocessing as mp
+from torch.nn.parallel import DistributedDataParallel as DDP
+from torch.utils.data import Dataset, DataLoader, DistributedSampler
+from torch.utils.tensorboard import SummaryWriter
+
 class FlashAttentionHead(nn.Module):
     """single head of self-attention using Flash Attention when available"""
     # apparently flash attention is one of those things that can just not be avail
