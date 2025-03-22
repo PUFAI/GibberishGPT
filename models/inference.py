@@ -41,7 +41,7 @@ class Head(nn.Module):
         return output
 
 class FlashAttentionHead(nn.Module):
-    """Single attention head that uses Flash Attention if available"""
+    
     def __init__(self, embed_dim, head_dim, max_seq_len, dropout_prob):
         super().__init__()
         self.key_proj = nn.Linear(embed_dim, head_dim, bias=False)
@@ -56,6 +56,7 @@ class FlashAttentionHead(nn.Module):
         keys = self.key_proj(input_tensor)
         queries = self.query_proj(input_tensor)
         values = self.value_proj(input_tensor)
+        
         if self.use_flash and seq_len <= 1024:
             q = queries.unsqueeze(2)
             k = keys.unsqueeze(2)
@@ -112,9 +113,7 @@ class Block(nn.Module):
         self.layer_norm2 = nn.LayerNorm(embed_dim)
 
     def forward(self, input_tensor):
-        
         x = input_tensor + self.self_attention(self.layer_norm1(input_tensor))
-        
         x = x + self.feed_forward(self.layer_norm2(x))
         return x
 
@@ -131,7 +130,6 @@ class TransformerModel(nn.Module):
         self.layer_norm = nn.LayerNorm(embed_dim)
         self.lm_head = nn.Linear(embed_dim, vocab_size)
         self.max_seq_len = max_seq_len
-        
         self.apply(self._init_weights)
 
     def _init_weights(self, module):
@@ -175,6 +173,8 @@ class TransformerModel(nn.Module):
             idx = torch.cat((idx, idx_next), dim=1)
         return idx
 
+
+
 def load_model(checkpoint_path, device):
     if not os.path.exists(checkpoint_path):
         raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
@@ -194,9 +194,12 @@ def load_model(checkpoint_path, device):
         use_gradient_checkpoint=config_dict['gradient_checkpointing'],
         use_flash_attn=config_dict['use_flash_attn']
     )
-    
     model.load_state_dict(checkpoint['model_state_dict'])
     model.to(device)
+    if config_dict.get('use_flash_attn', False) and device.type == 'cuda':
+        print("Flash attention enabled: casting model to half precision.")
+        model.half()
+
     model.eval()
     print("Model loaded and set to evaluation mode.")
     return model
@@ -213,10 +216,10 @@ def main():
             break
         prompt_ids = tokenizer.encode(prompt)
         input_tensor = torch.tensor([prompt_ids], dtype=torch.long, device=device)
-        
+
         with torch.no_grad():
             generated_tensor = model.generate(input_tensor, max_new_tokens=200, temperature=1.0)
-        
+
         generated_text = tokenizer.decode(generated_tensor[0].tolist())
         print("\nGenerated text:")
         print(generated_text)

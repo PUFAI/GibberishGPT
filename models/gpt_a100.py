@@ -675,14 +675,14 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
         # generate sample text
         model.eval()
         context = torch.zeros((1, 1), dtype=torch.long, device=device)
-        context_ids = context[0].tolist()
-        context_text = tokenizer.decode(context_ids)
+        # context_ids = context[0].tolist()
+        # context_text = tokenizer.decode(context_ids)
         
         generated_sequence = model.module.generate(context, max_new_tokens=200, max_seq_len=config.block_size)
         generated_ids = generated_sequence[0].tolist()
         decoded_text = tokenizer.decode(generated_ids)  # Decode the generated token IDs into text
         
-        print("Context:", context_text)
+        # print("Context:", context_text)
         print("Generated text:", decoded_text) 
         
         print("Training completed!")
