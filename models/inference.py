@@ -53,7 +53,8 @@ def load_model(checkpoint_path, device):
 
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    checkpoint_path = os.path.join("checkpoints", "best_model.pt")
+    model_choice = input("Which model would you like to inference (best_model): ")
+    checkpoint_path = os.path.join("checkpoints", f"{model_choice}.pt")
     model = load_model(checkpoint_path, device)
 
     print("\nEnter your prompt below. Type 'exit' to quit.")
