@@ -68,7 +68,7 @@ class ModelConfig:
         self.warmup_iters = 100             # Learning rate warmup iterations
         
         # Optimizer Settings
-        self.weight_decay = 1e-1
+        self.weight_decay = 1e-4
         self.beta1 = 0.9
         self.beta2 = 0.95
         
