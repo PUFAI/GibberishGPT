@@ -60,12 +60,12 @@ class ModelConfig:
         self.dropout = 0.1                  # Dropout rate
         
         # training parameters
-        self.max_iters = 5000               # Number of iterations
+        self.max_iters = 1000               # Number of iterations
         self.eval_interval = 100            # Evaluation interval
-        self.learning_rate = 5e-4           # Learning rate
+        self.learning_rate = 5e-3           # Learning rate
         self.eval_iters = 5                 # Evaluation iterations
         self.accumulation_steps = 4         # Gradient accumulation steps
-        self.warmup_iters = 500             # Learning rate warmup iterations
+        self.warmup_iters = 100             # Learning rate warmup iterations
         
         # Optimizer Settings
         self.weight_decay = 1e-4
@@ -675,7 +675,8 @@ def train(gpu_id, config, train_tensor, val_tensor, test_tensor, vocab_size):
         # generate sample text
         model.eval()
         context = torch.zeros((1, 1), dtype=torch.long, device=device)
-        context_text = tokenizer.decode(context[0].tolist())
+        context_ids = context[0].tolist()
+        context_text = tokenizer.decode(context_ids)
         
         generated_sequence = model.module.generate(context, max_new_tokens=200, max_seq_len=config.block_size)
         generated_ids = generated_sequence[0].tolist()
