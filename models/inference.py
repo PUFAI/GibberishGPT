@@ -12,6 +12,9 @@ except ImportError:
     HAS_FLASH_ATTN = False
     print("Flash Attention is not available, falling back to standard attention")
 
+base_folder = os.path.abspath("..")
+print(f"Your base folder is: {base_folder}")
+sys.path.append(base_folder)
 from tokenization import get_tiktoken_tokenizer
 tokenizer = get_tiktoken_tokenizer()
 vocab_size = tokenizer.n_vocab
