@@ -175,3 +175,4 @@ venv
 # Local Tokenization Data Saved
 /data/tokenized_wikitext
 /data/tiktoken_tokenized_wikitext
+*.pt
