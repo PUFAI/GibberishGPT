@@ -66,7 +66,7 @@ def main():
         input_tensor = torch.tensor([prompt_ids], dtype=torch.long, device=device)
 
         with torch.no_grad():
-            generated_tensor = model.generate(input_tensor, max_new_tokens=2000, max_seq_len=config.block_size, temperature=1.0)
+            generated_tensor = model.generate(input_tensor, max_new_tokens=300, max_seq_len=config.block_size, temperature=1.0)
 
         generated_text = tokenizer.decode(generated_tensor[0].tolist())
         print("\nGenerated text:")
