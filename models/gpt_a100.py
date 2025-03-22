@@ -62,7 +62,7 @@ class ModelConfig:
         # training parameters
         self.max_iters = 5000               # Number of iterations
         self.eval_interval = 100            # Evaluation interval
-        self.learning_rate = 4e-4           # Learning rate
+        self.learning_rate = 1e-4           # Learning rate
         self.eval_iters = 5                 # Evaluation iterations
         self.accumulation_steps = 4         # Gradient accumulation steps
         self.warmup_iters = 500             # Learning rate warmup iterations
