@@ -401,8 +401,8 @@ def main():
     
     vocab_size = tokenizer.n_vocab
     
-    # dataset = get_wikitext_data()
-    dataset = get_fineweb_data(1)
+    dataset = get_wikitext_data()
+    # dataset = get_fineweb_data(1)
     num_cores = multiprocessing.cpu_count()
     
     def clean_batch(examples):
