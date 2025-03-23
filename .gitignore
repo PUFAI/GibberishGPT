@@ -176,3 +176,4 @@ venv
 /data/tokenized_wikitext
 /data/tiktoken_tokenized_wikitext
 *.pt
+*.bin
