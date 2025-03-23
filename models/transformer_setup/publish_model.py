@@ -27,7 +27,7 @@ def inspect_checkpoint(checkpoint_path):
     print(f"\n--- Inspecting checkpoint: {checkpoint_path} ---")
     
     try:
-        checkpoint = torch.load(checkpoint_path, map_location="cpu")
+        checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
         print("Checkpoint loaded successfully")
         
         if isinstance(checkpoint, dict):
