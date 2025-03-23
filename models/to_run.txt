@@ -1,1 +1,9 @@
-nohup python3 -u gpt_a100.py > a100_train.log 2>&1 &
+git clone https://github.com/Michaelgathara/GPT
+cd GPT
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env bash
+uv sync
+source .venv/bin/activate
+cd models
+nohup python3 -u gpt_flashattn.py > train.log 2>&1 &
+bash print_res.sh
