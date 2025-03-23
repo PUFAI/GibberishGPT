@@ -24,7 +24,7 @@ from typing import Optional
 base_folder = os.path.abspath("..")
 print(f"Your base folder is: {base_folder}")
 sys.path.append(base_folder)
-from data import get_wikitext_data, clean_textdata
+from data import get_wikitext_data, clean_textdata, get_fineweb_data
 from tokenization import get_tiktoken_tokenizer
 
 tokenizer = get_tiktoken_tokenizer()
@@ -402,6 +402,7 @@ def main():
     vocab_size = tokenizer.n_vocab
     
     dataset = get_wikitext_data()
+    # dataset = get_fineweb_data(1)
     num_cores = multiprocessing.cpu_count()
     
     def clean_batch(examples):

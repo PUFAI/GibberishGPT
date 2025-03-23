@@ -53,7 +53,8 @@ def load_model(checkpoint_path, device):
 
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    checkpoint_path = os.path.join("checkpoints", "best_model.pt")
+    model_choice = input("Which model would you like to inference (best_model): ")
+    checkpoint_path = os.path.join("checkpoints", f"{model_choice}.pt")
     model = load_model(checkpoint_path, device)
 
     print("\nEnter your prompt below. Type 'exit' to quit.")
@@ -65,7 +66,7 @@ def main():
         input_tensor = torch.tensor([prompt_ids], dtype=torch.long, device=device)
 
         with torch.no_grad():
-            generated_tensor = model.generate(input_tensor, max_new_tokens=200, temperature=1.0)
+            generated_tensor = model.generate(input_tensor, max_new_tokens=300, max_seq_len=config.block_size, temperature=1.0)
 
         generated_text = tokenizer.decode(generated_tensor[0].tolist())
         print("\nGenerated text:")
