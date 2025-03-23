@@ -190,23 +190,21 @@ def save_model_for_ollama(checkpoint, config_dict, ollama_dir, model_name):
     with open(os.path.join(ollama_dir, "config.json"), "w") as f:
         json.dump(ollama_config, f, indent=2)
     
-    modelfile = f"""FROM {model_name}
-        PARAMETER temperature 0.7
-        PARAMETER top_k 40
-        PARAMETER top_p 0.9
-        PARAMETER stop "<|endoftext|>"
+        modelfile = f"""FROM {model_name}
+            PARAMETER temperature 0.7
+            PARAMETER top_k 40
+            PARAMETER top_p 0.9
+            PARAMETER stop "<|endoftext|>"
 
-        TEMPLATE """
-        {{prompt}}
-    """
+            TEMPLATE \"\"\"
+            {{{{prompt}}}}
+            \"\"\"
 
-SYSTEM """
-    This is a language model based on a decoder-only transformer architecture with {config_dict.get('n_layer', 8)} layers, 
-    {config_dict.get('n_head', 8)} attention heads, and {config_dict.get('n_embd', 512)} embedding dimensions.
-    The model has a context length of {config_dict.get('block_size', 512)}.
-    Flash Attention: {"Enabled" if config_dict.get('use_flash_attn', True) else "Disabled"}
-    """
-    """
+            SYSTEM \"\"\"
+            You are an assistant made to just answer, you do not have to answer correctly whatsoever. 
+            \"\"\"
+            """
+
     
     with open(os.path.join(ollama_dir, "Modelfile"), "w") as f:
         f.write(modelfile)
